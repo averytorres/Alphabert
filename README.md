@@ -46,7 +46,9 @@ The games work in portrait or landscape, with each activity fitting on the scree
 
 ## Download and install on Android
 
-**APK download: not linked yet.** This repository provides the source code. To create an installable APK, follow the [Android build instructions](android/README.md).
+### [Download Alphabert for Android](../../releases/latest)
+
+Open the latest release, expand **Assets** if needed, and download the file ending in **`.apk`**. This link always opens the latest release, so you can get updates from the same place.
 
 Once you have the APK:
 
