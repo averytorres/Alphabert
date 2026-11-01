@@ -63,6 +63,8 @@ The built-in voices, pictures, games, and melodies are included with the app. **
 
 Progress and words you add stay on the device. Open **Grown-ups → Bertie’s voice** to choose **Roger, Amelia, or Jessica**; the choice is remembered after closing the app. Settings also include speech, music and answer-sound controls, plus a reduced-motion option.
 
+On Android, **Grown-ups → Keep game open** starts screen pinning to prevent accidental exits. Accept Android’s confirmation. Turn it off here with your phone’s screen lock (or a grown-up arithmetic check if no screen lock is set), or use Android’s unpin gesture. Enable **Require PIN to unpin** in the phone’s App pinning settings for stronger protection. Pinning applies to the current session; Back returns to the game menu.
+
 ## Make it your child's word collection
 
 Open **Grown-ups → Add a word** to add familiar words and a picture emoji. You can also import or export a word pack to share additions or keep a backup.

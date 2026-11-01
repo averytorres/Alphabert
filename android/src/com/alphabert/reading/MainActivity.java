@@ -53,6 +53,7 @@ public final class MainActivity extends Activity {
         settings.setMediaPlaybackRequiresUserGesture(false);
         web.addJavascriptInterface(new VoiceBridge(), "AndroidVoice");
         web.addJavascriptInterface(new FileBridge(), "AndroidFiles");
+        web.addJavascriptInterface(new GameLockBridge(), "AndroidGameLock");
         web.setWebViewClient(new WebViewClient() {
             @Override public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 return !isLocal(request.getUrl());
@@ -180,6 +181,7 @@ public final class MainActivity extends Activity {
     }
     @Override protected void onActivityResult(int request, int result, Intent data) {
         super.onActivityResult(request, result, data);
+        if (request == 102 && result == RESULT_OK) { stopLockTask(); notifyGameLock(); }
         if (request == PICK_FILE && fileResult != null) {
             Uri picked = result == RESULT_OK && data != null ? data.getData() : null;
             fileResult.onReceiveValue(picked == null ? null : new Uri[]{picked});
@@ -207,14 +209,65 @@ public final class MainActivity extends Activity {
             web.onPause();
         }
     }
-    @Override protected void onResume() { super.onResume(); if (web != null) web.onResume(); }
+    private boolean isGamePinned() {
+        android.app.ActivityManager manager = (android.app.ActivityManager) getSystemService(ACTIVITY_SERVICE);
+        return manager.getLockTaskModeState() != android.app.ActivityManager.LOCK_TASK_MODE_NONE;
+    }
+    private void notifyGameLock() {
+        if (web != null) web.evaluateJavascript("window.dispatchEvent(new Event('android-game-lock'))", null);
+    }
+    private final class GameLockBridge {
+        @JavascriptInterface public boolean isPinned() { return isGamePinned(); }
+        @JavascriptInterface public void toggle() {
+            runOnUiThread(() -> {
+                if (isGamePinned()) {
+                    // A child reaching Grown-ups must not be able to unpin with one tap.
+                    android.app.KeyguardManager keyguard = (android.app.KeyguardManager) getSystemService(KEYGUARD_SERVICE);
+                    Intent unlock = keyguard.createConfirmDeviceCredentialIntent("Turn off Keep game open", "Confirm your phone's screen lock to unpin Alphabert.");
+                    if (unlock != null) startActivityForResult(unlock, 102);
+                    else {
+                        final int first = 12 + new java.util.Random().nextInt(8);
+                        final int second = 12 + new java.util.Random().nextInt(8);
+                        final android.widget.EditText answer = new android.widget.EditText(MainActivity.this);
+                        answer.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+                        new android.app.AlertDialog.Builder(MainActivity.this)
+                            .setTitle("Grown-ups: " + first + " + " + second + " = ?")
+                            .setMessage("Enter the answer to turn off Keep game open.")
+                            .setView(answer).setNegativeButton("Cancel", null)
+                            .setPositiveButton("Turn off", (dialog, which) -> {
+                                if (answer.getText().toString().trim().equals(String.valueOf(first + second))) {
+                                    stopLockTask(); notifyGameLock();
+                                }
+                            }).show();
+                    }
+                } else {
+                    new android.app.AlertDialog.Builder(MainActivity.this)
+                        .setTitle("Keep game open")
+                        .setMessage("Android will ask you to pin Alphabert. Accept its confirmation. To leave, use Android's unpin gesture shown in that prompt, or return here to turn this off. For stronger protection, enable Require PIN to unpin in your phone's App pinning settings. Pinning must be started again if Android ends the session.")
+                        .setNegativeButton("Cancel", null)
+                        .setPositiveButton("Pin game", (dialog, which) -> {
+                            try { startLockTask(); }
+                            catch (IllegalStateException | SecurityException error) {
+                                android.widget.Toast.makeText(MainActivity.this, "Could not pin. Enable App pinning in your phone's settings, then try again.", android.widget.Toast.LENGTH_LONG).show();
+                            }
+                            notifyGameLock();
+                        }).show();
+                }
+            });
+        }
+    }
+    @Override public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) notifyGameLock();
+    }
+    @Override protected void onResume() { super.onResume(); if (web != null) { web.onResume(); notifyGameLock(); } }
     @Override public void onBackPressed() {
         web.evaluateJavascript("window.dispatchEvent(new Event('androidback'))", null);
     }
     @Override protected void onDestroy() {
         if (fileResult != null) fileResult.onReceiveValue(null);
         if (voice != null) { voice.stop(); voice.shutdown(); }
-        if (web != null) { web.removeJavascriptInterface("AndroidVoice"); web.removeJavascriptInterface("AndroidFiles"); web.destroy(); }
+        if (web != null) { web.removeJavascriptInterface("AndroidVoice"); web.removeJavascriptInterface("AndroidFiles"); web.removeJavascriptInterface("AndroidGameLock"); web.destroy(); }
         super.onDestroy();
     }
 }

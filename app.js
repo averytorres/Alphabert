@@ -667,6 +667,7 @@ function settings() {
     stars: progress.stars,
     customWordCount: customWords.length,
   });
+  updateGameLockControl();
   select('#answer-volume').oninput = (e) => {
     preferences.feedbackVolume = Number(e.target.value) / 100;
     answerSounds.volume = preferences.feedbackVolume;
@@ -726,6 +727,15 @@ function settings() {
     }
   };
 }
+function updateGameLockControl() {
+  const control = select('#game-lock-toggle');
+  if (!control || !window.AndroidGameLock) return;
+  select('#game-lock-section').hidden = false;
+  const pinned = window.AndroidGameLock.isPinned();
+  control.textContent = `Keep game open: ${pinned ? 'On — turn off' : 'Off — turn on'}`;
+  control.setAttribute('aria-pressed', String(pinned));
+}
+window.addEventListener('android-game-lock', updateGameLockControl);
 function status(text) {
   select('#settings-status').textContent = text;
 }
@@ -809,6 +819,9 @@ document.addEventListener('click', (event) => {
   if (action.memory) return memoryTap(action.memory);
   if (action.song !== undefined) return song(Number(action.song));
   switch (control.id) {
+    case 'game-lock-toggle':
+      window.AndroidGameLock?.toggle();
+      break;
     case 'home':
     case 'back':
       home();
