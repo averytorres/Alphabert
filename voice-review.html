@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Voice sound review</title>
+    <style>
+      body { font: 18px system-ui; max-width: 1100px; margin: auto; padding: 20px; background: #faf8f0; color: #183f3a; }
+      a { color: #075e61; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; }
+      section { background: white; padding: 12px; border-radius: 12px; }
+      audio { width: 100%; }
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Back to the game</a>
+    <h1>Voice sound review</h1>
+    <p>
+      Fresh ElevenLabs recordings at their native timing. Each cue is an independent response, with
+      no looping or time stretching. Automated checks do not certify pronunciation; listen to the
+      sounds with your child.
+    </p>
+    <main id="sounds">Loading recordings…</main>
+    <script type="module">
+      const target = document.querySelector('#sounds');
+      try {
+        const catalog = await (await fetch('audio/voices.json')).json();
+        const id = new URLSearchParams(location.search).get('voice') || 'amelia';
+        const voice = catalog.voices.find((voice) => voice.id === id && /^[a-z-]+$/.test(voice.id));
+        if (!voice || id === 'roger') throw new Error('Choose a voice from the game’s settings.');
+        const response = await fetch(`audio/${voice.id}/report.json`);
+        if (!response.ok) throw new Error('These voice recordings are not installed yet.');
+        const report = await response.json();
+        document.title = `${report.voice} sound review`;
+        document.querySelector('h1').textContent = document.title;
+        target.textContent = '';
+        for (const [kind, title] of [['phoneme', 'Letter sounds'], ['letter', 'Letter names'], ['blend', 'Blends']]) {
+          const heading = document.createElement('h2');
+          heading.textContent = title;
+          const grid = document.createElement('div');
+          grid.className = 'grid';
+          for (const cue of report.phonics.filter((cue) => cue.kind === kind)) {
+            const card = document.createElement('section');
+            const label = document.createElement('h3');
+            label.textContent = cue.label === 'schwa' ? 'uh (schwa)' : cue.label;
+            const audio = document.createElement('audio');
+            audio.controls = true;
+            audio.preload = 'none';
+            audio.src = cue.file;
+            audio.addEventListener('play', () => {
+              for (const other of document.querySelectorAll('audio')) if (other !== audio) other.pause();
+            });
+            card.append(label, audio);
+            grid.append(card);
+          }
+          target.append(heading, grid);
+        }
+      } catch (error) {
+        target.textContent = error.message;
+      }
+    </script>
+  </body>
+</html>

@@ -96,7 +96,13 @@ export function renderActivityShell(activity, playedCount) {
   ].join('');
 }
 
-export function renderSettingsView({ wordCount, preferences, stars, customWordCount }) {
+export function renderSettingsView({
+  wordCount,
+  preferences,
+  stars,
+  customWordCount,
+  voices = [],
+}) {
   return [
     `<div class="settings">`,
     `<button class="back" id="back">`,
@@ -109,6 +115,16 @@ export function renderSettingsView({ wordCount, preferences, stars, customWordCo
     `${wordCount}`,
     ` words ready to explore. Add words here, or import a JSON word pack. Your additions stay on this device and work across the spelling, counting, and letter activities.</p>`,
     `<div class="form-grid">`,
+    `<div>`,
+    `<label for="voice-choice">Bertie’s voice</label>`,
+    `<select id="voice-choice">`,
+    ...voices.map(
+      (voice) =>
+        `<option value="${escapeHtml(voice.id)}" ${voice.available ? '' : 'disabled'}>${escapeHtml(voice.label)}${voice.available ? '' : ' (recordings not installed)'}</option>`,
+    ),
+    `</select>`,
+    `<p class="prompt-small">Your choice is remembered on this device, including after closing the app. Added words need a recording in the chosen voice.</p>`,
+    `</div>`,
     `<div>`,
     `<label for="voice-rate">Speaking speed</label>`,
     `<select id="voice-rate">`,
@@ -164,7 +180,7 @@ export function renderSettingsView({ wordCount, preferences, stars, customWordCo
     `</section>`,
     `<section>`,
     `<p>`,
-    `<a href="elevenlabs-review.html">Roger’s letter sounds, names and blends</a> · <a href="phonics-credits.html">Earlier phonics sources</a>`,
+    `<a href="${preferences.voice && preferences.voice !== 'roger' ? `voice-review.html?voice=${encodeURIComponent(preferences.voice)}` : 'elevenlabs-review.html'}">Review the selected voice’s sounds, names and blends</a> · <a href="phonics-credits.html">Earlier phonics sources</a>`,
     `</p>`,
     `<h2>Word packs</h2>`,
     `<p>Import adds or replaces words by ID. Built-in words remain available. Export makes a backup of your additions. See content/README.md in the project for the complete format and rhyme lessons.</p>`,
@@ -187,7 +203,7 @@ export function renderSettingsView({ wordCount, preferences, stars, customWordCo
     `${customWordCount}`,
     `.</p>`,
     `<button class="secondary" id="reset-progress">Reset stars and activity history</button>`,
-    `<p class="prompt-small">Speech uses bundled recordings first. New words use your device’s English voice. For offline speech with new content, install an English voice in Android’s text-to-speech settings. Built-in words, instructions, hints, jokes, letter names and sounds use offline ElevenLabs Roger recordings. New custom content uses the device voice until its recordings are prepared. Review the isolated sound clips with your child.</p>`,
+    `<p class="prompt-small">Built-in speech uses offline recordings. Choosing a voice keeps all speech with that speaker. Added words without that speaker’s recording remain silent until it is added. Older settings without a voice choice can still use the device voice for new content. Review the isolated sound clips with your child.</p>`,
     `</section>`,
     `<p id="settings-status" class="status" role="status">`,
     `</p>`,

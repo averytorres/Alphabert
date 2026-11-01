@@ -260,6 +260,9 @@ window.addEventListener('speech-state', (e) => document.body.classList.toggle('t
 window.addEventListener('phoneme-unavailable', (e) =>
   feedback(`This sound needs a recording: ${e.detail}`, false),
 );
+window.addEventListener('voice-recording-unavailable', () =>
+  feedback('This needs a recording in your chosen voice.', false),
+);
 function save() {
   try {
     localStorage.setItem('alphabert-progress', JSON.stringify(progress));
@@ -660,6 +663,7 @@ function settings() {
   select('#main').innerHTML = renderSettingsView({
     wordCount: wordBank.length,
     preferences,
+    voices: speechService.voices,
     stars: progress.stars,
     customWordCount: customWords.length,
   });
@@ -669,6 +673,35 @@ function settings() {
     save();
   };
   select('#voice-rate').value = String(preferences.rate);
+  select('#voice-choice').value = preferences.voice || 'roger';
+  select('#voice-choice').onchange = async (event) => {
+    const control = event.target;
+    const previous = {
+      voice: speechService.voice,
+      index: speechService.index,
+      strictVoice: speechService.strictVoice,
+    };
+    control.disabled = true;
+    try {
+      await speechService.selectVoice(control.value);
+      // Confirm durable storage before reporting success. If storage is full or
+      // unavailable, restore the previous bank rather than promise a saved choice.
+      localStorage.setItem(
+        'alphabert-prefs',
+        JSON.stringify({ ...preferences, voice: speechService.voice }),
+      );
+      preferences.voice = speechService.voice;
+      save();
+      status('Voice saved for all activities.');
+    } catch (error) {
+      speechService.stop();
+      Object.assign(speechService, previous);
+      control.value = speechService.voice;
+      status(error.message);
+    } finally {
+      control.disabled = false;
+    }
+  };
   select('#motion').value = String(preferences.motion);
   select('#word-form').addEventListener('submit', addWord);
   select('#voice-rate').onchange = (e) => {
@@ -988,6 +1021,20 @@ try {
   );
   validatePack(builtInWordPack);
   wordBank = mergedWords(builtInWordPack.words, customWords);
+  await speechService.catalogReady;
+  if (preferences.voice) {
+    try {
+      await speechService.selectVoice(preferences.voice);
+    } catch (error) {
+      // Preserve the saved choice and prevent the default bank speaking while
+      // its replacement is unavailable. Grown-ups can explicitly choose another.
+      await speechService.ready;
+      speechService.stop();
+      speechService.index = {};
+      speechService.strictVoice = true;
+      throw error;
+    }
+  }
   home();
 } catch (e) {
   select('#main').innerHTML = [

@@ -42,6 +42,7 @@ __pycache__/
 /tools/
 .cache/
 .codex/
+.codex-remote-attachments/
 .vs/
 .idea/
 

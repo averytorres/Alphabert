@@ -6,6 +6,11 @@
       this.enabled = true;
       this.rate = 0.85;
       this.index = {};
+      this.voice = 'roger';
+      this.strictVoice = false;
+      this.voices = [
+        { id: 'roger', label: 'Male — Roger', index: 'audio/index.json', available: true },
+      ];
       this.serial = 0;
       this.pending = null;
       this.ready = fetch('audio/index.json')
@@ -14,6 +19,45 @@
           this.index = data.clips || data;
         })
         .catch(() => {});
+      this.catalogReady = fetch('audio/voices.json')
+        .then((response) => (response.ok ? response.json() : {}))
+        .then((catalog) => {
+          if (Array.isArray(catalog.voices)) this.voices = catalog.voices;
+        })
+        .catch(() => {});
+    }
+    async selectVoice(id) {
+      this.stop();
+      await this.catalogReady;
+      const selected = this.voices.find((voice) => voice.id === id && voice.available);
+      if (!selected) throw new Error('This voice’s recordings are not installed yet.');
+      await this.ready;
+      if (id === this.voice && Object.keys(this.index).length) {
+        this.strictVoice = true;
+        return;
+      }
+      const response = await fetch(selected.index);
+      if (!response.ok) throw new Error('Could not load the selected voice. Please try again.');
+      const data = await response.json();
+      if (!data.clips || !Object.keys(data.clips).length)
+        throw new Error('The selected voice is empty.');
+      if (
+        id !== 'roger' &&
+        Object.values(data.clips).some(
+          (clip) =>
+            typeof clip !== 'string' ||
+            !clip.startsWith(`audio/${id}/`) ||
+            clip.includes('..') ||
+            clip.includes('\\'),
+        )
+      ) {
+        throw new Error('The selected voice contains recordings from another speaker.');
+      }
+      // Replace the bank as a whole. Missing entries must never borrow the other speaker.
+      this.stop();
+      this.index = data.clips;
+      this.voice = id;
+      this.strictVoice = true;
     }
     stop() {
       this.serial++;
@@ -108,6 +152,7 @@
       }
     }
     async word(word) {
+      if (this.strictVoice) return this.say(word.word);
       if (!word.audio) return this.say(word.word);
       this.stop();
       if (!this.enabled) return;
@@ -175,6 +220,12 @@
       });
     }
     fallback(text, serial) {
+      // A device TTS voice cannot guarantee the chosen speaker. Keep the selection
+      // intact and report missing recordings instead of switching voices silently.
+      if (this.strictVoice) {
+        window.dispatchEvent(new CustomEvent('voice-recording-unavailable', { detail: text }));
+        return Promise.resolve();
+      }
       return new Promise((resolve) => {
         let timer,
           finished = false;

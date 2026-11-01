@@ -61,13 +61,13 @@ Once you have the APK:
 
 The built-in voices, pictures, games, and melodies are included with the app. **No login or internet connection is needed to play.** The Android app does not request internet, microphone, or storage permissions.
 
-Progress and words you add stay on the device. Grown-up settings include speech, music and answer-sound controls, plus a reduced-motion option.
+Progress and words you add stay on the device. Open **Grown-ups → Bertie’s voice** to choose **Roger, Amelia, or Jessica**; the choice is remembered after closing the app. Settings also include speech, music and answer-sound controls, plus a reduced-motion option.
 
 ## Make it your child's word collection
 
 Open **Grown-ups → Add a word** to add familiar words and a picture emoji. You can also import or export a word pack to share additions or keep a backup.
 
-New words without a bundled recording use the device's voice; an installed offline English voice helps keep them available without internet. Export your additions before uninstalling the game or clearing its data.
+When you choose a voice, added words need a recording in that voice before the game can say them; it keeps your chosen speaker instead of switching voices. Existing settings without an explicit voice choice retain the device-voice fallback. Export your additions before uninstalling the game or clearing its data.
 
 ## Want to work on the game?
 

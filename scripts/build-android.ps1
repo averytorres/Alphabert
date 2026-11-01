@@ -63,6 +63,21 @@ Get-ChildItem -LiteralPath $audioSource -File | Where-Object Extension -NotIn '.
 if(Test-Path (Join-Path $audioSource 'licenses')){Copy-Item (Join-Path $audioSource 'licenses') $audioTarget -Recurse}
 $audioIndex=Get-Content (Join-Path $audioSource 'index.json') -Raw | ConvertFrom-Json -AsHashtable
 $recordings=@($audioIndex.clips.Values | ForEach-Object {if($_ -is [string]){$_}else{$_.file}})
+$voiceCatalogPath = Join-Path $audioSource 'voices.json'
+if (Test-Path -LiteralPath $voiceCatalogPath) {
+    $voiceCatalog = Get-Content -LiteralPath $voiceCatalogPath -Raw | ConvertFrom-Json
+    foreach ($voice in ($voiceCatalog.voices | Where-Object available)) {
+        if ($voice.index -eq 'audio/index.json') { continue }
+        if ($voice.index -notmatch '^audio/[a-z-]+/index\.json$') { throw 'Invalid voice index path.' }
+        $voiceIndexPath = Join-Path $projectRoot $voice.index
+        $voiceIndex = Get-Content -LiteralPath $voiceIndexPath -Raw | ConvertFrom-Json -AsHashtable
+        $voiceFolder = Split-Path -Parent $voiceIndexPath
+        $targetFolder = Join-Path $assets (Split-Path -Parent $voice.index)
+        New-Item -ItemType Directory -Force $targetFolder | Out-Null
+        Get-ChildItem -LiteralPath $voiceFolder -File -Filter '*.json' | Copy-Item -Destination $targetFolder
+        $recordings += @($voiceIndex.clips.Values | ForEach-Object { if ($_ -is [string]) { $_ } else { $_.file } })
+    }
+}
 $wordContent=Get-Content (Join-Path $projectRoot 'content/words.json') -Raw | ConvertFrom-Json
 $recordings+=@($wordContent.words | Where-Object audio | ForEach-Object audio)
 foreach($recording in ($recordings | Select-Object -Unique)){

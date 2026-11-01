@@ -1,0 +1,41 @@
+{
+  "voices": [
+    {
+      "id": "roger",
+      "label": "Male — Roger",
+      "index": "audio/index.json",
+      "available": true
+    },
+    {
+      "id": "amelia",
+      "label": "Female — Amelia",
+      "name": "Amelia",
+      "plainLetterNames": [
+        "a",
+        "e"
+      ],
+      "elevenlabsVoiceId": "ZF6FPAbjXT4488VcRRnw",
+      "model": "eleven_v4",
+      "index": "audio/amelia/index.json",
+      "available": true
+    },
+    {
+      "id": "jessica",
+      "label": "Female — Jessica",
+      "name": "Jessica",
+      "plainLetterNames": [
+        "a",
+        "e",
+        "h"
+      ],
+      "letterNameText": {
+        "a": "/eɪ/.",
+        "h": "/eɪtʃ/."
+      },
+      "elevenlabsVoiceId": "cgSgspJ2msm6clMCkdW9",
+      "model": "eleven_v4",
+      "index": "audio/jessica/index.json",
+      "available": true
+    }
+  ]
+}
