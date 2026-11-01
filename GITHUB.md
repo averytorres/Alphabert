@@ -2,30 +2,14 @@
 
 GitHub shows files that have been committed and pushed to a GitHub repository. Files sitting on your computer are local until that happens. You do not need to publish the Android app, upload an APK, or release it in an app store first.
 
-## Choose the correct local folder
+## Work from the project root
 
-Choose the outer project folder that contains the game files. For example:
-
-```text
-C:\Projects\Alphabert
-```
-
-It contains `app.js`, `index.html`, `content`, `audio`, and `android`.
-
-In the original local setup there was also a nested placeholder repository. Using the example path, that would be:
-
-```text
-C:\Projects\Alphabert\Alphabert
-```
-
-That nested repository contains only `.gitattributes`. Selecting it in GitHub Desktop will not show the app files in its parent folder. The nested folder is excluded from the main project's Git tracking; its repository has been left intact.
-
-At the initial setup check, the actual project had no commits and no remote, and the nested repository had only its placeholder initial commit and no remote.
+Use the folder containing `app.js`, `index.html`, `content`, `audio`, and `android`. Run the commands below from that folder.
 
 ## GitHub Desktop
 
 1. Select **File → Add local repository**.
-2. Choose the actual project folder above, ending in a single `Alphabert`.
+2. Choose the project folder containing `app.js` and `index.html`.
 3. Confirm the Changes list shows files such as `app.js`, `README.md`, and `content/words.json`.
 4. Review the changes, enter a summary such as **Initial game source**, and click **Commit to master** (or the branch name shown).
 5. Click **Publish repository**. Choose the repository name, owner and visibility you want.
@@ -38,7 +22,6 @@ For later updates, commit the changes and click **Push origin**.
 From PowerShell:
 
 ```powershell
-Set-Location 'C:\Projects\Alphabert'
 git status
 git add .
 git diff --cached --stat
@@ -58,7 +41,7 @@ Replace the placeholder URL before running it. If `origin` already exists, inspe
 
 Commit the game source, editable content, runtime artwork/audio, documentation, build scripts and tests. Bundled audio is needed to run the game offline.
 
-The `.gitignore` excludes API credentials/caches, signing keystores, dependency downloads, generated APKs, test screenshots, speech trials, the downloaded ISO and its inspection directory. Keep signing keys and speech generation masters backed up separately; ignoring them does not create a backup.
+The `.gitignore` excludes API credentials/caches, signing keystores, dependency downloads, generated APKs, test screenshots, speech trials, downloaded research material and local working notes. Keep signing keys and speech generation masters backed up separately; ignoring them does not create a backup.
 
 Some advanced speech tests and regeneration tools require the ignored local source recordings, receipts or models. A fresh clone can preview/build the bundled runtime, but those source-dependent checks need the local development material described in `scripts/SPEECH.md`.
 

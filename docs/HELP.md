@@ -1,4 +1,4 @@
-# Help review — v1.9.0
+# Activity help
 
 First Help now gives a strategy or relevant clue. It never fills a letter, solves a round, eliminates an answer, speaks the missing letter/phoneme, names the robot mystery word, reveals a memory trail, or marks a hidden word. Naming a visible picture in spelling activities repeats the question word, not its spelling answer. Later Help remains progressively stronger.
 
@@ -21,6 +21,8 @@ First Help now gives a strategy or relevant clue. It never fills a letter, solve
 | Count With Me | Count individually or in smaller groups, based on amount; do not name the total. | Eliminate wrong choices, then identify the total. |
 | Music Corner | Add Help control; choosing/page guidance when idle, humming/clapping guidance while playing. | Repeat contextual guidance. |
 
-Implementation: context-hints.js contains finite, offline-recordable clue text and the pure state-to-clue selector. It deliberately exposes no answer/solve actions. The app applies only gap/reference markers and optional visible-picture narration. First Help cancels unfinished lesson narration so it cannot resume over the clue. Memory's active playback is preserved. All 49 clue recordings use the existing Kokoro narrator.
+## Implementation
 
-Validation: pure selector tests cover all 16 modes, no input mutation, position/progress variants, valid/invalid word-search prefixes, and offline clip coverage. Browser tests additionally check actual first-Help controls in all 16 modes: answers, inputs, guesses, counts, found words and sequences stay unchanged; answer choices remain available; no answer key is highlighted. Existing stronger-help and spelling tests remain in the regression suite.
+`context-hints.js` selects the first clue without changing game state. The coordinator handles cancellation and narration; activity modules supply the current state. First Help offers a strategy, while later Help can reveal more. Memory playback stays locked until narration finishes.
+
+Run `npm test` and `node scripts/test-game.mjs` to check clue selection, state preservation and stronger-help behavior.

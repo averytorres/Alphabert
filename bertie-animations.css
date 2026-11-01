@@ -1,72 +1,485 @@
-.robot-performer{position:absolute;inset:0;transform-origin:50% 50%}
-.robot[data-reaction] .robot-performer{animation-duration:3.2s;animation-timing-function:ease-in-out;animation-fill-mode:both}
-.robot[data-reaction] .robot-performer .arm{transform-origin:50% 8%;z-index:4}
-.robot[data-reaction] .robot-performer .leg{transform-origin:50% 5%}
-.robot[data-reaction="spring-jump"] .robot-performer{animation-name:bertie-full-jump}
-.robot[data-reaction="spring-jump"] .arm{animation:bertie-arms-up .8s 4}
-.robot[data-reaction="spin-flip"] .robot-performer{animation-name:bertie-full-spin}
-.robot[data-reaction="spin-flip"] .arm{animation:bertie-arms-up 1.6s 2}
-.robot[data-reaction="cartwheel"] .robot-performer{animation-name:bertie-full-cartwheel}
-.robot[data-reaction="cartwheel"] .arm{transform:rotate(150deg)}
-.robot[data-reaction="cartwheel"] .arm.right{transform:rotate(-150deg)}
-.robot[data-reaction="cartwheel"] .leg{transform:rotate(35deg)}
-.robot[data-reaction="cartwheel"] .leg.right{transform:rotate(-35deg)}
-.robot[data-reaction="kick-dance"] .robot-performer{animation-name:bertie-full-dance}
-.robot[data-reaction="kick-dance"] .leg{animation:bertie-high-kick .8s 4}
-.robot[data-reaction="kick-dance"] .leg.right{animation-delay:.4s}
-.robot[data-reaction="kick-dance"] .arm{animation:bertie-punch .8s 4}
-.robot[data-reaction="kick-dance"] .arm.right{animation-delay:.4s}
-.robot[data-reaction="moonwalk"] .robot-performer{animation-name:bertie-full-moonwalk}
-.robot[data-reaction="moonwalk"] .leg{animation:bertie-slide-foot .8s linear 4}
-.robot[data-reaction="moonwalk"] .leg.right{animation-delay:.4s}
-.robot[data-reaction="robot-pop"] .robot-performer{animation-name:bertie-full-pop;animation-timing-function:steps(2,end)}
-.robot[data-reaction="robot-pop"] .arm{animation:bertie-punch .8s steps(2,end) 4}
-.robot[data-reaction="robot-pop"] .arm.right{animation-delay:.4s}
-.robot[data-reaction="peekaboo"] .robot-performer{animation-name:bertie-full-peek}
-.robot[data-reaction="peekaboo"] .arm{animation:bertie-cover-face 1.6s 2;z-index:8}
-.robot[data-reaction="peekaboo"] .arm.right{animation-name:bertie-cover-face-right}
-.robot[data-reaction="peekaboo"] .eye{animation:bertie-peek 1.6s 2}
-.robot[data-reaction="victory-dance"] .robot-performer{animation-name:bertie-full-victory}
-.robot[data-reaction="victory-dance"] .arm{animation:bertie-arms-up .8s 4}
-.robot[data-reaction="victory-dance"] .arm.right{animation-delay:.4s}
-.robot[data-reaction="sleep-fall"] .robot-performer{animation-name:bertie-full-sleep}
-.robot[data-reaction="sleep-fall"] .eye{animation:bertie-sleep-eyes 3.2s 1}
-.robot[data-reaction="star-jump"] .robot-performer{animation-name:bertie-full-jump}
-.robot[data-reaction="star-jump"] .arm{animation:bertie-star-arm .8s 4}
-.robot[data-reaction="star-jump"] .arm.right{animation-name:bertie-star-arm-right}
-.robot[data-reaction="star-jump"] .leg{animation:bertie-star-leg .8s 4}
-.robot[data-reaction="star-jump"] .leg.right{animation-name:bertie-star-leg-right}
-.robot[data-reaction="toe-touch"] .robot-performer{animation-name:bertie-full-bow}
-.robot[data-reaction="toe-touch"] .robot-head{animation:bertie-bend-head 1.6s 2}
-.robot[data-reaction="toe-touch"] .arm{animation:bertie-reach-toes 1.6s 2}
-.robot[data-reaction="big-wave"] .robot-performer{animation-name:bertie-full-greet}
-.robot[data-reaction="big-wave"] .arm.right{animation:bertie-hello-arm .8s 4}
-.robot[data-reaction="big-wave"] .robot-head{animation:bertie-happy-head .8s 4}
-@keyframes bertie-full-jump{0%,100%{transform:scale(1)}8%,32%,56%,80%{transform:translateY(15px) scale(.83,.62)}20%,44%,68%,92%{transform:translateY(-21px) scale(.68,.78)}}
-@keyframes bertie-full-spin{0%{transform:scale(1)}100%{transform:scale(1) rotate(720deg)}12%{transform:scale(.6) rotate(-25deg)}42%{transform:scale(.6) rotate(360deg)}55%{transform:scale(.6) rotate(360deg)}86%{transform:scale(.6) rotate(720deg)}}
-@keyframes bertie-full-cartwheel{0%,100%{transform:scale(1)}12%{transform:translateX(-9px) scale(.56) rotate(-20deg)}42%{transform:translateX(9px) scale(.56) rotate(360deg)}57%{transform:translateX(9px) scale(.56) rotate(360deg)}87%{transform:translateX(-9px) scale(.56) rotate(0deg)}}
-@keyframes bertie-full-dance{0%,100%{transform:scale(1)}10%,35%,60%,85%{transform:translateX(-15px) translateY(-7px) scale(.7) rotate(-12deg)}22%,47%,72%,95%{transform:translateX(15px) translateY(5px) scale(.7) rotate(12deg)}}
-@keyframes bertie-full-moonwalk{0%,100%{transform:scale(1)}10%{transform:translateX(18px) scale(.72) rotate(-7deg)}45%{transform:translateX(-18px) scale(.72) rotate(-7deg)}55%{transform:translateX(-18px) scale(.72) rotate(7deg)}90%{transform:translateX(18px) scale(.72) rotate(7deg)}}
-@keyframes bertie-full-pop{0%,100%{transform:scale(1)}12%,37%,62%,87%{transform:translateX(-17px) scale(.72) rotate(-15deg)}25%,50%,75%{transform:translateX(17px) scale(.72) rotate(15deg)}}
-@keyframes bertie-full-peek{0%,100%{transform:scale(1)}15%,55%{transform:translateY(21px) scale(.72,.61)}35%,75%{transform:translateY(-12px) scale(.76)}}
-@keyframes bertie-full-victory{0%,100%{transform:scale(1)}10%,35%,60%,85%{transform:translateY(-18px) scale(.74) rotate(-14deg)}22%,47%,72%,94%{transform:translateY(10px) scale(.74) rotate(14deg)}}
-@keyframes bertie-full-sleep{0%,100%{transform:scale(1)}15%{transform:scale(.65) rotate(15deg)}30%,65%{transform:translateY(12px) scale(.65) rotate(78deg)}78%{transform:translateY(-15px) scale(.72) rotate(-15deg)}90%{transform:scale(.75) rotate(10deg)}}
-@keyframes bertie-full-bow{0%,100%{transform:scale(1)}20%,65%{transform:translateY(15px) scale(.72,.68) rotate(10deg)}40%,85%{transform:translateY(-8px) scale(.75) rotate(-8deg)}}
-@keyframes bertie-full-greet{0%,100%{transform:scale(1)}12%,60%{transform:translateX(-10px) scale(.75) rotate(-10deg)}35%,85%{transform:translateX(10px) scale(.75) rotate(10deg)}}
-@keyframes bertie-arms-up{0%,100%{transform:rotate(0)}50%{transform:rotate(145deg)}}
-@keyframes bertie-high-kick{0%,100%{transform:rotate(0)}45%,65%{transform:rotate(-95deg)}}
-@keyframes bertie-punch{0%,100%{transform:rotate(0)}45%,65%{transform:rotate(100deg)}}
-@keyframes bertie-slide-foot{0%,100%{transform:translateX(-10px) rotate(-30deg)}50%{transform:translateX(12px) rotate(35deg)}}
-@keyframes bertie-cover-face{0%,100%{transform:none}25%,65%{transform:translate(42px,-65px) rotate(-20deg)}}
-@keyframes bertie-cover-face-right{0%,100%{transform:none}25%,65%{transform:translate(-42px,-65px) rotate(20deg)}}
-@keyframes bertie-star-arm{0%,100%{transform:none}50%{transform:rotate(135deg)}}
-@keyframes bertie-star-arm-right{0%,100%{transform:none}50%{transform:rotate(-135deg)}}
-@keyframes bertie-star-leg{0%,100%{transform:none}50%{transform:rotate(50deg)}}
-@keyframes bertie-star-leg-right{0%,100%{transform:none}50%{transform:rotate(-50deg)}}
-@keyframes bertie-sleep-eyes{0%,75%,100%{transform:none}15%,65%{transform:scaleY(.08)}82%{transform:scale(1.3)}}
-@keyframes bertie-bend-head{0%,100%{transform:none}45%,65%{transform:translateY(27px) rotate(28deg)}}
-@keyframes bertie-reach-toes{0%,100%{transform:none}45%,65%{transform:translateY(20px) rotate(-12deg)}}
-@keyframes bertie-hello-arm{0%,100%{transform:rotate(-110deg)}50%{transform:rotate(-165deg)}}
-@keyframes bertie-happy-head{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(8deg)}}
-.reduce-motion .robot[data-reaction] .robot-performer,.reduce-motion .robot[data-reaction] .robot-performer *{animation:none!important;transform:none!important}
-@media(prefers-reduced-motion:reduce){.robot[data-reaction] .robot-performer,.robot[data-reaction] .robot-performer *{animation:none!important;transform:none!important}}
+.robot-performer {
+  position: absolute;
+  inset: 0;
+  transform-origin: 50% 50%;
+}
+.robot[data-reaction] .robot-performer {
+  animation-duration: 3.2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+.robot[data-reaction] .robot-performer .arm {
+  transform-origin: 50% 8%;
+  z-index: 4;
+}
+.robot[data-reaction] .robot-performer .leg {
+  transform-origin: 50% 5%;
+}
+.robot[data-reaction='spring-jump'] .robot-performer {
+  animation-name: bertie-full-jump;
+}
+.robot[data-reaction='spring-jump'] .arm {
+  animation: bertie-arms-up 0.8s 4;
+}
+.robot[data-reaction='spin-flip'] .robot-performer {
+  animation-name: bertie-full-spin;
+}
+.robot[data-reaction='spin-flip'] .arm {
+  animation: bertie-arms-up 1.6s 2;
+}
+.robot[data-reaction='cartwheel'] .robot-performer {
+  animation-name: bertie-full-cartwheel;
+}
+.robot[data-reaction='cartwheel'] .arm {
+  transform: rotate(150deg);
+}
+.robot[data-reaction='cartwheel'] .arm.right {
+  transform: rotate(-150deg);
+}
+.robot[data-reaction='cartwheel'] .leg {
+  transform: rotate(35deg);
+}
+.robot[data-reaction='cartwheel'] .leg.right {
+  transform: rotate(-35deg);
+}
+.robot[data-reaction='kick-dance'] .robot-performer {
+  animation-name: bertie-full-dance;
+}
+.robot[data-reaction='kick-dance'] .leg {
+  animation: bertie-high-kick 0.8s 4;
+}
+.robot[data-reaction='kick-dance'] .leg.right {
+  animation-delay: 0.4s;
+}
+.robot[data-reaction='kick-dance'] .arm {
+  animation: bertie-punch 0.8s 4;
+}
+.robot[data-reaction='kick-dance'] .arm.right {
+  animation-delay: 0.4s;
+}
+.robot[data-reaction='moonwalk'] .robot-performer {
+  animation-name: bertie-full-moonwalk;
+}
+.robot[data-reaction='moonwalk'] .leg {
+  animation: bertie-slide-foot 0.8s linear 4;
+}
+.robot[data-reaction='moonwalk'] .leg.right {
+  animation-delay: 0.4s;
+}
+.robot[data-reaction='robot-pop'] .robot-performer {
+  animation-name: bertie-full-pop;
+  animation-timing-function: steps(2, end);
+}
+.robot[data-reaction='robot-pop'] .arm {
+  animation: bertie-punch 0.8s steps(2, end) 4;
+}
+.robot[data-reaction='robot-pop'] .arm.right {
+  animation-delay: 0.4s;
+}
+.robot[data-reaction='peekaboo'] .robot-performer {
+  animation-name: bertie-full-peek;
+}
+.robot[data-reaction='peekaboo'] .arm {
+  animation: bertie-cover-face 1.6s 2;
+  z-index: 8;
+}
+.robot[data-reaction='peekaboo'] .arm.right {
+  animation-name: bertie-cover-face-right;
+}
+.robot[data-reaction='peekaboo'] .eye {
+  animation: bertie-peek 1.6s 2;
+}
+.robot[data-reaction='victory-dance'] .robot-performer {
+  animation-name: bertie-full-victory;
+}
+.robot[data-reaction='victory-dance'] .arm {
+  animation: bertie-arms-up 0.8s 4;
+}
+.robot[data-reaction='victory-dance'] .arm.right {
+  animation-delay: 0.4s;
+}
+.robot[data-reaction='sleep-fall'] .robot-performer {
+  animation-name: bertie-full-sleep;
+}
+.robot[data-reaction='sleep-fall'] .eye {
+  animation: bertie-sleep-eyes 3.2s 1;
+}
+.robot[data-reaction='star-jump'] .robot-performer {
+  animation-name: bertie-full-jump;
+}
+.robot[data-reaction='star-jump'] .arm {
+  animation: bertie-star-arm 0.8s 4;
+}
+.robot[data-reaction='star-jump'] .arm.right {
+  animation-name: bertie-star-arm-right;
+}
+.robot[data-reaction='star-jump'] .leg {
+  animation: bertie-star-leg 0.8s 4;
+}
+.robot[data-reaction='star-jump'] .leg.right {
+  animation-name: bertie-star-leg-right;
+}
+.robot[data-reaction='toe-touch'] .robot-performer {
+  animation-name: bertie-full-bow;
+}
+.robot[data-reaction='toe-touch'] .robot-head {
+  animation: bertie-bend-head 1.6s 2;
+}
+.robot[data-reaction='toe-touch'] .arm {
+  animation: bertie-reach-toes 1.6s 2;
+}
+.robot[data-reaction='big-wave'] .robot-performer {
+  animation-name: bertie-full-greet;
+}
+.robot[data-reaction='big-wave'] .arm.right {
+  animation: bertie-hello-arm 0.8s 4;
+}
+.robot[data-reaction='big-wave'] .robot-head {
+  animation: bertie-happy-head 0.8s 4;
+}
+@keyframes bertie-full-jump {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  8%,
+  32%,
+  56%,
+  80% {
+    transform: translateY(15px) scale(0.83, 0.62);
+  }
+  20%,
+  44%,
+  68%,
+  92% {
+    transform: translateY(-21px) scale(0.68, 0.78);
+  }
+}
+@keyframes bertie-full-spin {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1) rotate(720deg);
+  }
+  12% {
+    transform: scale(0.6) rotate(-25deg);
+  }
+  42% {
+    transform: scale(0.6) rotate(360deg);
+  }
+  55% {
+    transform: scale(0.6) rotate(360deg);
+  }
+  86% {
+    transform: scale(0.6) rotate(720deg);
+  }
+}
+@keyframes bertie-full-cartwheel {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  12% {
+    transform: translateX(-9px) scale(0.56) rotate(-20deg);
+  }
+  42% {
+    transform: translateX(9px) scale(0.56) rotate(360deg);
+  }
+  57% {
+    transform: translateX(9px) scale(0.56) rotate(360deg);
+  }
+  87% {
+    transform: translateX(-9px) scale(0.56) rotate(0deg);
+  }
+}
+@keyframes bertie-full-dance {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  10%,
+  35%,
+  60%,
+  85% {
+    transform: translateX(-15px) translateY(-7px) scale(0.7) rotate(-12deg);
+  }
+  22%,
+  47%,
+  72%,
+  95% {
+    transform: translateX(15px) translateY(5px) scale(0.7) rotate(12deg);
+  }
+}
+@keyframes bertie-full-moonwalk {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  10% {
+    transform: translateX(18px) scale(0.72) rotate(-7deg);
+  }
+  45% {
+    transform: translateX(-18px) scale(0.72) rotate(-7deg);
+  }
+  55% {
+    transform: translateX(-18px) scale(0.72) rotate(7deg);
+  }
+  90% {
+    transform: translateX(18px) scale(0.72) rotate(7deg);
+  }
+}
+@keyframes bertie-full-pop {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  12%,
+  37%,
+  62%,
+  87% {
+    transform: translateX(-17px) scale(0.72) rotate(-15deg);
+  }
+  25%,
+  50%,
+  75% {
+    transform: translateX(17px) scale(0.72) rotate(15deg);
+  }
+}
+@keyframes bertie-full-peek {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  15%,
+  55% {
+    transform: translateY(21px) scale(0.72, 0.61);
+  }
+  35%,
+  75% {
+    transform: translateY(-12px) scale(0.76);
+  }
+}
+@keyframes bertie-full-victory {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  10%,
+  35%,
+  60%,
+  85% {
+    transform: translateY(-18px) scale(0.74) rotate(-14deg);
+  }
+  22%,
+  47%,
+  72%,
+  94% {
+    transform: translateY(10px) scale(0.74) rotate(14deg);
+  }
+}
+@keyframes bertie-full-sleep {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(0.65) rotate(15deg);
+  }
+  30%,
+  65% {
+    transform: translateY(12px) scale(0.65) rotate(78deg);
+  }
+  78% {
+    transform: translateY(-15px) scale(0.72) rotate(-15deg);
+  }
+  90% {
+    transform: scale(0.75) rotate(10deg);
+  }
+}
+@keyframes bertie-full-bow {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  20%,
+  65% {
+    transform: translateY(15px) scale(0.72, 0.68) rotate(10deg);
+  }
+  40%,
+  85% {
+    transform: translateY(-8px) scale(0.75) rotate(-8deg);
+  }
+}
+@keyframes bertie-full-greet {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  12%,
+  60% {
+    transform: translateX(-10px) scale(0.75) rotate(-10deg);
+  }
+  35%,
+  85% {
+    transform: translateX(10px) scale(0.75) rotate(10deg);
+  }
+}
+@keyframes bertie-arms-up {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(145deg);
+  }
+}
+@keyframes bertie-high-kick {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  45%,
+  65% {
+    transform: rotate(-95deg);
+  }
+}
+@keyframes bertie-punch {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  45%,
+  65% {
+    transform: rotate(100deg);
+  }
+}
+@keyframes bertie-slide-foot {
+  0%,
+  100% {
+    transform: translateX(-10px) rotate(-30deg);
+  }
+  50% {
+    transform: translateX(12px) rotate(35deg);
+  }
+}
+@keyframes bertie-cover-face {
+  0%,
+  100% {
+    transform: none;
+  }
+  25%,
+  65% {
+    transform: translate(42px, -65px) rotate(-20deg);
+  }
+}
+@keyframes bertie-cover-face-right {
+  0%,
+  100% {
+    transform: none;
+  }
+  25%,
+  65% {
+    transform: translate(-42px, -65px) rotate(20deg);
+  }
+}
+@keyframes bertie-star-arm {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(135deg);
+  }
+}
+@keyframes bertie-star-arm-right {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(-135deg);
+  }
+}
+@keyframes bertie-star-leg {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+}
+@keyframes bertie-star-leg-right {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(-50deg);
+  }
+}
+@keyframes bertie-sleep-eyes {
+  0%,
+  75%,
+  100% {
+    transform: none;
+  }
+  15%,
+  65% {
+    transform: scaleY(0.08);
+  }
+  82% {
+    transform: scale(1.3);
+  }
+}
+@keyframes bertie-bend-head {
+  0%,
+  100% {
+    transform: none;
+  }
+  45%,
+  65% {
+    transform: translateY(27px) rotate(28deg);
+  }
+}
+@keyframes bertie-reach-toes {
+  0%,
+  100% {
+    transform: none;
+  }
+  45%,
+  65% {
+    transform: translateY(20px) rotate(-12deg);
+  }
+}
+@keyframes bertie-hello-arm {
+  0%,
+  100% {
+    transform: rotate(-110deg);
+  }
+  50% {
+    transform: rotate(-165deg);
+  }
+}
+@keyframes bertie-happy-head {
+  0%,
+  100% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+}
+.reduce-motion .robot[data-reaction] .robot-performer,
+.reduce-motion .robot[data-reaction] .robot-performer * {
+  animation: none !important;
+  transform: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .robot[data-reaction] .robot-performer,
+  .robot[data-reaction] .robot-performer * {
+    animation: none !important;
+    transform: none !important;
+  }
+}

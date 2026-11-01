@@ -51,7 +51,7 @@ foreach ($required in @('index.html','app.js','styles.css','content/words.json',
 }
 # Package only runtime web files, never project tooling, source APKs, or the old VTech ISO.
 Get-ChildItem -LiteralPath $projectRoot -File | Where-Object { $_.Extension -in '.html','.css','.js','.webmanifest' } | Copy-Item -Destination $assets
-foreach ($folder in @('content','assets','images','fonts')) {
+foreach ($folder in @('content','assets','images','fonts','activities')) {
     $source = Join-Path $projectRoot $folder
     if (Test-Path -LiteralPath $source) { Copy-Item -LiteralPath $source -Destination $assets -Recurse }
 }

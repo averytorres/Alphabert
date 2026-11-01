@@ -1,33 +1,43 @@
 import fs from 'node:fs';
 // Large silhouettes and a few identifying details stay readable on letter keys.
-const shapes={
-unit:'<path fill="#ecba61" d="m12 20 20-11 20 11v27L32 58 12 47Z"/><path fill="#8fbcb2" d="m12 20 20 11 20-11-20-11Z"/><path d="M32 31v27"/><text x="21" y="44" fill="#fff" stroke="none" font-family="sans-serif" font-size="18" font-weight="bold">1</text>',
-plum:'<path fill="#8650ad" d="M31 18C8 8 5 36 18 51c9 10 24 8 31-5 10-19-1-35-18-28Z"/><path d="M32 19q-3 22 0 34" stroke="#633280"/><path d="M32 19q-2-10 5-14"/><path fill="#7eb858" d="M35 13q14-13 22 0-12 8-22 0Z"/><path d="M19 27q-6 7-3 14" stroke="#d7ace8"/>',
-acorn:'<path fill="#b9783e" d="M16 28h32q1 21-16 29-17-8-16-29Z"/><path fill="#80572f" d="M11 29q1-18 21-18t21 18Z"/><path d="M30 12q0-7 6-9M18 21l7-6m0 9 8-8m0 9 8-8m0 9 5-5"/>',
-eel:'<path fill="#7ca981" d="M8 26q7-13 17-3l14 17q13 15 18-6 4 28-17 22-9-2-18-17L11 32q-8 0-3-6Z"/><circle cx="15" cy="25" r="2" fill="#172b28"/><path d="m9 31 8 1m8 1 8-7 1 14"/>',
-emu:'<ellipse cx="29" cy="37" rx="17" ry="13" fill="#8c7764"/><path d="M39 33q-3-16 4-22" stroke="#8c7764" stroke-width="8"/><circle cx="45" cy="10" r="6" fill="#8c7764"/><path fill="#e8bd65" d="m51 9 9 4-10 2Z"/><circle cx="46" cy="9" r="1.5" fill="#172b28"/><path d="m25 48-3 11m15-11 3 11m-23 0h10m8 0h11m-26-25 10 8"/>',
-gate:'<path fill="#bf8750" d="M7 17h6v42H7Zm44 0h6v42h-6ZM16 25h32v24H16Z"/><path d="M19 27v20m9-20v20m9-20v20m9-20v20M16 49l32-24"/><circle cx="44" cy="37" r="2" fill="#172b28"/>',
-ink:'<path fill="#597ca9" d="M14 26h36v30H14Z"/><path fill="#e5eaf0" d="M19 19h26v8H19Z"/><path fill="#fff3d4" d="M20 35h24v14H20Z"/><path fill="#242e51" d="M32 37q-12 12 0 11 10-1 0-11Z"/><path d="m41 19 12-15" stroke-width="5"/>',
-jam:'<rect x="14" y="17" width="36" height="42" rx="8" fill="#bd456c"/><path fill="#f5c365" d="M12 10h40v11H12Z"/><path fill="#fff0d4" d="M17 30h30v20H17Z"/><path fill="#d94f52" d="M24 37q8-8 16 0-1 12-8 11-7 0-8-11Z"/><path d="m27 34 5 4 5-4" stroke="#458a4a"/>',
-jug:'<path fill="#83b8d2" d="M16 12h27v10q13 2 13 14T43 48v9H13V25L8 16h8Z"/><path fill="#faf8f0" d="M43 28q13 1 6 12l-6 1Z"/><path d="M17 12h26M18 48h19"/>',
-lamp:'<path fill="#f5ca67" d="m20 7-10 27h44L44 7Z"/><path d="M32 35v19m-12 4h24" stroke-width="5"/><path d="m7 40-3 4m53-4 3 4" stroke="#dca739"/>',
-mop:'<path d="m40 5-12 37" stroke="#ad7846" stroke-width="6"/><path fill="#8bb8ce" d="M18 37h20q11 11 9 21-5 5-8-2-4 7-8 0-5 7-9 0-5 6-9 0 0-11 5-19Z"/><path d="m22 41-3 14m10-14-1 15m7-15 5 14m-25-18h24"/>',
-quilt:'<path fill="#e9bb71" d="M8 9h48v48H8Z"/><path fill="#8cbbaa" d="M8 9h16v16H8Zm32 0h16v16H40ZM24 25h16v16H24ZM8 41h16v16H8Zm32 0h16v16H40Z"/><path d="M8 25h48M8 41h48M24 9v48M40 9v48" stroke-dasharray="2 3" stroke-width="1.5"/>',
-top:'<path fill="#edb64f" d="M9 29q23-21 46 0L32 55Z"/><ellipse cx="32" cy="29" rx="23" ry="8" fill="#cf6e56"/><path d="M32 7v19" stroke-width="6"/><path d="M9 14q-8 8-3 16m50 6q6-6 3-13" stroke="#6e9bba"/>',
-vet:'<path fill="#a4ccbf" d="M5 58V38q0-10 15-10t15 10v20Z"/><circle cx="20" cy="16" r="10" fill="#edc39c"/><path d="M13 30v12q8 10 14 0V30m-8 18v7"/><circle cx="30" cy="41" r="3" fill="#697c8c"/><path fill="#c89964" d="m38 45-3-13 11 7 9-7 4 13v14H38Z"/><circle cx="44" cy="48" r="1.5" fill="#172b28"/><circle cx="53" cy="48" r="1.5" fill="#172b28"/><path d="m47 53 3 0"/>',
-wig:'<path fill="#bb7950" d="M9 47V25Q7 4 32 5t23 20v22L44 41V24q-12 4-19-7-2 11-7 13v11Z"/><path fill="#d5dedb" d="M23 48q9 10 18 0l-3 12H26Z"/><path d="M16 19q1-8 10-9m21 8q-1-7-8-8" stroke="#f0bc7e"/>',
-xylophone:'<path d="m11 52 43-17M12 57l44-17" stroke="#966737" stroke-width="5"/><path fill="#de6563" d="m9 30 8-3 8 24-8 3Z"/><path fill="#edb956" d="m19 27 8-3 7 22-8 3Z"/><path fill="#8cba76" d="m29 24 8-3 6 20-8 3Z"/><path fill="#75a8cc" d="m39 21 8-3 5 18-8 3Z"/><path d="M12 5 46 24" stroke="#966737"/><circle cx="11" cy="5" r="4" fill="#e1a157"/>',
-yak:'<path fill="#806451" d="M8 29q7-11 30-7l13 8v20H12Z"/><path d="m16 48-2 11m14-11v11m15-11 2 11" stroke-width="5"/><path fill="#715446" d="m40 24 4-10 14 6v20L47 43 39 34Z"/><path d="M45 18q-9-2-7-11m17 15q9-1 6-11" stroke="#d9c9a8" stroke-width="4"/><circle cx="52" cy="27" r="2" fill="#172b28"/><path d="m16 33-2 13m10-14-1 14m9-14v14" stroke="#b09574"/>',
-zip:'<path fill="#7fa5c0" d="M15 5h34v54H15Z"/><path d="M31 6v16m0 17v20" stroke="#ece3bc" stroke-width="6"/><path fill="#e6c266" d="M27 22h10v18H27Z"/><path d="M30 27h4m-13-17h5m-5 8h5m11-4h5m-5 8h5m-21 23h5m-5 8h5m11-8h5m-5 8h5"/>',
-zoo:'<path fill="#b49462" d="M5 26h7v34H5Zm47 0h7v34h-7ZM5 14q27-22 54 0v14H5Z"/><path d="M17 31v28m10-28v28m10-28v28m10-28v28"/><circle cx="32" cy="43" r="12" fill="#c59444"/><circle cx="32" cy="43" r="8" fill="#efd38c"/><path d="m28 41 0 0m8 0 0 0m-5 6h2"/><text x="32" y="22" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#fff" stroke="none" font-weight="bold">ZOO</text>',
-glue:'<path fill="#f9f1dc" d="M14 26h36v32H14Z"/><path fill="#df9a43" d="M25 7h14v19H25Z"/><path fill="#e2b252" d="M12 25h40v9H12Z"/><path fill="#7caac4" d="M20 39h24v12H20Z"/><path d="M32 41q-9 8 0 8 8 0 0-8Z" stroke="#fff"/>',
-well:'<path fill="#b8b4a7" d="M10 38h44v21H10Z"/><ellipse cx="32" cy="38" rx="22" ry="7" fill="#56676b"/><path d="M14 36V19m36 17V19M32 20v18" stroke="#997044" stroke-width="4"/><path fill="#cb7550" d="m5 20 27-16 27 16Z"/><path fill="#c9d6db" d="M26 34h12l-2 12h-8Z"/><path d="M11 49h42m-30 0v9m19-9v9"/>',
-net:'<path d="m26 37-15 22" stroke="#a67b4f" stroke-width="6"/><ellipse cx="37" cy="22" rx="17" ry="15" fill="#c8e4ec"/><path d="m24 16 25 14m-28-6 22 13m-13-27 20 11m-18-10-10 19m20-18-12 25m19-18-7 16" stroke="#75a3b4" stroke-width="1.5"/>',
-oak:'<path fill="#ad794b" d="M26 34h12v25H26Z"/><path fill="#75a763" d="M12 39q-15-7-5-20-2-13 12-12 10-11 21-2 18-3 18 13 13 10 1 20-8 11-20 3-14 8-27-2Z"/><path d="M32 57V31m0 11-10-8m10 5 12-10"/>',
-oat:'<path d="M31 59V9m0 16L17 13m14 25 16-18m-16 30L15 36" stroke="#b49043"/><path fill="#e3c17a" d="M12 9q15-4 12 14Q10 24 12 9Zm31 5q15 0 10 15-15 0-10-15ZM9 29q15-1 16 14-14 2-16-14Zm30 5q14-1 12 14-15 2-12-14ZM26 5q12-5 12 10-12 6-12-10Z"/>'
+const shapes = {
+  unit: '<path fill="#ecba61" d="m12 20 20-11 20 11v27L32 58 12 47Z"/><path fill="#8fbcb2" d="m12 20 20 11 20-11-20-11Z"/><path d="M32 31v27"/><text x="21" y="44" fill="#fff" stroke="none" font-family="sans-serif" font-size="18" font-weight="bold">1</text>',
+  plum: '<path fill="#8650ad" d="M31 18C8 8 5 36 18 51c9 10 24 8 31-5 10-19-1-35-18-28Z"/><path d="M32 19q-3 22 0 34" stroke="#633280"/><path d="M32 19q-2-10 5-14"/><path fill="#7eb858" d="M35 13q14-13 22 0-12 8-22 0Z"/><path d="M19 27q-6 7-3 14" stroke="#d7ace8"/>',
+  acorn:
+    '<path fill="#b9783e" d="M16 28h32q1 21-16 29-17-8-16-29Z"/><path fill="#80572f" d="M11 29q1-18 21-18t21 18Z"/><path d="M30 12q0-7 6-9M18 21l7-6m0 9 8-8m0 9 8-8m0 9 5-5"/>',
+  eel: '<path fill="#7ca981" d="M8 26q7-13 17-3l14 17q13 15 18-6 4 28-17 22-9-2-18-17L11 32q-8 0-3-6Z"/><circle cx="15" cy="25" r="2" fill="#172b28"/><path d="m9 31 8 1m8 1 8-7 1 14"/>',
+  emu: '<ellipse cx="29" cy="37" rx="17" ry="13" fill="#8c7764"/><path d="M39 33q-3-16 4-22" stroke="#8c7764" stroke-width="8"/><circle cx="45" cy="10" r="6" fill="#8c7764"/><path fill="#e8bd65" d="m51 9 9 4-10 2Z"/><circle cx="46" cy="9" r="1.5" fill="#172b28"/><path d="m25 48-3 11m15-11 3 11m-23 0h10m8 0h11m-26-25 10 8"/>',
+  gate: '<path fill="#bf8750" d="M7 17h6v42H7Zm44 0h6v42h-6ZM16 25h32v24H16Z"/><path d="M19 27v20m9-20v20m9-20v20m9-20v20M16 49l32-24"/><circle cx="44" cy="37" r="2" fill="#172b28"/>',
+  ink: '<path fill="#597ca9" d="M14 26h36v30H14Z"/><path fill="#e5eaf0" d="M19 19h26v8H19Z"/><path fill="#fff3d4" d="M20 35h24v14H20Z"/><path fill="#242e51" d="M32 37q-12 12 0 11 10-1 0-11Z"/><path d="m41 19 12-15" stroke-width="5"/>',
+  jam: '<rect x="14" y="17" width="36" height="42" rx="8" fill="#bd456c"/><path fill="#f5c365" d="M12 10h40v11H12Z"/><path fill="#fff0d4" d="M17 30h30v20H17Z"/><path fill="#d94f52" d="M24 37q8-8 16 0-1 12-8 11-7 0-8-11Z"/><path d="m27 34 5 4 5-4" stroke="#458a4a"/>',
+  jug: '<path fill="#83b8d2" d="M16 12h27v10q13 2 13 14T43 48v9H13V25L8 16h8Z"/><path fill="#faf8f0" d="M43 28q13 1 6 12l-6 1Z"/><path d="M17 12h26M18 48h19"/>',
+  lamp: '<path fill="#f5ca67" d="m20 7-10 27h44L44 7Z"/><path d="M32 35v19m-12 4h24" stroke-width="5"/><path d="m7 40-3 4m53-4 3 4" stroke="#dca739"/>',
+  mop: '<path d="m40 5-12 37" stroke="#ad7846" stroke-width="6"/><path fill="#8bb8ce" d="M18 37h20q11 11 9 21-5 5-8-2-4 7-8 0-5 7-9 0-5 6-9 0 0-11 5-19Z"/><path d="m22 41-3 14m10-14-1 15m7-15 5 14m-25-18h24"/>',
+  quilt:
+    '<path fill="#e9bb71" d="M8 9h48v48H8Z"/><path fill="#8cbbaa" d="M8 9h16v16H8Zm32 0h16v16H40ZM24 25h16v16H24ZM8 41h16v16H8Zm32 0h16v16H40Z"/><path d="M8 25h48M8 41h48M24 9v48M40 9v48" stroke-dasharray="2 3" stroke-width="1.5"/>',
+  top: '<path fill="#edb64f" d="M9 29q23-21 46 0L32 55Z"/><ellipse cx="32" cy="29" rx="23" ry="8" fill="#cf6e56"/><path d="M32 7v19" stroke-width="6"/><path d="M9 14q-8 8-3 16m50 6q6-6 3-13" stroke="#6e9bba"/>',
+  vet: '<path fill="#a4ccbf" d="M5 58V38q0-10 15-10t15 10v20Z"/><circle cx="20" cy="16" r="10" fill="#edc39c"/><path d="M13 30v12q8 10 14 0V30m-8 18v7"/><circle cx="30" cy="41" r="3" fill="#697c8c"/><path fill="#c89964" d="m38 45-3-13 11 7 9-7 4 13v14H38Z"/><circle cx="44" cy="48" r="1.5" fill="#172b28"/><circle cx="53" cy="48" r="1.5" fill="#172b28"/><path d="m47 53 3 0"/>',
+  wig: '<path fill="#bb7950" d="M9 47V25Q7 4 32 5t23 20v22L44 41V24q-12 4-19-7-2 11-7 13v11Z"/><path fill="#d5dedb" d="M23 48q9 10 18 0l-3 12H26Z"/><path d="M16 19q1-8 10-9m21 8q-1-7-8-8" stroke="#f0bc7e"/>',
+  xylophone:
+    '<path d="m11 52 43-17M12 57l44-17" stroke="#966737" stroke-width="5"/><path fill="#de6563" d="m9 30 8-3 8 24-8 3Z"/><path fill="#edb956" d="m19 27 8-3 7 22-8 3Z"/><path fill="#8cba76" d="m29 24 8-3 6 20-8 3Z"/><path fill="#75a8cc" d="m39 21 8-3 5 18-8 3Z"/><path d="M12 5 46 24" stroke="#966737"/><circle cx="11" cy="5" r="4" fill="#e1a157"/>',
+  yak: '<path fill="#806451" d="M8 29q7-11 30-7l13 8v20H12Z"/><path d="m16 48-2 11m14-11v11m15-11 2 11" stroke-width="5"/><path fill="#715446" d="m40 24 4-10 14 6v20L47 43 39 34Z"/><path d="M45 18q-9-2-7-11m17 15q9-1 6-11" stroke="#d9c9a8" stroke-width="4"/><circle cx="52" cy="27" r="2" fill="#172b28"/><path d="m16 33-2 13m10-14-1 14m9-14v14" stroke="#b09574"/>',
+  zip: '<path fill="#7fa5c0" d="M15 5h34v54H15Z"/><path d="M31 6v16m0 17v20" stroke="#ece3bc" stroke-width="6"/><path fill="#e6c266" d="M27 22h10v18H27Z"/><path d="M30 27h4m-13-17h5m-5 8h5m11-4h5m-5 8h5m-21 23h5m-5 8h5m11-8h5m-5 8h5"/>',
+  zoo: '<path fill="#b49462" d="M5 26h7v34H5Zm47 0h7v34h-7ZM5 14q27-22 54 0v14H5Z"/><path d="M17 31v28m10-28v28m10-28v28m10-28v28"/><circle cx="32" cy="43" r="12" fill="#c59444"/><circle cx="32" cy="43" r="8" fill="#efd38c"/><path d="m28 41 0 0m8 0 0 0m-5 6h2"/><text x="32" y="22" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#fff" stroke="none" font-weight="bold">ZOO</text>',
+  glue: '<path fill="#f9f1dc" d="M14 26h36v32H14Z"/><path fill="#df9a43" d="M25 7h14v19H25Z"/><path fill="#e2b252" d="M12 25h40v9H12Z"/><path fill="#7caac4" d="M20 39h24v12H20Z"/><path d="M32 41q-9 8 0 8 8 0 0-8Z" stroke="#fff"/>',
+  well: '<path fill="#b8b4a7" d="M10 38h44v21H10Z"/><ellipse cx="32" cy="38" rx="22" ry="7" fill="#56676b"/><path d="M14 36V19m36 17V19M32 20v18" stroke="#997044" stroke-width="4"/><path fill="#cb7550" d="m5 20 27-16 27 16Z"/><path fill="#c9d6db" d="M26 34h12l-2 12h-8Z"/><path d="M11 49h42m-30 0v9m19-9v9"/>',
+  net: '<path d="m26 37-15 22" stroke="#a67b4f" stroke-width="6"/><ellipse cx="37" cy="22" rx="17" ry="15" fill="#c8e4ec"/><path d="m24 16 25 14m-28-6 22 13m-13-27 20 11m-18-10-10 19m20-18-12 25m19-18-7 16" stroke="#75a3b4" stroke-width="1.5"/>',
+  oak: '<path fill="#ad794b" d="M26 34h12v25H26Z"/><path fill="#75a763" d="M12 39q-15-7-5-20-2-13 12-12 10-11 21-2 18-3 18 13 13 10 1 20-8 11-20 3-14 8-27-2Z"/><path d="M32 57V31m0 11-10-8m10 5 12-10"/>',
+  oat: '<path d="M31 59V9m0 16L17 13m14 25 16-18m-16 30L15 36" stroke="#b49043"/><path fill="#e3c17a" d="M12 9q15-4 12 14Q10 24 12 9Zm31 5q15 0 10 15-15 0-10-15ZM9 29q15-1 16 14-14 2-16-14Zm30 5q14-1 12 14-15 2-12-14ZM26 5q12-5 12 10-12 6-12-10Z"/>',
 };
-fs.mkdirSync('assets/words',{recursive:true});
-for(const [id,body] of Object.entries(shapes))fs.writeFileSync(`assets/words/${id}.svg`,`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#263d37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${body}</svg>\n`);
-const words=JSON.parse(fs.readFileSync('content/words.json')).words;
-fs.writeFileSync('word-pictures.js',`// Only replace the built-in picture; custom word-pack emoji stay editable.\nconst pictures=${JSON.stringify(Object.fromEntries(words.filter(w=>shapes[w.id]).map(w=>[w.id,w.emoji])),null,2)};\nexport function wordPicturePath(word){return word&&pictures[word.id]===word.emoji?'assets/words/'+word.id+'.svg':word?.id==='sun'&&word.emoji==='☀️'?'assets/sun.svg':null;}\n`);
+fs.mkdirSync('assets/words', { recursive: true });
+for (const [id, body] of Object.entries(shapes))
+  fs.writeFileSync(
+    `assets/words/${id}.svg`,
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#263d37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${body}</svg>\n`,
+  );
+const words = JSON.parse(fs.readFileSync('content/words.json')).words;
+fs.writeFileSync(
+  'word-pictures.js',
+  `// Only replace the built-in picture; custom word-pack emoji stay editable.\nconst pictures=${JSON.stringify(Object.fromEntries(words.filter((w) => shapes[w.id]).map((w) => [w.id, w.emoji])), null, 2)};\nexport function wordPicturePath(word){return word&&pictures[word.id]===word.emoji?'assets/words/'+word.id+'.svg':word?.id==='sun'&&word.emoji==='☀️'?'assets/sun.svg':null;}\n`,
+);
 console.log(`Built ${Object.keys(shapes).length} word illustrations`);

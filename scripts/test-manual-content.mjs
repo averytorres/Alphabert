@@ -1,14 +1,94 @@
-import fs from 'node:fs';import assert from 'node:assert/strict';import {SOUNDS,cleanIPA} from './phonics-reference.mjs';
-const words=JSON.parse(fs.readFileSync('content/words.json')).words,lessons=JSON.parse(fs.readFileSync('content/lessons.json')),index=JSON.parse(fs.readFileSync('audio/index.json')).clips,blends=JSON.parse(fs.readFileSync('audio/blend-reference.json'));
-for(const letter of ['a','e','i','o','u','c','g','y'])assert.ok(lessons.letters.find(l=>l.letter===letter).sounds.length>=2,letter+' needs multiple sounds');
-const ending=word=>{const sounds=word.phonemes.map(t=>SOUNDS[t][1]);let last=-1;for(let i=0;i<sounds.length;i++)if(/[æɛɪɑʌieouəɔa]/.test(sounds[i]))last=i;assert.ok(last>=0);return sounds.slice(last).join('');};
-for(const family of lessons.rhymes){const group=family.words.map(id=>words.find(w=>w.id===id));assert.equal(new Set(group.map(ending)).size,1,'Rhyme endings differ: '+family.words.join('/'));for(const a of group)for(const b of group)if(a!==b)assert.ok(index[`${a.word} rhymes with ${b.word}.`],`Missing rhyme narration ${a.word}/${b.word}`);}
-for(const word of words)for(const blend of word.blends||[]){if(blend.start!==0&&blend.start+blend.text.length!==word.word.length)continue;const entry=blends.find(b=>b.word===word.id&&b.blend===blend.text);assert.ok(entry,'Missing blend '+word.word);assert.equal(cleanIPA(entry.selectedPhones.join('')),entry.ipa);assert.equal(index[`blend:${word.id}:${blend.text}`],entry.file);}
-assert.ok(index['a, e, i, o, and u are vowels.']);assert.ok(index['listen to the blend.']);
-for(const entry of blends){assert.equal(entry.playbackRate,1);assert.equal(entry.timeStretched,false);assert.ok(entry.segments.every(s=>!/[aeiou]/.test(s.token)),'Consonant blends must contain no vowels');for(const segment of entry.segments)if(segment.sustained)assert.ok(segment.seconds>=.47,'Continuous consonants held for learning');}
-for(const word of ['snow','snail']){const entry=blends.find(b=>b.word===word);assert.deepEqual(entry.tokens,['s','n']);assert.ok(entry.seconds>=.94&&entry.seconds<=1.01,'SN is held, without a following vowel');}
-for(const entry of blends)for(const segment of entry.segments)if(segment.sustained){assert.equal(segment.steadyRelease,true);assert.equal(segment.sourceEndFraction,.6,'Blend must discard reference-keyword vowel boundary');}
-const frog=blends.find(b=>b.word==='frog');assert.deepEqual(frog.tokens,['f','r']);assert.equal(frog.segments[1].steadyRelease,true);assert.ok(frog.seconds>=.65&&frog.seconds<=1.01);
-for(const entry of blends)for(const segment of entry.segments)if(index['phoneme-natural:'+segment.token]){assert.equal(segment.source,index['phoneme-natural:'+segment.token],'Blend must use current human sound instead of stale synthetic recording');assert.equal(segment.human,true);assert.equal(segment.looped,false);assert.equal(segment.sustained,false);}
-for(const id of ['frog','flag','gift'])assert.ok(blends.find(b=>b.word===id).segments.some(s=>s.token==='f'&&s.human));
-console.log('Manual-content checks passed: multi-sound letters, consistent rhyme endings and offline pair narration, 28 beginning/end blend recordings, vowel introduction.');
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import { SOUNDS, cleanIPA } from './phonics-reference.mjs';
+const words = JSON.parse(fs.readFileSync('content/words.json')).words,
+  lessons = JSON.parse(fs.readFileSync('content/lessons.json')),
+  index = JSON.parse(fs.readFileSync('audio/index.json')).clips,
+  blends = JSON.parse(fs.readFileSync('audio/blend-reference.json'));
+for (const letter of ['a', 'e', 'i', 'o', 'u', 'c', 'g', 'y'])
+  assert.ok(
+    lessons.letters.find((l) => l.letter === letter).sounds.length >= 2,
+    letter + ' needs multiple sounds',
+  );
+const ending = (word) => {
+  const sounds = word.phonemes.map((t) => SOUNDS[t][1]);
+  let last = -1;
+  for (let i = 0; i < sounds.length; i++) if (/[æɛɪɑʌieouəɔa]/.test(sounds[i])) last = i;
+  assert.ok(last >= 0);
+  return sounds.slice(last).join('');
+};
+for (const family of lessons.rhymes) {
+  const group = family.words.map((id) => words.find((w) => w.id === id));
+  assert.equal(
+    new Set(group.map(ending)).size,
+    1,
+    'Rhyme endings differ: ' + family.words.join('/'),
+  );
+  for (const a of group)
+    for (const b of group)
+      if (a !== b)
+        assert.ok(
+          index[`${a.word} rhymes with ${b.word}.`],
+          `Missing rhyme narration ${a.word}/${b.word}`,
+        );
+}
+for (const word of words)
+  for (const blend of word.blends || []) {
+    if (blend.start !== 0 && blend.start + blend.text.length !== word.word.length) continue;
+    const entry = blends.find((b) => b.word === word.id && b.blend === blend.text);
+    assert.ok(entry, 'Missing blend ' + word.word);
+    assert.equal(cleanIPA(entry.selectedPhones.join('')), entry.ipa);
+    assert.equal(index[`blend:${word.id}:${blend.text}`], entry.file);
+  }
+assert.ok(index['a, e, i, o, and u are vowels.']);
+assert.ok(index['listen to the blend.']);
+for (const entry of blends) {
+  assert.equal(entry.playbackRate, 1);
+  assert.equal(entry.timeStretched, false);
+  assert.ok(
+    entry.segments.every((s) => !/[aeiou]/.test(s.token)),
+    'Consonant blends must contain no vowels',
+  );
+  for (const segment of entry.segments)
+    if (segment.sustained)
+      assert.ok(segment.seconds >= 0.47, 'Continuous consonants held for learning');
+}
+for (const word of ['snow', 'snail']) {
+  const entry = blends.find((b) => b.word === word);
+  assert.deepEqual(entry.tokens, ['s', 'n']);
+  assert.ok(
+    entry.seconds >= 0.94 && entry.seconds <= 1.01,
+    'SN is held, without a following vowel',
+  );
+}
+for (const entry of blends)
+  for (const segment of entry.segments)
+    if (segment.sustained) {
+      assert.equal(segment.steadyRelease, true);
+      assert.equal(
+        segment.sourceEndFraction,
+        0.6,
+        'Blend must discard reference-keyword vowel boundary',
+      );
+    }
+const frog = blends.find((b) => b.word === 'frog');
+assert.deepEqual(frog.tokens, ['f', 'r']);
+assert.equal(frog.segments[1].steadyRelease, true);
+assert.ok(frog.seconds >= 0.65 && frog.seconds <= 1.01);
+for (const entry of blends)
+  for (const segment of entry.segments)
+    if (index['phoneme-natural:' + segment.token]) {
+      assert.equal(
+        segment.source,
+        index['phoneme-natural:' + segment.token],
+        'Blend must use current human sound instead of stale synthetic recording',
+      );
+      assert.equal(segment.human, true);
+      assert.equal(segment.looped, false);
+      assert.equal(segment.sustained, false);
+    }
+for (const id of ['frog', 'flag', 'gift'])
+  assert.ok(blends.find((b) => b.word === id).segments.some((s) => s.token === 'f' && s.human));
+console.log(
+  'Manual-content checks passed: multi-sound letters, consistent rhyme endings and offline pair narration, 28 beginning/end blend recordings, vowel introduction.',
+);

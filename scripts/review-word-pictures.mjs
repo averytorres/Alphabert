@@ -1,4 +1,29 @@
-import {browserOptions} from './browser-config.mjs';
-import {chromium} from '../tools/test-browser/node_modules/playwright/index.mjs';import fs from 'node:fs';
-const browser=await chromium.launch({...browserOptions(),headless:true});const page=await browser.newPage({viewport:{width:1100,height:850}});await page.goto('http://127.0.0.1:4173');const words=JSON.parse(fs.readFileSync('content/words.json')).words;await page.evaluate(async words=>{const {wordPicturePath}=await import('./word-pictures.js');document.body.innerHTML='<div style="display:grid;grid-template-columns:repeat(9,1fr);gap:12px;padding:20px">'+words.map(w=>{const p=wordPicturePath(w);return '<div style="text-align:center;border:1px solid #ccc;border-radius:8px;padding:10px;background:white"><div style="height:70px;font-size:55px">'+(p?'<img style="width:68px;height:68px" src="'+p+'">':w.emoji)+'</div><div>'+w.word+'</div></div>'}).join('')+'</div>';await Promise.all([...document.images].map(i=>i.decode()));},words);fs.mkdirSync('test-results/pictures',{recursive:true});await page.screenshot({path:'test-results/pictures/catalog.png',fullPage:true});await browser.close();
-
+import { browserOptions } from './browser-config.mjs';
+import { chromium } from '../tools/test-browser/node_modules/playwright/index.mjs';
+import fs from 'node:fs';
+const browser = await chromium.launch({ ...browserOptions(), headless: true });
+const page = await browser.newPage({ viewport: { width: 1100, height: 850 } });
+await page.goto('http://127.0.0.1:4173');
+const words = JSON.parse(fs.readFileSync('content/words.json')).words;
+await page.evaluate(async (words) => {
+  const { wordPicturePath } = await import('./word-pictures.js');
+  document.body.innerHTML =
+    '<div style="display:grid;grid-template-columns:repeat(9,1fr);gap:12px;padding:20px">' +
+    words
+      .map((w) => {
+        const p = wordPicturePath(w);
+        return (
+          '<div style="text-align:center;border:1px solid #ccc;border-radius:8px;padding:10px;background:white"><div style="height:70px;font-size:55px">' +
+          (p ? '<img style="width:68px;height:68px" src="' + p + '">' : w.emoji) +
+          '</div><div>' +
+          w.word +
+          '</div></div>'
+        );
+      })
+      .join('') +
+    '</div>';
+  await Promise.all([...document.images].map((i) => i.decode()));
+}, words);
+fs.mkdirSync('test-results/pictures', { recursive: true });
+await page.screenshot({ path: 'test-results/pictures/catalog.png', fullPage: true });
+await browser.close();

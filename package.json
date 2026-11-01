@@ -5,8 +5,14 @@
   "type": "module",
   "scripts": {
     "start": "node scripts/serve.mjs",
+    "test:all": "node scripts/test-all.mjs",
     "validate": "node scripts/validate-content.mjs",
     "test": "node scripts/test-feedback.mjs && node scripts/test-core.mjs && node scripts/test-blend-choices.mjs && node scripts/test-speech.mjs && node scripts/test-manual-content.mjs && node scripts/test-bertie-reactions.mjs && node scripts/test-sustain-phoneme.mjs && node scripts/test-human-phonics.mjs && node scripts/test-context-hints.mjs",
-    "audit:privacy": "node scripts/audit-repo-privacy.mjs"
+    "audit:privacy": "node scripts/audit-repo-privacy.mjs",
+    "format": "prettier --write \"*.{js,css,html}\" \"scripts/*.mjs\" \"activities/**/*.js\" --no-error-on-unmatched-pattern",
+    "format:check": "prettier --check \"*.{js,css,html}\" \"scripts/*.mjs\" \"activities/**/*.js\" --no-error-on-unmatched-pattern"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
   }
 }

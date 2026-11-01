@@ -19,8 +19,8 @@ test-results/
 .elevenlabs-cache/
 tools/audio-python/
 
-# Local duplicate repository created inside the actual project.
-/Alphabert/
+# Personal working notes and historical investigation logs.
+/.local-notes/
 
 # Local credentials and signing material.
 .env
