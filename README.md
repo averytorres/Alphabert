@@ -77,6 +77,5 @@ The game is built with **JavaScript, HTML and CSS**, with a **Java Android wrapp
 - [Adding words and lessons](content/README.md)
 - [Android build instructions](android/README.md)
 - [Voice and audio workflow](scripts/SPEECH.md)
-- [Putting the source on GitHub](GITHUB.md)
 
 For a browser preview, install Node.js, run `npm start` from the project folder, and open `http://127.0.0.1:4173`.
