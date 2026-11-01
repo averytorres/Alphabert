@@ -1,0 +1,1696 @@
+{
+  "schemaVersion": 1,
+  "words": [
+    {
+      "id": "ant",
+      "word": "ant",
+      "letter": "a",
+      "emoji": "🐜",
+      "category": "animals",
+      "phonemes": [
+        "a",
+        "n",
+        "t"
+      ],
+      "phoneticHint": "a · n · t",
+      "blends": [],
+      "vowelSound": "short"
+    },
+    {
+      "id": "apple",
+      "word": "apple",
+      "letter": "a",
+      "emoji": "🍎",
+      "category": "food",
+      "phonemes": [
+        "a",
+        "p",
+        "schwa",
+        "l"
+      ],
+      "phoneticHint": "a · p · ə · l",
+      "blends": [],
+      "vowelSound": "short"
+    },
+    {
+      "id": "acorn",
+      "word": "acorn",
+      "letter": "a",
+      "emoji": "🌰",
+      "category": "nature",
+      "phonemes": [
+        "ay",
+        "k",
+        "or",
+        "n"
+      ],
+      "phoneticHint": "ay · k · or · n",
+      "blends": [],
+      "vowelSound": "long"
+    },
+    {
+      "id": "ape",
+      "word": "ape",
+      "letter": "a",
+      "emoji": "🦍",
+      "category": "animals",
+      "phonemes": [
+        "ay",
+        "p"
+      ],
+      "phoneticHint": "ay · p",
+      "blends": [],
+      "vowelSound": "long"
+    },
+    {
+      "id": "bat",
+      "word": "bat",
+      "letter": "b",
+      "emoji": "🦇",
+      "category": "animals",
+      "phonemes": [
+        "b",
+        "a",
+        "t"
+      ],
+      "phoneticHint": "b · a · t",
+      "blends": []
+    },
+    {
+      "id": "ball",
+      "word": "ball",
+      "letter": "b",
+      "emoji": "⚽",
+      "category": "toys",
+      "phonemes": [
+        "b",
+        "aw",
+        "l"
+      ],
+      "phoneticHint": "b · aw · l",
+      "blends": []
+    },
+    {
+      "id": "bed",
+      "word": "bed",
+      "letter": "b",
+      "emoji": "🛏️",
+      "category": "home",
+      "phonemes": [
+        "b",
+        "e",
+        "d"
+      ],
+      "phoneticHint": "b · e · d",
+      "blends": []
+    },
+    {
+      "id": "boat",
+      "word": "boat",
+      "letter": "b",
+      "emoji": "⛵",
+      "category": "vehicles",
+      "phonemes": [
+        "b",
+        "oh",
+        "t"
+      ],
+      "phoneticHint": "b · oh · t",
+      "blends": []
+    },
+    {
+      "id": "box",
+      "word": "box",
+      "letter": "b",
+      "emoji": "📦",
+      "category": "home",
+      "phonemes": [
+        "b",
+        "o",
+        "k",
+        "s"
+      ],
+      "phoneticHint": "b · o · k · s",
+      "blends": []
+    },
+    {
+      "id": "cat",
+      "word": "cat",
+      "letter": "c",
+      "emoji": "🐈",
+      "category": "animals",
+      "phonemes": [
+        "k",
+        "a",
+        "t"
+      ],
+      "phoneticHint": "k · a · t",
+      "blends": []
+    },
+    {
+      "id": "cap",
+      "word": "cap",
+      "letter": "c",
+      "emoji": "🧢",
+      "category": "clothes",
+      "phonemes": [
+        "k",
+        "a",
+        "p"
+      ],
+      "phoneticHint": "k · a · p",
+      "blends": []
+    },
+    {
+      "id": "cake",
+      "word": "cake",
+      "letter": "c",
+      "emoji": "🎂",
+      "category": "food",
+      "phonemes": [
+        "k",
+        "ay",
+        "k"
+      ],
+      "phoneticHint": "k · ay · k",
+      "blends": []
+    },
+    {
+      "id": "car",
+      "word": "car",
+      "letter": "c",
+      "emoji": "🚗",
+      "category": "vehicles",
+      "phonemes": [
+        "k",
+        "ar"
+      ],
+      "phoneticHint": "k · ar",
+      "blends": []
+    },
+    {
+      "id": "crab",
+      "word": "crab",
+      "letter": "c",
+      "emoji": "🦀",
+      "category": "animals",
+      "phonemes": [
+        "k",
+        "r",
+        "a",
+        "b"
+      ],
+      "phoneticHint": "k · r · a · b",
+      "blends": [
+        {
+          "text": "cr",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "clap",
+      "word": "clap",
+      "letter": "c",
+      "emoji": "👏",
+      "category": "actions",
+      "phonemes": [
+        "k",
+        "l",
+        "a",
+        "p"
+      ],
+      "phoneticHint": "k · l · a · p",
+      "blends": [
+        {
+          "text": "cl",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "clock",
+      "word": "clock",
+      "letter": "c",
+      "emoji": "🕒",
+      "category": "home",
+      "phonemes": [
+        "k",
+        "l",
+        "o",
+        "k"
+      ],
+      "phoneticHint": "k · l · o · k",
+      "blends": [
+        {
+          "text": "cl",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "dog",
+      "word": "dog",
+      "letter": "d",
+      "emoji": "🐕",
+      "category": "animals",
+      "phonemes": [
+        "d",
+        "o",
+        "g"
+      ],
+      "phoneticHint": "d · o · g",
+      "blends": []
+    },
+    {
+      "id": "duck",
+      "word": "duck",
+      "letter": "d",
+      "emoji": "🦆",
+      "category": "animals",
+      "phonemes": [
+        "d",
+        "u",
+        "k"
+      ],
+      "phoneticHint": "d · u · k",
+      "blends": []
+    },
+    {
+      "id": "drum",
+      "word": "drum",
+      "letter": "d",
+      "emoji": "🥁",
+      "category": "music",
+      "phonemes": [
+        "d",
+        "r",
+        "u",
+        "m"
+      ],
+      "phoneticHint": "d · r · u · m",
+      "blends": [
+        {
+          "text": "dr",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "dress",
+      "word": "dress",
+      "letter": "d",
+      "emoji": "👗",
+      "category": "clothes",
+      "phonemes": [
+        "d",
+        "r",
+        "e",
+        "s"
+      ],
+      "phoneticHint": "d · r · e · s",
+      "blends": [
+        {
+          "text": "dr",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "egg",
+      "word": "egg",
+      "letter": "e",
+      "emoji": "🥚",
+      "category": "food",
+      "phonemes": [
+        "e",
+        "g"
+      ],
+      "phoneticHint": "e · g",
+      "blends": [],
+      "vowelSound": "short"
+    },
+    {
+      "id": "elf",
+      "word": "elf",
+      "letter": "e",
+      "emoji": "🧝",
+      "category": "characters",
+      "phonemes": [
+        "e",
+        "l",
+        "f"
+      ],
+      "phoneticHint": "e · l · f",
+      "blends": [],
+      "vowelSound": "short"
+    },
+    {
+      "id": "eel",
+      "word": "eel",
+      "letter": "e",
+      "emoji": "🐟",
+      "category": "animals",
+      "phonemes": [
+        "ee",
+        "l"
+      ],
+      "phoneticHint": "ee · l",
+      "blends": [],
+      "vowelSound": "long"
+    },
+    {
+      "id": "emu",
+      "word": "emu",
+      "letter": "e",
+      "emoji": "🐦",
+      "category": "animals",
+      "phonemes": [
+        "ee",
+        "m",
+        "yoo"
+      ],
+      "phoneticHint": "ee · m · yoo",
+      "blends": [],
+      "vowelSound": "long"
+    },
+    {
+      "id": "fan",
+      "word": "fan",
+      "letter": "f",
+      "emoji": "🪭",
+      "category": "home",
+      "phonemes": [
+        "f",
+        "a",
+        "n"
+      ],
+      "phoneticHint": "f · a · n",
+      "blends": []
+    },
+    {
+      "id": "fish",
+      "word": "fish",
+      "letter": "f",
+      "emoji": "🐟",
+      "category": "animals",
+      "phonemes": [
+        "f",
+        "i",
+        "sh"
+      ],
+      "phoneticHint": "f · i · sh",
+      "blends": []
+    },
+    {
+      "id": "flag",
+      "word": "flag",
+      "letter": "f",
+      "emoji": "🚩",
+      "category": "objects",
+      "phonemes": [
+        "f",
+        "l",
+        "a",
+        "g"
+      ],
+      "phoneticHint": "f · l · a · g",
+      "blends": [
+        {
+          "text": "fl",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "frog",
+      "word": "frog",
+      "letter": "f",
+      "emoji": "🐸",
+      "category": "animals",
+      "phonemes": [
+        "f",
+        "r",
+        "o",
+        "g"
+      ],
+      "phoneticHint": "f · r · o · g",
+      "blends": [
+        {
+          "text": "fr",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "fox",
+      "word": "fox",
+      "letter": "f",
+      "emoji": "🦊",
+      "category": "animals",
+      "phonemes": [
+        "f",
+        "o",
+        "k",
+        "s"
+      ],
+      "phoneticHint": "f · o · k · s",
+      "blends": []
+    },
+    {
+      "id": "goat",
+      "word": "goat",
+      "letter": "g",
+      "emoji": "🐐",
+      "category": "animals",
+      "phonemes": [
+        "g",
+        "oh",
+        "t"
+      ],
+      "phoneticHint": "g · oh · t",
+      "blends": []
+    },
+    {
+      "id": "gate",
+      "word": "gate",
+      "letter": "g",
+      "emoji": "🚪",
+      "category": "home",
+      "phonemes": [
+        "g",
+        "ay",
+        "t"
+      ],
+      "phoneticHint": "g · ay · t",
+      "blends": []
+    },
+    {
+      "id": "gift",
+      "word": "gift",
+      "letter": "g",
+      "emoji": "🎁",
+      "category": "objects",
+      "phonemes": [
+        "g",
+        "i",
+        "f",
+        "t"
+      ],
+      "phoneticHint": "g · i · f · t",
+      "blends": [
+        {
+          "text": "ft",
+          "start": 2
+        }
+      ]
+    },
+    {
+      "id": "gem",
+      "word": "gem",
+      "letter": "g",
+      "emoji": "💎",
+      "category": "nature",
+      "phonemes": [
+        "j",
+        "e",
+        "m"
+      ],
+      "phoneticHint": "j · e · m",
+      "blends": []
+    },
+    {
+      "id": "hat",
+      "word": "hat",
+      "letter": "h",
+      "emoji": "🎩",
+      "category": "clothes",
+      "phonemes": [
+        "h",
+        "a",
+        "t"
+      ],
+      "phoneticHint": "h · a · t",
+      "blends": []
+    },
+    {
+      "id": "hen",
+      "word": "hen",
+      "letter": "h",
+      "emoji": "🐔",
+      "category": "animals",
+      "phonemes": [
+        "h",
+        "e",
+        "n"
+      ],
+      "phoneticHint": "h · e · n",
+      "blends": []
+    },
+    {
+      "id": "hand",
+      "word": "hand",
+      "letter": "h",
+      "emoji": "✋",
+      "category": "body",
+      "phonemes": [
+        "h",
+        "a",
+        "n",
+        "d"
+      ],
+      "phoneticHint": "h · a · n · d",
+      "blends": [
+        {
+          "text": "nd",
+          "start": 2
+        }
+      ]
+    },
+    {
+      "id": "hill",
+      "word": "hill",
+      "letter": "h",
+      "emoji": "⛰️",
+      "category": "nature",
+      "phonemes": [
+        "h",
+        "i",
+        "l"
+      ],
+      "phoneticHint": "h · i · l",
+      "blends": []
+    },
+    {
+      "id": "insect",
+      "word": "insect",
+      "letter": "i",
+      "emoji": "🐞",
+      "category": "animals",
+      "phonemes": [
+        "i",
+        "n",
+        "s",
+        "e",
+        "k",
+        "t"
+      ],
+      "phoneticHint": "i · n · s · e · k · t",
+      "blends": [
+        {
+          "text": "ct",
+          "start": 4
+        }
+      ],
+      "vowelSound": "short"
+    },
+    {
+      "id": "ink",
+      "word": "ink",
+      "letter": "i",
+      "emoji": "🖋️",
+      "category": "objects",
+      "phonemes": [
+        "i",
+        "ng",
+        "k"
+      ],
+      "phoneticHint": "i · ng · k",
+      "blends": [
+        {
+          "text": "nk",
+          "start": 1
+        }
+      ],
+      "vowelSound": "short"
+    },
+    {
+      "id": "ice",
+      "word": "ice",
+      "letter": "i",
+      "emoji": "🧊",
+      "category": "nature",
+      "phonemes": [
+        "eye",
+        "s"
+      ],
+      "phoneticHint": "eye · s",
+      "blends": [],
+      "vowelSound": "long"
+    },
+    {
+      "id": "ivy",
+      "word": "ivy",
+      "letter": "i",
+      "emoji": "🌿",
+      "category": "nature",
+      "phonemes": [
+        "eye",
+        "v",
+        "ee"
+      ],
+      "phoneticHint": "eye · v · ee",
+      "blends": [],
+      "vowelSound": "long"
+    },
+    {
+      "id": "jam",
+      "word": "jam",
+      "letter": "j",
+      "emoji": "🫙",
+      "category": "food",
+      "phonemes": [
+        "j",
+        "a",
+        "m"
+      ],
+      "phoneticHint": "j · a · m",
+      "blends": []
+    },
+    {
+      "id": "jet",
+      "word": "jet",
+      "letter": "j",
+      "emoji": "✈️",
+      "category": "vehicles",
+      "phonemes": [
+        "j",
+        "e",
+        "t"
+      ],
+      "phoneticHint": "j · e · t",
+      "blends": []
+    },
+    {
+      "id": "jug",
+      "word": "jug",
+      "letter": "j",
+      "emoji": "🏺",
+      "category": "home",
+      "phonemes": [
+        "j",
+        "u",
+        "g"
+      ],
+      "phoneticHint": "j · u · g",
+      "blends": []
+    },
+    {
+      "id": "king",
+      "word": "king",
+      "letter": "k",
+      "emoji": "🤴",
+      "category": "characters",
+      "phonemes": [
+        "k",
+        "i",
+        "ng"
+      ],
+      "phoneticHint": "k · i · ng",
+      "blends": []
+    },
+    {
+      "id": "kite",
+      "word": "kite",
+      "letter": "k",
+      "emoji": "🪁",
+      "category": "toys",
+      "phonemes": [
+        "k",
+        "eye",
+        "t"
+      ],
+      "phoneticHint": "k · eye · t",
+      "blends": []
+    },
+    {
+      "id": "kitten",
+      "word": "kitten",
+      "letter": "k",
+      "emoji": "🐱",
+      "category": "animals",
+      "phonemes": [
+        "k",
+        "i",
+        "t",
+        "schwa",
+        "n"
+      ],
+      "phoneticHint": "k · i · t · ə · n",
+      "blends": []
+    },
+    {
+      "id": "log",
+      "word": "log",
+      "letter": "l",
+      "emoji": "🪵",
+      "category": "nature",
+      "phonemes": [
+        "l",
+        "aw",
+        "g"
+      ],
+      "phoneticHint": "l · aw · g",
+      "blends": []
+    },
+    {
+      "id": "leg",
+      "word": "leg",
+      "letter": "l",
+      "emoji": "🦵",
+      "category": "body",
+      "phonemes": [
+        "l",
+        "e",
+        "g"
+      ],
+      "phoneticHint": "l · e · g",
+      "blends": []
+    },
+    {
+      "id": "lamp",
+      "word": "lamp",
+      "letter": "l",
+      "emoji": "💡",
+      "category": "home",
+      "phonemes": [
+        "l",
+        "a",
+        "m",
+        "p"
+      ],
+      "phoneticHint": "l · a · m · p",
+      "blends": [
+        {
+          "text": "mp",
+          "start": 2
+        }
+      ]
+    },
+    {
+      "id": "land",
+      "word": "land",
+      "letter": "l",
+      "emoji": "🏝️",
+      "category": "nature",
+      "phonemes": [
+        "l",
+        "a",
+        "n",
+        "d"
+      ],
+      "phoneticHint": "l · a · n · d",
+      "blends": [
+        {
+          "text": "nd",
+          "start": 2
+        }
+      ]
+    },
+    {
+      "id": "map",
+      "word": "map",
+      "letter": "m",
+      "emoji": "🗺️",
+      "category": "objects",
+      "phonemes": [
+        "m",
+        "a",
+        "p"
+      ],
+      "phoneticHint": "m · a · p",
+      "blends": []
+    },
+    {
+      "id": "moon",
+      "word": "moon",
+      "letter": "m",
+      "emoji": "🌙",
+      "category": "nature",
+      "phonemes": [
+        "m",
+        "oo",
+        "n"
+      ],
+      "phoneticHint": "m · oo · n",
+      "blends": []
+    },
+    {
+      "id": "mop",
+      "word": "mop",
+      "letter": "m",
+      "emoji": "🧹",
+      "category": "home",
+      "phonemes": [
+        "m",
+        "o",
+        "p"
+      ],
+      "phoneticHint": "m · o · p",
+      "blends": []
+    },
+    {
+      "id": "mouse",
+      "word": "mouse",
+      "letter": "m",
+      "emoji": "🐁",
+      "category": "animals",
+      "phonemes": [
+        "m",
+        "ow",
+        "s"
+      ],
+      "phoneticHint": "m · ow · s",
+      "blends": []
+    },
+    {
+      "id": "nest",
+      "word": "nest",
+      "letter": "n",
+      "emoji": "🪺",
+      "category": "nature",
+      "phonemes": [
+        "n",
+        "e",
+        "s",
+        "t"
+      ],
+      "phoneticHint": "n · e · s · t",
+      "blends": [
+        {
+          "text": "st",
+          "start": 2
+        }
+      ]
+    },
+    {
+      "id": "net",
+      "word": "net",
+      "letter": "n",
+      "emoji": "🥅",
+      "category": "toys",
+      "phonemes": [
+        "n",
+        "e",
+        "t"
+      ],
+      "phoneticHint": "n · e · t",
+      "blends": []
+    },
+    {
+      "id": "nose",
+      "word": "nose",
+      "letter": "n",
+      "emoji": "👃",
+      "category": "body",
+      "phonemes": [
+        "n",
+        "oh",
+        "z"
+      ],
+      "phoneticHint": "n · oh · z",
+      "blends": []
+    },
+    {
+      "id": "nut",
+      "word": "nut",
+      "letter": "n",
+      "emoji": "🥜",
+      "category": "food",
+      "phonemes": [
+        "n",
+        "u",
+        "t"
+      ],
+      "phoneticHint": "n · u · t",
+      "blends": []
+    },
+    {
+      "id": "ox",
+      "word": "ox",
+      "letter": "o",
+      "emoji": "🐂",
+      "category": "animals",
+      "phonemes": [
+        "o",
+        "k",
+        "s"
+      ],
+      "phoneticHint": "o · k · s",
+      "blends": [],
+      "vowelSound": "short"
+    },
+    {
+      "id": "otter",
+      "word": "otter",
+      "letter": "o",
+      "emoji": "🦦",
+      "category": "animals",
+      "phonemes": [
+        "o",
+        "t",
+        "er"
+      ],
+      "phoneticHint": "o · t · er",
+      "blends": [],
+      "vowelSound": "short"
+    },
+    {
+      "id": "oak",
+      "word": "oak",
+      "letter": "o",
+      "emoji": "🌳",
+      "category": "nature",
+      "phonemes": [
+        "oh",
+        "k"
+      ],
+      "phoneticHint": "oh · k",
+      "blends": [],
+      "vowelSound": "long"
+    },
+    {
+      "id": "oat",
+      "word": "oat",
+      "letter": "o",
+      "emoji": "🌾",
+      "category": "food",
+      "phonemes": [
+        "oh",
+        "t"
+      ],
+      "phoneticHint": "oh · t",
+      "blends": [],
+      "vowelSound": "long"
+    },
+    {
+      "id": "pig",
+      "word": "pig",
+      "letter": "p",
+      "emoji": "🐖",
+      "category": "animals",
+      "phonemes": [
+        "p",
+        "i",
+        "g"
+      ],
+      "phoneticHint": "p · i · g",
+      "blends": []
+    },
+    {
+      "id": "pen",
+      "word": "pen",
+      "letter": "p",
+      "emoji": "🖊️",
+      "category": "objects",
+      "phonemes": [
+        "p",
+        "e",
+        "n"
+      ],
+      "phoneticHint": "p · e · n",
+      "blends": []
+    },
+    {
+      "id": "pan",
+      "word": "pan",
+      "letter": "p",
+      "emoji": "🍳",
+      "category": "home",
+      "phonemes": [
+        "p",
+        "a",
+        "n"
+      ],
+      "phoneticHint": "p · a · n",
+      "blends": []
+    },
+    {
+      "id": "plant",
+      "word": "plant",
+      "letter": "p",
+      "emoji": "🪴",
+      "category": "nature",
+      "phonemes": [
+        "p",
+        "l",
+        "a",
+        "n",
+        "t"
+      ],
+      "phoneticHint": "p · l · a · n · t",
+      "blends": [
+        {
+          "text": "pl",
+          "start": 0
+        },
+        {
+          "text": "nt",
+          "start": 3
+        }
+      ]
+    },
+    {
+      "id": "plum",
+      "word": "plum",
+      "letter": "p",
+      "emoji": "🟣",
+      "category": "food",
+      "phonemes": [
+        "p",
+        "l",
+        "u",
+        "m"
+      ],
+      "phoneticHint": "p · l · u · m",
+      "blends": [
+        {
+          "text": "pl",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "queen",
+      "word": "queen",
+      "letter": "q",
+      "emoji": "👸",
+      "category": "characters",
+      "phonemes": [
+        "k",
+        "w",
+        "ee",
+        "n"
+      ],
+      "phoneticHint": "k · w · ee · n",
+      "blends": []
+    },
+    {
+      "id": "quilt",
+      "word": "quilt",
+      "letter": "q",
+      "emoji": "🛌",
+      "category": "home",
+      "phonemes": [
+        "k",
+        "w",
+        "i",
+        "l",
+        "t"
+      ],
+      "phoneticHint": "k · w · i · l · t",
+      "blends": [
+        {
+          "text": "lt",
+          "start": 3
+        }
+      ]
+    },
+    {
+      "id": "rat",
+      "word": "rat",
+      "letter": "r",
+      "emoji": "🐀",
+      "category": "animals",
+      "phonemes": [
+        "r",
+        "a",
+        "t"
+      ],
+      "phoneticHint": "r · a · t",
+      "blends": []
+    },
+    {
+      "id": "red",
+      "word": "red",
+      "letter": "r",
+      "emoji": "🔴",
+      "category": "colors",
+      "phonemes": [
+        "r",
+        "e",
+        "d"
+      ],
+      "phoneticHint": "r · e · d",
+      "blends": []
+    },
+    {
+      "id": "ring",
+      "word": "ring",
+      "letter": "r",
+      "emoji": "💍",
+      "category": "objects",
+      "phonemes": [
+        "r",
+        "i",
+        "ng"
+      ],
+      "phoneticHint": "r · i · ng",
+      "blends": []
+    },
+    {
+      "id": "rain",
+      "word": "rain",
+      "letter": "r",
+      "emoji": "🌧️",
+      "category": "nature",
+      "phonemes": [
+        "r",
+        "ay",
+        "n"
+      ],
+      "phoneticHint": "r · ay · n",
+      "blends": []
+    },
+    {
+      "id": "sun",
+      "word": "sun",
+      "letter": "s",
+      "emoji": "☀️",
+      "category": "nature",
+      "phonemes": [
+        "s",
+        "u",
+        "n"
+      ],
+      "phoneticHint": "s · u · n",
+      "blends": []
+    },
+    {
+      "id": "sock",
+      "word": "sock",
+      "letter": "s",
+      "emoji": "🧦",
+      "category": "clothes",
+      "phonemes": [
+        "s",
+        "o",
+        "k"
+      ],
+      "phoneticHint": "s · o · k",
+      "blends": []
+    },
+    {
+      "id": "star",
+      "word": "star",
+      "letter": "s",
+      "emoji": "⭐",
+      "category": "nature",
+      "phonemes": [
+        "s",
+        "t",
+        "ar"
+      ],
+      "phoneticHint": "s · t · ar",
+      "blends": [
+        {
+          "text": "st",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "stop",
+      "word": "stop",
+      "letter": "s",
+      "emoji": "🛑",
+      "category": "actions",
+      "phonemes": [
+        "s",
+        "t",
+        "o",
+        "p"
+      ],
+      "phoneticHint": "s · t · o · p",
+      "blends": [
+        {
+          "text": "st",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "snail",
+      "word": "snail",
+      "letter": "s",
+      "emoji": "🐌",
+      "category": "animals",
+      "phonemes": [
+        "s",
+        "n",
+        "ay",
+        "l"
+      ],
+      "phoneticHint": "s · n · ay · l",
+      "blends": [
+        {
+          "text": "sn",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "snow",
+      "word": "snow",
+      "letter": "s",
+      "emoji": "❄️",
+      "category": "nature",
+      "phonemes": [
+        "s",
+        "n",
+        "oh"
+      ],
+      "phoneticHint": "s · n · oh",
+      "blends": [
+        {
+          "text": "sn",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "top",
+      "word": "top",
+      "letter": "t",
+      "emoji": "🌀",
+      "category": "toys",
+      "phonemes": [
+        "t",
+        "o",
+        "p"
+      ],
+      "phoneticHint": "t · o · p",
+      "blends": []
+    },
+    {
+      "id": "tree",
+      "word": "tree",
+      "letter": "t",
+      "emoji": "🌳",
+      "category": "nature",
+      "phonemes": [
+        "t",
+        "r",
+        "ee"
+      ],
+      "phoneticHint": "t · r · ee",
+      "blends": [
+        {
+          "text": "tr",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "tent",
+      "word": "tent",
+      "letter": "t",
+      "emoji": "⛺",
+      "category": "home",
+      "phonemes": [
+        "t",
+        "e",
+        "n",
+        "t"
+      ],
+      "phoneticHint": "t · e · n · t",
+      "blends": [
+        {
+          "text": "nt",
+          "start": 2
+        }
+      ]
+    },
+    {
+      "id": "train",
+      "word": "train",
+      "letter": "t",
+      "emoji": "🚂",
+      "category": "vehicles",
+      "phonemes": [
+        "t",
+        "r",
+        "ay",
+        "n"
+      ],
+      "phoneticHint": "t · r · ay · n",
+      "blends": [
+        {
+          "text": "tr",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "up",
+      "word": "up",
+      "letter": "u",
+      "emoji": "⬆️",
+      "category": "actions",
+      "phonemes": [
+        "u",
+        "p"
+      ],
+      "phoneticHint": "u · p",
+      "blends": [],
+      "vowelSound": "short"
+    },
+    {
+      "id": "umbrella",
+      "word": "umbrella",
+      "letter": "u",
+      "emoji": "☂️",
+      "category": "objects",
+      "phonemes": [
+        "u",
+        "m",
+        "b",
+        "r",
+        "e",
+        "l",
+        "schwa"
+      ],
+      "phoneticHint": "u · m · b · r · e · l · ə",
+      "blends": [
+        {
+          "text": "br",
+          "start": 2
+        }
+      ],
+      "vowelSound": "short"
+    },
+    {
+      "id": "unicorn",
+      "word": "unicorn",
+      "letter": "u",
+      "emoji": "🦄",
+      "category": "characters",
+      "phonemes": [
+        "yoo",
+        "n",
+        "i",
+        "k",
+        "or",
+        "n"
+      ],
+      "phoneticHint": "yoo · n · i · k · or · n",
+      "blends": [],
+      "vowelSound": "long"
+    },
+    {
+      "id": "unit",
+      "word": "unit",
+      "letter": "u",
+      "emoji": "🧊",
+      "category": "objects",
+      "phonemes": [
+        "yoo",
+        "n",
+        "i",
+        "t"
+      ],
+      "phoneticHint": "yoo · n · i · t",
+      "blends": [],
+      "vowelSound": "long"
+    },
+    {
+      "id": "van",
+      "word": "van",
+      "letter": "v",
+      "emoji": "🚐",
+      "category": "vehicles",
+      "phonemes": [
+        "v",
+        "a",
+        "n"
+      ],
+      "phoneticHint": "v · a · n",
+      "blends": []
+    },
+    {
+      "id": "vest",
+      "word": "vest",
+      "letter": "v",
+      "emoji": "🦺",
+      "category": "clothes",
+      "phonemes": [
+        "v",
+        "e",
+        "s",
+        "t"
+      ],
+      "phoneticHint": "v · e · s · t",
+      "blends": [
+        {
+          "text": "st",
+          "start": 2
+        }
+      ]
+    },
+    {
+      "id": "vet",
+      "word": "vet",
+      "letter": "v",
+      "emoji": "🧑‍⚕️",
+      "category": "people",
+      "phonemes": [
+        "v",
+        "e",
+        "t"
+      ],
+      "phoneticHint": "v · e · t",
+      "blends": []
+    },
+    {
+      "id": "web",
+      "word": "web",
+      "letter": "w",
+      "emoji": "🕸️",
+      "category": "nature",
+      "phonemes": [
+        "w",
+        "e",
+        "b"
+      ],
+      "phoneticHint": "w · e · b",
+      "blends": []
+    },
+    {
+      "id": "wig",
+      "word": "wig",
+      "letter": "w",
+      "emoji": "💇",
+      "category": "clothes",
+      "phonemes": [
+        "w",
+        "i",
+        "g"
+      ],
+      "phoneticHint": "w · i · g",
+      "blends": []
+    },
+    {
+      "id": "wing",
+      "word": "wing",
+      "letter": "w",
+      "emoji": "🪽",
+      "category": "body",
+      "phonemes": [
+        "w",
+        "i",
+        "ng"
+      ],
+      "phoneticHint": "w · i · ng",
+      "blends": []
+    },
+    {
+      "id": "xylophone",
+      "word": "xylophone",
+      "letter": "x",
+      "emoji": "🎼",
+      "category": "music",
+      "phonemes": [
+        "z",
+        "eye",
+        "l",
+        "schwa",
+        "f",
+        "oh",
+        "n"
+      ],
+      "phoneticHint": "z · eye · l · ə · f · oh · n",
+      "blends": []
+    },
+    {
+      "id": "yak",
+      "word": "yak",
+      "letter": "y",
+      "emoji": "🐃",
+      "category": "animals",
+      "phonemes": [
+        "y",
+        "a",
+        "k"
+      ],
+      "phoneticHint": "y · a · k",
+      "blends": []
+    },
+    {
+      "id": "yarn",
+      "word": "yarn",
+      "letter": "y",
+      "emoji": "🧶",
+      "category": "objects",
+      "phonemes": [
+        "y",
+        "ar",
+        "n"
+      ],
+      "phoneticHint": "y · ar · n",
+      "blends": []
+    },
+    {
+      "id": "yellow",
+      "word": "yellow",
+      "letter": "y",
+      "emoji": "🟡",
+      "category": "colors",
+      "phonemes": [
+        "y",
+        "e",
+        "l",
+        "oh"
+      ],
+      "phoneticHint": "y · e · l · oh",
+      "blends": []
+    },
+    {
+      "id": "zebra",
+      "word": "zebra",
+      "letter": "z",
+      "emoji": "🦓",
+      "category": "animals",
+      "phonemes": [
+        "z",
+        "ee",
+        "b",
+        "r",
+        "schwa"
+      ],
+      "phoneticHint": "z · ee · b · r · ə",
+      "blends": [
+        {
+          "text": "br",
+          "start": 2
+        }
+      ]
+    },
+    {
+      "id": "zip",
+      "word": "zip",
+      "letter": "z",
+      "emoji": "🤐",
+      "category": "actions",
+      "phonemes": [
+        "z",
+        "i",
+        "p"
+      ],
+      "phoneticHint": "z · i · p",
+      "blends": []
+    },
+    {
+      "id": "zoo",
+      "word": "zoo",
+      "letter": "z",
+      "emoji": "🦁",
+      "category": "places",
+      "phonemes": [
+        "z",
+        "oo"
+      ],
+      "phoneticHint": "z · oo",
+      "blends": []
+    },
+    {
+      "id": "blue",
+      "word": "blue",
+      "letter": "b",
+      "emoji": "🔵",
+      "category": "colors",
+      "phonemes": [
+        "b",
+        "l",
+        "oo"
+      ],
+      "phoneticHint": "b · l · oo",
+      "blends": [
+        {
+          "text": "bl",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "glue",
+      "word": "glue",
+      "letter": "g",
+      "emoji": "🧴",
+      "category": "objects",
+      "phonemes": [
+        "g",
+        "l",
+        "oo"
+      ],
+      "phoneticHint": "g · l · oo",
+      "blends": [
+        {
+          "text": "gl",
+          "start": 0
+        }
+      ]
+    },
+    {
+      "id": "bell",
+      "word": "bell",
+      "letter": "b",
+      "emoji": "🔔",
+      "category": "music",
+      "phonemes": [
+        "b",
+        "e",
+        "l"
+      ],
+      "phoneticHint": "b · e · l",
+      "blends": []
+    },
+    {
+      "id": "shell",
+      "word": "shell",
+      "letter": "s",
+      "emoji": "🐚",
+      "category": "nature",
+      "phonemes": [
+        "sh",
+        "e",
+        "l"
+      ],
+      "phoneticHint": "sh · e · l",
+      "blends": []
+    },
+    {
+      "id": "well",
+      "word": "well",
+      "letter": "w",
+      "emoji": "🕳️",
+      "category": "home",
+      "phonemes": [
+        "w",
+        "e",
+        "l"
+      ],
+      "phoneticHint": "w · e · l",
+      "blends": []
+    }
+  ]
+}

@@ -1,0 +1,2041 @@
+{
+  "version": 1,
+  "engine": "eSpeak NG",
+  "voice": "en-us",
+  "references": {
+    "a": {
+      "keyword": "ant",
+      "targetIPA": "æ",
+      "sourcePhones": [
+        "ˈæ",
+        "n",
+        "t"
+      ],
+      "selectedPhones": [
+        "ˈæ"
+      ],
+      "from": 0,
+      "to": 0.403,
+      "targetDuration": 0.39700680272108846,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-a-reference-v3.ogg"
+    },
+    "ay": {
+      "keyword": "ape",
+      "targetIPA": "eɪ",
+      "sourcePhones": [
+        "ˈeɪ",
+        "p"
+      ],
+      "selectedPhones": [
+        "ˈeɪ"
+      ],
+      "from": 0,
+      "to": 0.555,
+      "targetDuration": 0.5490249433106575,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-ay-reference-v3.ogg"
+    },
+    "b": {
+      "keyword": "cab",
+      "targetIPA": "b",
+      "sourcePhones": [
+        "k",
+        "ˈæ",
+        "b"
+      ],
+      "selectedPhones": [
+        "b"
+      ],
+      "from": 0.704,
+      "to": 0.79,
+      "targetDuration": 0.08,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-b-reference-v3.ogg"
+    },
+    "k": {
+      "keyword": "king",
+      "targetIPA": "k",
+      "sourcePhones": [
+        "k",
+        "ˈɪ",
+        "ŋ"
+      ],
+      "selectedPhones": [
+        "k"
+      ],
+      "from": 0.087,
+      "to": 0.154,
+      "targetDuration": 0.06104308390022676,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-k-reference-v3.ogg"
+    },
+    "d": {
+      "keyword": "bed",
+      "targetIPA": "d",
+      "sourcePhones": [
+        "b",
+        "ˈɛ",
+        "d"
+      ],
+      "selectedPhones": [
+        "d"
+      ],
+      "from": 0.644,
+      "to": 0.73,
+      "targetDuration": 0.08,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-d-reference-v3.ogg"
+    },
+    "e": {
+      "keyword": "egg",
+      "targetIPA": "ɛ",
+      "sourcePhones": [
+        "ˈɛ",
+        "ɡ"
+      ],
+      "selectedPhones": [
+        "ˈɛ"
+      ],
+      "from": 0,
+      "to": 0.534,
+      "targetDuration": 0.5280272108843538,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-e-reference-v3.ogg"
+    },
+    "ee": {
+      "keyword": "eel",
+      "targetIPA": "i",
+      "sourcePhones": [
+        "ˈiː",
+        "l"
+      ],
+      "selectedPhones": [
+        "ˈiː"
+      ],
+      "from": 0,
+      "to": 0.656,
+      "targetDuration": 0.6500226757369615,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-ee-reference-v3.ogg"
+    },
+    "f": {
+      "keyword": "fan",
+      "targetIPA": "f",
+      "sourcePhones": [
+        "f",
+        "ˈæ",
+        "n"
+      ],
+      "selectedPhones": [
+        "f"
+      ],
+      "from": 0.021,
+      "to": 0.157,
+      "targetDuration": 0.13002267573696144,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-f-reference-v3.ogg"
+    },
+    "g": {
+      "keyword": "bag",
+      "targetIPA": "ɡ",
+      "sourcePhones": [
+        "b",
+        "ˈæ",
+        "ɡ"
+      ],
+      "selectedPhones": [
+        "ɡ"
+      ],
+      "from": 0.687,
+      "to": 0.774,
+      "targetDuration": 0.08104308390022676,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-g-reference-v3.ogg"
+    },
+    "h": {
+      "keyword": "hat",
+      "targetIPA": "h",
+      "sourcePhones": [
+        "h",
+        "ˈæ",
+        "t"
+      ],
+      "selectedPhones": [
+        "h"
+      ],
+      "from": 0.021,
+      "to": 0.134,
+      "targetDuration": 0.10702947845804989,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-h-reference-v3.ogg"
+    },
+    "i": {
+      "keyword": "ink",
+      "targetIPA": "ɪ",
+      "sourcePhones": [
+        "ˈɪ",
+        "ŋ",
+        "k"
+      ],
+      "selectedPhones": [
+        "ˈɪ"
+      ],
+      "from": 0,
+      "to": 0.348,
+      "targetDuration": 0.34199546485260773,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-i-reference-v3.ogg"
+    },
+    "igh": {
+      "keyword": "ice",
+      "targetIPA": "aɪ",
+      "sourcePhones": [
+        "ˈaɪ",
+        "s"
+      ],
+      "selectedPhones": [
+        "ˈaɪ"
+      ],
+      "from": 0,
+      "to": 0.53,
+      "targetDuration": 0.5239909297052154,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-igh-reference-v3.ogg"
+    },
+    "j": {
+      "keyword": "jam",
+      "targetIPA": "dʒ",
+      "sourcePhones": [
+        "dʒ",
+        "ˈæ",
+        "m"
+      ],
+      "selectedPhones": [
+        "dʒ"
+      ],
+      "from": 0.022,
+      "to": 0.101,
+      "targetDuration": 0.07301587301587302,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-j-reference-v3.ogg"
+    },
+    "l": {
+      "keyword": "leaf",
+      "targetIPA": "l",
+      "sourcePhones": [
+        "l",
+        "ˈiː",
+        "f"
+      ],
+      "selectedPhones": [
+        "l"
+      ],
+      "from": 0,
+      "to": 0.261,
+      "targetDuration": 0.25501133786848074,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-l-reference-v3.ogg"
+    },
+    "m": {
+      "keyword": "map",
+      "targetIPA": "m",
+      "sourcePhones": [
+        "m",
+        "ˈæ",
+        "p"
+      ],
+      "selectedPhones": [
+        "m"
+      ],
+      "from": 0,
+      "to": 0.246,
+      "targetDuration": 0.24,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-m-reference-v3.ogg"
+    },
+    "n": {
+      "keyword": "net",
+      "targetIPA": "n",
+      "sourcePhones": [
+        "n",
+        "ˈɛ",
+        "t"
+      ],
+      "selectedPhones": [
+        "n"
+      ],
+      "from": 0,
+      "to": 0.261,
+      "targetDuration": 0.25501133786848074,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-n-reference-v3.ogg"
+    },
+    "o": {
+      "keyword": "ox",
+      "targetIPA": "ɑ",
+      "sourcePhones": [
+        "ˈɑː",
+        "k",
+        "s"
+      ],
+      "selectedPhones": [
+        "ˈɑː"
+      ],
+      "from": 0,
+      "to": 0.532,
+      "targetDuration": 0.5259863945578231,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-o-reference-v3.ogg"
+    },
+    "oa": {
+      "keyword": "oak",
+      "targetIPA": "oʊ",
+      "sourcePhones": [
+        "ˈoʊ",
+        "k"
+      ],
+      "selectedPhones": [
+        "ˈoʊ"
+      ],
+      "from": 0,
+      "to": 0.566,
+      "targetDuration": 0.56,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-oa-reference-v3.ogg"
+    },
+    "oo": {
+      "keyword": "moon",
+      "targetIPA": "u",
+      "sourcePhones": [
+        "m",
+        "ˈuː",
+        "n"
+      ],
+      "selectedPhones": [
+        "ˈuː"
+      ],
+      "from": 0.249,
+      "to": 0.644,
+      "targetDuration": 0.3889795918367347,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-oo-reference-v3.ogg"
+    },
+    "p": {
+      "keyword": "cap",
+      "targetIPA": "p",
+      "sourcePhones": [
+        "k",
+        "ˈæ",
+        "p"
+      ],
+      "selectedPhones": [
+        "p"
+      ],
+      "from": 0.678,
+      "to": 0.771,
+      "targetDuration": 0.08698412698412698,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-p-reference-v3.ogg"
+    },
+    "r": {
+      "keyword": "red",
+      "targetIPA": "ɹ",
+      "sourcePhones": [
+        "ɹ",
+        "ˈɛ",
+        "d"
+      ],
+      "selectedPhones": [
+        "ɹ"
+      ],
+      "from": 0,
+      "to": 0.316,
+      "targetDuration": 0.31002267573696146,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-r-reference-v3.ogg"
+    },
+    "s": {
+      "keyword": "sun",
+      "targetIPA": "s",
+      "sourcePhones": [
+        "s",
+        "ˈʌ",
+        "n"
+      ],
+      "selectedPhones": [
+        "s"
+      ],
+      "from": 0.021,
+      "to": 0.152,
+      "targetDuration": 0.12498866213151927,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-s-reference-v3.ogg"
+    },
+    "t": {
+      "keyword": "cat",
+      "targetIPA": "t",
+      "sourcePhones": [
+        "k",
+        "ˈæ",
+        "t"
+      ],
+      "selectedPhones": [
+        "t"
+      ],
+      "from": 0.677,
+      "to": 0.732,
+      "targetDuration": 0.04897959183673469,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-t-reference-v3.ogg"
+    },
+    "u": {
+      "keyword": "up",
+      "targetIPA": "ʌ",
+      "sourcePhones": [
+        "ˈʌ",
+        "p"
+      ],
+      "selectedPhones": [
+        "ˈʌ"
+      ],
+      "from": 0,
+      "to": 0.463,
+      "targetDuration": 0.45700680272108846,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-u-reference-v3.ogg"
+    },
+    "ue": {
+      "keyword": "unit",
+      "targetIPA": "ju",
+      "sourcePhones": [
+        "j",
+        "ˈuː",
+        "n",
+        "ɪ",
+        "t"
+      ],
+      "selectedPhones": [
+        "j",
+        "ˈuː"
+      ],
+      "from": 0,
+      "to": 0.383,
+      "targetDuration": 0.37700680272108844,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-ue-reference-v3.ogg"
+    },
+    "v": {
+      "keyword": "van",
+      "targetIPA": "v",
+      "sourcePhones": [
+        "v",
+        "ˈæ",
+        "n"
+      ],
+      "selectedPhones": [
+        "v"
+      ],
+      "from": 0.021,
+      "to": 0.23,
+      "targetDuration": 0.20299319727891157,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-v-reference-v3.ogg"
+    },
+    "w": {
+      "keyword": "web",
+      "targetIPA": "w",
+      "sourcePhones": [
+        "w",
+        "ˈɛ",
+        "b"
+      ],
+      "selectedPhones": [
+        "w"
+      ],
+      "from": 0,
+      "to": 0.261,
+      "targetDuration": 0.25501133786848074,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-w-reference-v3.ogg"
+    },
+    "y": {
+      "keyword": "yak",
+      "targetIPA": "j",
+      "sourcePhones": [
+        "j",
+        "ˈæ",
+        "k"
+      ],
+      "selectedPhones": [
+        "j"
+      ],
+      "from": 0,
+      "to": 0.243,
+      "targetDuration": 0.23700680272108843,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-y-reference-v3.ogg"
+    },
+    "z": {
+      "keyword": "zoo",
+      "targetIPA": "z",
+      "sourcePhones": [
+        "z",
+        "ˈuː"
+      ],
+      "selectedPhones": [
+        "z"
+      ],
+      "from": 0.021,
+      "to": 0.225,
+      "targetDuration": 0.1980045351473923,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-z-reference-v3.ogg"
+    },
+    "sh": {
+      "keyword": "ship",
+      "targetIPA": "ʃ",
+      "sourcePhones": [
+        "ʃ",
+        "ˈɪ",
+        "p"
+      ],
+      "selectedPhones": [
+        "ʃ"
+      ],
+      "from": 0.021,
+      "to": 0.188,
+      "targetDuration": 0.16099773242630386,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-sh-reference-v3.ogg"
+    },
+    "ch": {
+      "keyword": "chip",
+      "targetIPA": "tʃ",
+      "sourcePhones": [
+        "tʃ",
+        "ˈɪ",
+        "p"
+      ],
+      "selectedPhones": [
+        "tʃ"
+      ],
+      "from": 0.087,
+      "to": 0.16,
+      "targetDuration": 0.0670294784580499,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-ch-reference-v3.ogg"
+    },
+    "th": {
+      "keyword": "thin",
+      "targetIPA": "θ",
+      "sourcePhones": [
+        "θ",
+        "ˈɪ",
+        "n"
+      ],
+      "selectedPhones": [
+        "θ"
+      ],
+      "from": 0.021,
+      "to": 0.169,
+      "targetDuration": 0.14199546485260772,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-th-reference-v3.ogg"
+    },
+    "ng": {
+      "keyword": "sing",
+      "targetIPA": "ŋ",
+      "sourcePhones": [
+        "s",
+        "ˈɪ",
+        "ŋ"
+      ],
+      "selectedPhones": [
+        "ŋ"
+      ],
+      "from": 0.643,
+      "to": 0.891,
+      "targetDuration": 0.2419954648526077,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-ng-reference-v3.ogg"
+    },
+    "qu": {
+      "keyword": "queen",
+      "targetIPA": "kw",
+      "sourcePhones": [
+        "k",
+        "w",
+        "ˈiː",
+        "n"
+      ],
+      "selectedPhones": [
+        "k",
+        "w"
+      ],
+      "from": 0.087,
+      "to": 0.407,
+      "targetDuration": 0.3140136054421769,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-qu-reference-v3.ogg"
+    },
+    "ks": {
+      "keyword": "box",
+      "targetIPA": "ks",
+      "sourcePhones": [
+        "b",
+        "ˈɑː",
+        "k",
+        "s"
+      ],
+      "selectedPhones": [
+        "k",
+        "s"
+      ],
+      "from": 0.628,
+      "to": 0.866,
+      "targetDuration": 0.23197278911564626,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-ks-reference-v3.ogg"
+    },
+    "or": {
+      "keyword": "fork",
+      "targetIPA": "ɔɹ",
+      "sourcePhones": [
+        "f",
+        "ˈɔːɹ",
+        "k"
+      ],
+      "selectedPhones": [
+        "ˈɔːɹ"
+      ],
+      "from": 0.157,
+      "to": 0.737,
+      "targetDuration": 0.5740136054421768,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-or-reference-v3.ogg"
+    },
+    "ar": {
+      "keyword": "car",
+      "targetIPA": "ɑɹ",
+      "sourcePhones": [
+        "k",
+        "ˈɑːɹ"
+      ],
+      "selectedPhones": [
+        "ˈɑːɹ"
+      ],
+      "from": 0.143,
+      "to": 0.858,
+      "targetDuration": 0.7090249433106576,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-ar-reference-v3.ogg"
+    },
+    "er": {
+      "keyword": "otter",
+      "targetIPA": "əɹ",
+      "sourcePhones": [
+        "ˈɑː",
+        "ɾ",
+        "ɚ"
+      ],
+      "selectedPhones": [
+        "ɚ"
+      ],
+      "from": 0.516,
+      "to": 0.8,
+      "targetDuration": 0.2780045351473923,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-er-reference-v3.ogg"
+    },
+    "ai": {
+      "keyword": "ape",
+      "targetIPA": "eɪ",
+      "sourcePhones": [
+        "ˈeɪ",
+        "p"
+      ],
+      "selectedPhones": [
+        "ˈeɪ"
+      ],
+      "from": 0,
+      "to": 0.555,
+      "targetDuration": 0.5490249433106575,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-ai-reference-v3.ogg"
+    },
+    "ow": {
+      "keyword": "cow",
+      "targetIPA": "aʊ",
+      "sourcePhones": [
+        "k",
+        "ˈaʊ"
+      ],
+      "selectedPhones": [
+        "ˈaʊ"
+      ],
+      "from": 0.143,
+      "to": 0.825,
+      "targetDuration": 0.6760090702947846,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-ow-reference-v3.ogg"
+    },
+    "oi": {
+      "keyword": "boy",
+      "targetIPA": "ɔɪ",
+      "sourcePhones": [
+        "b",
+        "ˈɔɪ"
+      ],
+      "selectedPhones": [
+        "ˈɔɪ"
+      ],
+      "from": 0.121,
+      "to": 0.854,
+      "targetDuration": 0.7270294784580499,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-oi-reference-v3.ogg"
+    },
+    "air": {
+      "keyword": "chair",
+      "targetIPA": "ɛɹ",
+      "sourcePhones": [
+        "tʃ",
+        "ˈɛɹ"
+      ],
+      "selectedPhones": [
+        "ˈɛɹ"
+      ],
+      "from": 0.16,
+      "to": 0.817,
+      "targetDuration": 0.6510204081632653,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-air-reference-v3.ogg"
+    },
+    "ear": {
+      "keyword": "hear",
+      "targetIPA": "ɪɹ",
+      "sourcePhones": [
+        "h",
+        "ˈɪɹ"
+      ],
+      "selectedPhones": [
+        "ˈɪɹ"
+      ],
+      "from": 0.117,
+      "to": 0.914,
+      "targetDuration": 0.7910204081632654,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-ear-reference-v3.ogg"
+    },
+    "eh": {
+      "keyword": "egg",
+      "targetIPA": "ɛ",
+      "sourcePhones": [
+        "ˈɛ",
+        "ɡ"
+      ],
+      "selectedPhones": [
+        "ˈɛ"
+      ],
+      "from": 0,
+      "to": 0.534,
+      "targetDuration": 0.5280272108843538,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-eh-reference-v3.ogg"
+    },
+    "ah": {
+      "keyword": "ox",
+      "targetIPA": "ɑ",
+      "sourcePhones": [
+        "ˈɑː",
+        "k",
+        "s"
+      ],
+      "selectedPhones": [
+        "ˈɑː"
+      ],
+      "from": 0,
+      "to": 0.531,
+      "targetDuration": 0.5249886621315193,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-ah-reference-v3.ogg"
+    },
+    "uh": {
+      "keyword": "up",
+      "targetIPA": "ʌ",
+      "sourcePhones": [
+        "ˈʌ",
+        "p"
+      ],
+      "selectedPhones": [
+        "ˈʌ"
+      ],
+      "from": 0,
+      "to": 0.463,
+      "targetDuration": 0.45700680272108846,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-uh-reference-v3.ogg"
+    },
+    "aw": {
+      "keyword": "ball",
+      "targetIPA": "ɔ",
+      "sourcePhones": [
+        "b",
+        "ˈɔː",
+        "l"
+      ],
+      "selectedPhones": [
+        "ˈɔː"
+      ],
+      "from": 0.107,
+      "to": 0.776,
+      "targetDuration": 0.6630385487528345,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-aw-reference-v3.ogg"
+    },
+    "eye": {
+      "keyword": "ice",
+      "targetIPA": "aɪ",
+      "sourcePhones": [
+        "ˈaɪ",
+        "s"
+      ],
+      "selectedPhones": [
+        "ˈaɪ"
+      ],
+      "from": 0,
+      "to": 0.53,
+      "targetDuration": 0.5239909297052154,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-eye-reference-v3.ogg"
+    },
+    "oh": {
+      "keyword": "oak",
+      "targetIPA": "oʊ",
+      "sourcePhones": [
+        "ˈoʊ",
+        "k"
+      ],
+      "selectedPhones": [
+        "ˈoʊ"
+      ],
+      "from": 0,
+      "to": 0.567,
+      "targetDuration": 0.5609977324263039,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-oh-reference-v3.ogg"
+    },
+    "yoo": {
+      "keyword": "unit",
+      "targetIPA": "ju",
+      "sourcePhones": [
+        "j",
+        "ˈuː",
+        "n",
+        "ɪ",
+        "t"
+      ],
+      "selectedPhones": [
+        "j",
+        "ˈuː"
+      ],
+      "from": 0,
+      "to": 0.383,
+      "targetDuration": 0.37700680272108844,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-yoo-reference-v3.ogg"
+    },
+    "kw": {
+      "keyword": "queen",
+      "targetIPA": "kw",
+      "sourcePhones": [
+        "k",
+        "w",
+        "ˈiː",
+        "n"
+      ],
+      "selectedPhones": [
+        "k",
+        "w"
+      ],
+      "from": 0.087,
+      "to": 0.407,
+      "targetDuration": 0.3140136054421769,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-kw-reference-v3.ogg"
+    },
+    "schwa": {
+      "keyword": "zebra",
+      "targetIPA": "ə",
+      "sourcePhones": [
+        "z",
+        "ˈiː",
+        "b",
+        "ɹ",
+        "ə"
+      ],
+      "selectedPhones": [
+        "ə"
+      ],
+      "from": 0.718,
+      "to": 0.825,
+      "targetDuration": 0.10099773242630386,
+      "synthesisRate": 80,
+      "timeStretched": false,
+      "file": "audio/phoneme-schwa-reference-v3.ogg"
+    }
+  },
+  "words": [
+    {
+      "word": "ant",
+      "phonemes": [
+        "a",
+        "n",
+        "t"
+      ],
+      "targetIPA": "ænt",
+      "referenceIPA": "ænt"
+    },
+    {
+      "word": "apple",
+      "phonemes": [
+        "a",
+        "p",
+        "schwa",
+        "l"
+      ],
+      "targetIPA": "æpəl",
+      "referenceIPA": "æpəl"
+    },
+    {
+      "word": "acorn",
+      "phonemes": [
+        "ay",
+        "k",
+        "or",
+        "n"
+      ],
+      "targetIPA": "eɪkɔɹn",
+      "referenceIPA": "eɪkɔɹn"
+    },
+    {
+      "word": "ape",
+      "phonemes": [
+        "ay",
+        "p"
+      ],
+      "targetIPA": "eɪp",
+      "referenceIPA": "eɪp"
+    },
+    {
+      "word": "bat",
+      "phonemes": [
+        "b",
+        "a",
+        "t"
+      ],
+      "targetIPA": "bæt",
+      "referenceIPA": "bæt"
+    },
+    {
+      "word": "ball",
+      "phonemes": [
+        "b",
+        "aw",
+        "l"
+      ],
+      "targetIPA": "bɔl",
+      "referenceIPA": "bɔl"
+    },
+    {
+      "word": "bed",
+      "phonemes": [
+        "b",
+        "e",
+        "d"
+      ],
+      "targetIPA": "bɛd",
+      "referenceIPA": "bɛd"
+    },
+    {
+      "word": "boat",
+      "phonemes": [
+        "b",
+        "oh",
+        "t"
+      ],
+      "targetIPA": "boʊt",
+      "referenceIPA": "boʊt"
+    },
+    {
+      "word": "box",
+      "phonemes": [
+        "b",
+        "o",
+        "k",
+        "s"
+      ],
+      "targetIPA": "bɑks",
+      "referenceIPA": "bɑks"
+    },
+    {
+      "word": "cat",
+      "phonemes": [
+        "k",
+        "a",
+        "t"
+      ],
+      "targetIPA": "kæt",
+      "referenceIPA": "kæt"
+    },
+    {
+      "word": "cap",
+      "phonemes": [
+        "k",
+        "a",
+        "p"
+      ],
+      "targetIPA": "kæp",
+      "referenceIPA": "kæp"
+    },
+    {
+      "word": "cake",
+      "phonemes": [
+        "k",
+        "ay",
+        "k"
+      ],
+      "targetIPA": "keɪk",
+      "referenceIPA": "keɪk"
+    },
+    {
+      "word": "car",
+      "phonemes": [
+        "k",
+        "ar"
+      ],
+      "targetIPA": "kɑɹ",
+      "referenceIPA": "kɑɹ"
+    },
+    {
+      "word": "crab",
+      "phonemes": [
+        "k",
+        "r",
+        "a",
+        "b"
+      ],
+      "targetIPA": "kɹæb",
+      "referenceIPA": "kɹæb"
+    },
+    {
+      "word": "clap",
+      "phonemes": [
+        "k",
+        "l",
+        "a",
+        "p"
+      ],
+      "targetIPA": "klæp",
+      "referenceIPA": "klæp"
+    },
+    {
+      "word": "clock",
+      "phonemes": [
+        "k",
+        "l",
+        "o",
+        "k"
+      ],
+      "targetIPA": "klɑk",
+      "referenceIPA": "klɑk"
+    },
+    {
+      "word": "dog",
+      "phonemes": [
+        "d",
+        "o",
+        "g"
+      ],
+      "targetIPA": "dɑɡ",
+      "referenceIPA": "dɑɡ"
+    },
+    {
+      "word": "duck",
+      "phonemes": [
+        "d",
+        "u",
+        "k"
+      ],
+      "targetIPA": "dʌk",
+      "referenceIPA": "dʌk"
+    },
+    {
+      "word": "drum",
+      "phonemes": [
+        "d",
+        "r",
+        "u",
+        "m"
+      ],
+      "targetIPA": "dɹʌm",
+      "referenceIPA": "dɹʌm"
+    },
+    {
+      "word": "dress",
+      "phonemes": [
+        "d",
+        "r",
+        "e",
+        "s"
+      ],
+      "targetIPA": "dɹɛs",
+      "referenceIPA": "dɹɛs"
+    },
+    {
+      "word": "egg",
+      "phonemes": [
+        "e",
+        "g"
+      ],
+      "targetIPA": "ɛɡ",
+      "referenceIPA": "ɛɡ"
+    },
+    {
+      "word": "elf",
+      "phonemes": [
+        "e",
+        "l",
+        "f"
+      ],
+      "targetIPA": "ɛlf",
+      "referenceIPA": "ɛlf"
+    },
+    {
+      "word": "eel",
+      "phonemes": [
+        "ee",
+        "l"
+      ],
+      "targetIPA": "il",
+      "referenceIPA": "il"
+    },
+    {
+      "word": "emu",
+      "phonemes": [
+        "ee",
+        "m",
+        "yoo"
+      ],
+      "targetIPA": "imju",
+      "referenceIPA": "imju"
+    },
+    {
+      "word": "fan",
+      "phonemes": [
+        "f",
+        "a",
+        "n"
+      ],
+      "targetIPA": "fæn",
+      "referenceIPA": "fæn"
+    },
+    {
+      "word": "fish",
+      "phonemes": [
+        "f",
+        "i",
+        "sh"
+      ],
+      "targetIPA": "fɪʃ",
+      "referenceIPA": "fɪʃ"
+    },
+    {
+      "word": "flag",
+      "phonemes": [
+        "f",
+        "l",
+        "a",
+        "g"
+      ],
+      "targetIPA": "flæɡ",
+      "referenceIPA": "flæɡ"
+    },
+    {
+      "word": "frog",
+      "phonemes": [
+        "f",
+        "r",
+        "o",
+        "g"
+      ],
+      "targetIPA": "fɹɑɡ",
+      "referenceIPA": "fɹɑɡ"
+    },
+    {
+      "word": "fox",
+      "phonemes": [
+        "f",
+        "o",
+        "k",
+        "s"
+      ],
+      "targetIPA": "fɑks",
+      "referenceIPA": "fɑks"
+    },
+    {
+      "word": "goat",
+      "phonemes": [
+        "g",
+        "oh",
+        "t"
+      ],
+      "targetIPA": "ɡoʊt",
+      "referenceIPA": "ɡoʊt"
+    },
+    {
+      "word": "gate",
+      "phonemes": [
+        "g",
+        "ay",
+        "t"
+      ],
+      "targetIPA": "ɡeɪt",
+      "referenceIPA": "ɡeɪt"
+    },
+    {
+      "word": "gift",
+      "phonemes": [
+        "g",
+        "i",
+        "f",
+        "t"
+      ],
+      "targetIPA": "ɡɪft",
+      "referenceIPA": "ɡɪft"
+    },
+    {
+      "word": "gem",
+      "phonemes": [
+        "j",
+        "e",
+        "m"
+      ],
+      "targetIPA": "dʒɛm",
+      "referenceIPA": "dʒɛm"
+    },
+    {
+      "word": "hat",
+      "phonemes": [
+        "h",
+        "a",
+        "t"
+      ],
+      "targetIPA": "hæt",
+      "referenceIPA": "hæt"
+    },
+    {
+      "word": "hen",
+      "phonemes": [
+        "h",
+        "e",
+        "n"
+      ],
+      "targetIPA": "hɛn",
+      "referenceIPA": "hɛn"
+    },
+    {
+      "word": "hand",
+      "phonemes": [
+        "h",
+        "a",
+        "n",
+        "d"
+      ],
+      "targetIPA": "hænd",
+      "referenceIPA": "hænd"
+    },
+    {
+      "word": "hill",
+      "phonemes": [
+        "h",
+        "i",
+        "l"
+      ],
+      "targetIPA": "hɪl",
+      "referenceIPA": "hɪl"
+    },
+    {
+      "word": "insect",
+      "phonemes": [
+        "i",
+        "n",
+        "s",
+        "e",
+        "k",
+        "t"
+      ],
+      "targetIPA": "ɪnsɛkt",
+      "referenceIPA": "ɪnsɛkt"
+    },
+    {
+      "word": "ink",
+      "phonemes": [
+        "i",
+        "ng",
+        "k"
+      ],
+      "targetIPA": "ɪŋk",
+      "referenceIPA": "ɪŋk"
+    },
+    {
+      "word": "ice",
+      "phonemes": [
+        "eye",
+        "s"
+      ],
+      "targetIPA": "aɪs",
+      "referenceIPA": "aɪs"
+    },
+    {
+      "word": "ivy",
+      "phonemes": [
+        "eye",
+        "v",
+        "ee"
+      ],
+      "targetIPA": "aɪvi",
+      "referenceIPA": "aɪvi"
+    },
+    {
+      "word": "jam",
+      "phonemes": [
+        "j",
+        "a",
+        "m"
+      ],
+      "targetIPA": "dʒæm",
+      "referenceIPA": "dʒæm"
+    },
+    {
+      "word": "jet",
+      "phonemes": [
+        "j",
+        "e",
+        "t"
+      ],
+      "targetIPA": "dʒɛt",
+      "referenceIPA": "dʒɛt"
+    },
+    {
+      "word": "jug",
+      "phonemes": [
+        "j",
+        "u",
+        "g"
+      ],
+      "targetIPA": "dʒʌɡ",
+      "referenceIPA": "dʒʌɡ"
+    },
+    {
+      "word": "king",
+      "phonemes": [
+        "k",
+        "i",
+        "ng"
+      ],
+      "targetIPA": "kɪŋ",
+      "referenceIPA": "kɪŋ"
+    },
+    {
+      "word": "kite",
+      "phonemes": [
+        "k",
+        "eye",
+        "t"
+      ],
+      "targetIPA": "kaɪt",
+      "referenceIPA": "kaɪt"
+    },
+    {
+      "word": "kitten",
+      "phonemes": [
+        "k",
+        "i",
+        "t",
+        "schwa",
+        "n"
+      ],
+      "targetIPA": "kɪtən",
+      "referenceIPA": "kɪʔn̩",
+      "variant": "Teaching pronunciation uses t + schwa + n; reference has an American glottal stop and syllabic n."
+    },
+    {
+      "word": "log",
+      "phonemes": [
+        "l",
+        "aw",
+        "g"
+      ],
+      "targetIPA": "lɔɡ",
+      "referenceIPA": "lɔɡ"
+    },
+    {
+      "word": "leg",
+      "phonemes": [
+        "l",
+        "e",
+        "g"
+      ],
+      "targetIPA": "lɛɡ",
+      "referenceIPA": "lɛɡ"
+    },
+    {
+      "word": "lamp",
+      "phonemes": [
+        "l",
+        "a",
+        "m",
+        "p"
+      ],
+      "targetIPA": "læmp",
+      "referenceIPA": "læmp"
+    },
+    {
+      "word": "land",
+      "phonemes": [
+        "l",
+        "a",
+        "n",
+        "d"
+      ],
+      "targetIPA": "lænd",
+      "referenceIPA": "lænd"
+    },
+    {
+      "word": "map",
+      "phonemes": [
+        "m",
+        "a",
+        "p"
+      ],
+      "targetIPA": "mæp",
+      "referenceIPA": "mæp"
+    },
+    {
+      "word": "moon",
+      "phonemes": [
+        "m",
+        "oo",
+        "n"
+      ],
+      "targetIPA": "mun",
+      "referenceIPA": "mun"
+    },
+    {
+      "word": "mop",
+      "phonemes": [
+        "m",
+        "o",
+        "p"
+      ],
+      "targetIPA": "mɑp",
+      "referenceIPA": "mɑp"
+    },
+    {
+      "word": "mouse",
+      "phonemes": [
+        "m",
+        "ow",
+        "s"
+      ],
+      "targetIPA": "maʊs",
+      "referenceIPA": "maʊs"
+    },
+    {
+      "word": "nest",
+      "phonemes": [
+        "n",
+        "e",
+        "s",
+        "t"
+      ],
+      "targetIPA": "nɛst",
+      "referenceIPA": "nɛst"
+    },
+    {
+      "word": "net",
+      "phonemes": [
+        "n",
+        "e",
+        "t"
+      ],
+      "targetIPA": "nɛt",
+      "referenceIPA": "nɛt"
+    },
+    {
+      "word": "nose",
+      "phonemes": [
+        "n",
+        "oh",
+        "z"
+      ],
+      "targetIPA": "noʊz",
+      "referenceIPA": "noʊz"
+    },
+    {
+      "word": "nut",
+      "phonemes": [
+        "n",
+        "u",
+        "t"
+      ],
+      "targetIPA": "nʌt",
+      "referenceIPA": "nʌt"
+    },
+    {
+      "word": "ox",
+      "phonemes": [
+        "o",
+        "k",
+        "s"
+      ],
+      "targetIPA": "ɑks",
+      "referenceIPA": "ɑks"
+    },
+    {
+      "word": "otter",
+      "phonemes": [
+        "o",
+        "t",
+        "er"
+      ],
+      "targetIPA": "ɑtəɹ",
+      "referenceIPA": "ɑtəɹ"
+    },
+    {
+      "word": "oak",
+      "phonemes": [
+        "oh",
+        "k"
+      ],
+      "targetIPA": "oʊk",
+      "referenceIPA": "oʊk"
+    },
+    {
+      "word": "oat",
+      "phonemes": [
+        "oh",
+        "t"
+      ],
+      "targetIPA": "oʊt",
+      "referenceIPA": "oʊt"
+    },
+    {
+      "word": "pig",
+      "phonemes": [
+        "p",
+        "i",
+        "g"
+      ],
+      "targetIPA": "pɪɡ",
+      "referenceIPA": "pɪɡ"
+    },
+    {
+      "word": "pen",
+      "phonemes": [
+        "p",
+        "e",
+        "n"
+      ],
+      "targetIPA": "pɛn",
+      "referenceIPA": "pɛn"
+    },
+    {
+      "word": "pan",
+      "phonemes": [
+        "p",
+        "a",
+        "n"
+      ],
+      "targetIPA": "pæn",
+      "referenceIPA": "pæn"
+    },
+    {
+      "word": "plant",
+      "phonemes": [
+        "p",
+        "l",
+        "a",
+        "n",
+        "t"
+      ],
+      "targetIPA": "plænt",
+      "referenceIPA": "plænt"
+    },
+    {
+      "word": "plum",
+      "phonemes": [
+        "p",
+        "l",
+        "u",
+        "m"
+      ],
+      "targetIPA": "plʌm",
+      "referenceIPA": "plʌm"
+    },
+    {
+      "word": "queen",
+      "phonemes": [
+        "k",
+        "w",
+        "ee",
+        "n"
+      ],
+      "targetIPA": "kwin",
+      "referenceIPA": "kwin"
+    },
+    {
+      "word": "quilt",
+      "phonemes": [
+        "k",
+        "w",
+        "i",
+        "l",
+        "t"
+      ],
+      "targetIPA": "kwɪlt",
+      "referenceIPA": "kwɪlt"
+    },
+    {
+      "word": "rat",
+      "phonemes": [
+        "r",
+        "a",
+        "t"
+      ],
+      "targetIPA": "ɹæt",
+      "referenceIPA": "ɹæt"
+    },
+    {
+      "word": "red",
+      "phonemes": [
+        "r",
+        "e",
+        "d"
+      ],
+      "targetIPA": "ɹɛd",
+      "referenceIPA": "ɹɛd"
+    },
+    {
+      "word": "ring",
+      "phonemes": [
+        "r",
+        "i",
+        "ng"
+      ],
+      "targetIPA": "ɹɪŋ",
+      "referenceIPA": "ɹɪŋ"
+    },
+    {
+      "word": "rain",
+      "phonemes": [
+        "r",
+        "ay",
+        "n"
+      ],
+      "targetIPA": "ɹeɪn",
+      "referenceIPA": "ɹeɪn"
+    },
+    {
+      "word": "sun",
+      "phonemes": [
+        "s",
+        "u",
+        "n"
+      ],
+      "targetIPA": "sʌn",
+      "referenceIPA": "sʌn"
+    },
+    {
+      "word": "sock",
+      "phonemes": [
+        "s",
+        "o",
+        "k"
+      ],
+      "targetIPA": "sɑk",
+      "referenceIPA": "sɑk"
+    },
+    {
+      "word": "star",
+      "phonemes": [
+        "s",
+        "t",
+        "ar"
+      ],
+      "targetIPA": "stɑɹ",
+      "referenceIPA": "stɑɹ"
+    },
+    {
+      "word": "stop",
+      "phonemes": [
+        "s",
+        "t",
+        "o",
+        "p"
+      ],
+      "targetIPA": "stɑp",
+      "referenceIPA": "stɑp"
+    },
+    {
+      "word": "snail",
+      "phonemes": [
+        "s",
+        "n",
+        "ay",
+        "l"
+      ],
+      "targetIPA": "sneɪl",
+      "referenceIPA": "sneɪl"
+    },
+    {
+      "word": "snow",
+      "phonemes": [
+        "s",
+        "n",
+        "oh"
+      ],
+      "targetIPA": "snoʊ",
+      "referenceIPA": "snoʊ"
+    },
+    {
+      "word": "top",
+      "phonemes": [
+        "t",
+        "o",
+        "p"
+      ],
+      "targetIPA": "tɑp",
+      "referenceIPA": "tɑp"
+    },
+    {
+      "word": "tree",
+      "phonemes": [
+        "t",
+        "r",
+        "ee"
+      ],
+      "targetIPA": "tɹi",
+      "referenceIPA": "tɹi"
+    },
+    {
+      "word": "tent",
+      "phonemes": [
+        "t",
+        "e",
+        "n",
+        "t"
+      ],
+      "targetIPA": "tɛnt",
+      "referenceIPA": "tɛnt"
+    },
+    {
+      "word": "train",
+      "phonemes": [
+        "t",
+        "r",
+        "ay",
+        "n"
+      ],
+      "targetIPA": "tɹeɪn",
+      "referenceIPA": "tɹeɪn"
+    },
+    {
+      "word": "up",
+      "phonemes": [
+        "u",
+        "p"
+      ],
+      "targetIPA": "ʌp",
+      "referenceIPA": "ʌp"
+    },
+    {
+      "word": "umbrella",
+      "phonemes": [
+        "u",
+        "m",
+        "b",
+        "r",
+        "e",
+        "l",
+        "schwa"
+      ],
+      "targetIPA": "ʌmbɹɛlə",
+      "referenceIPA": "ʌmbɹɛlə"
+    },
+    {
+      "word": "unicorn",
+      "phonemes": [
+        "yoo",
+        "n",
+        "i",
+        "k",
+        "or",
+        "n"
+      ],
+      "targetIPA": "junɪkɔɹn",
+      "referenceIPA": "junɪkɔɹn"
+    },
+    {
+      "word": "unit",
+      "phonemes": [
+        "yoo",
+        "n",
+        "i",
+        "t"
+      ],
+      "targetIPA": "junɪt",
+      "referenceIPA": "junɪt"
+    },
+    {
+      "word": "van",
+      "phonemes": [
+        "v",
+        "a",
+        "n"
+      ],
+      "targetIPA": "væn",
+      "referenceIPA": "væn"
+    },
+    {
+      "word": "vest",
+      "phonemes": [
+        "v",
+        "e",
+        "s",
+        "t"
+      ],
+      "targetIPA": "vɛst",
+      "referenceIPA": "vɛst"
+    },
+    {
+      "word": "vet",
+      "phonemes": [
+        "v",
+        "e",
+        "t"
+      ],
+      "targetIPA": "vɛt",
+      "referenceIPA": "vɛt"
+    },
+    {
+      "word": "web",
+      "phonemes": [
+        "w",
+        "e",
+        "b"
+      ],
+      "targetIPA": "wɛb",
+      "referenceIPA": "wɛb"
+    },
+    {
+      "word": "wig",
+      "phonemes": [
+        "w",
+        "i",
+        "g"
+      ],
+      "targetIPA": "wɪɡ",
+      "referenceIPA": "wɪɡ"
+    },
+    {
+      "word": "wing",
+      "phonemes": [
+        "w",
+        "i",
+        "ng"
+      ],
+      "targetIPA": "wɪŋ",
+      "referenceIPA": "wɪŋ"
+    },
+    {
+      "word": "xylophone",
+      "phonemes": [
+        "z",
+        "eye",
+        "l",
+        "schwa",
+        "f",
+        "oh",
+        "n"
+      ],
+      "targetIPA": "zaɪləfoʊn",
+      "referenceIPA": "zaɪləfoʊn"
+    },
+    {
+      "word": "yak",
+      "phonemes": [
+        "y",
+        "a",
+        "k"
+      ],
+      "targetIPA": "jæk",
+      "referenceIPA": "jæk"
+    },
+    {
+      "word": "yarn",
+      "phonemes": [
+        "y",
+        "ar",
+        "n"
+      ],
+      "targetIPA": "jɑɹn",
+      "referenceIPA": "jɑɹn"
+    },
+    {
+      "word": "yellow",
+      "phonemes": [
+        "y",
+        "e",
+        "l",
+        "oh"
+      ],
+      "targetIPA": "jɛloʊ",
+      "referenceIPA": "jɛloʊ"
+    },
+    {
+      "word": "zebra",
+      "phonemes": [
+        "z",
+        "ee",
+        "b",
+        "r",
+        "schwa"
+      ],
+      "targetIPA": "zibɹə",
+      "referenceIPA": "zibɹə"
+    },
+    {
+      "word": "zip",
+      "phonemes": [
+        "z",
+        "i",
+        "p"
+      ],
+      "targetIPA": "zɪp",
+      "referenceIPA": "zɪp"
+    },
+    {
+      "word": "zoo",
+      "phonemes": [
+        "z",
+        "oo"
+      ],
+      "targetIPA": "zu",
+      "referenceIPA": "zu"
+    },
+    {
+      "word": "blue",
+      "phonemes": [
+        "b",
+        "l",
+        "oo"
+      ],
+      "targetIPA": "blu",
+      "referenceIPA": "blu"
+    },
+    {
+      "word": "glue",
+      "phonemes": [
+        "g",
+        "l",
+        "oo"
+      ],
+      "targetIPA": "ɡlu",
+      "referenceIPA": "ɡlu"
+    },
+    {
+      "word": "bell",
+      "phonemes": [
+        "b",
+        "e",
+        "l"
+      ],
+      "targetIPA": "bɛl",
+      "referenceIPA": "bɛl"
+    },
+    {
+      "word": "shell",
+      "phonemes": [
+        "sh",
+        "e",
+        "l"
+      ],
+      "targetIPA": "ʃɛl",
+      "referenceIPA": "ʃɛl"
+    },
+    {
+      "word": "well",
+      "phonemes": [
+        "w",
+        "e",
+        "l"
+      ],
+      "targetIPA": "wɛl",
+      "referenceIPA": "wɛl"
+    }
+  ]
+}

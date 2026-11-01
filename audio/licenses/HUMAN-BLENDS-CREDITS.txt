@@ -1,0 +1,5 @@
+The following adapted blend recordings incorporate human phonics sources credited in HUMAN-PHONICS-CREDITS.txt. These blend adaptations are distributed under CC BY-SA 3.0: https://creativecommons.org/licenses/by-sa/3.0/
+Changes: natural sound segment with trailing silence trimmed, gain/edge fades, joined to generated consonant(s), mono/resampling/Ogg encoding; no stretching or looping of human audio.
+audio/blend-flag-fl-v4.ogg — audio/phoneme-f-human-v1.ogg
+audio/blend-frog-fr-v4.ogg — audio/phoneme-f-human-v1.ogg
+audio/blend-gift-ft-v4.ogg — audio/phoneme-f-human-v1.ogg

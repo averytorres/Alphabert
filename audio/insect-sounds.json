@@ -1,0 +1,62 @@
+[
+  {
+    "token": "i",
+    "ipa": "ɪ",
+    "from": 0.003,
+    "to": 0.23936000000000002,
+    "seconds": 0.4500226757369615,
+    "sustained": true,
+    "playbackRate": 1,
+    "file": "audio/word-phoneme-insect-0-v2.ogg"
+  },
+  {
+    "token": "n",
+    "ipa": "n",
+    "from": 0.275,
+    "to": 0.41104,
+    "seconds": 0.4500226757369615,
+    "sustained": true,
+    "playbackRate": 1,
+    "file": "audio/word-phoneme-insect-1-v2.ogg"
+  },
+  {
+    "token": "s",
+    "ipa": "s",
+    "from": 0.433,
+    "to": 0.5452800000000001,
+    "seconds": 0.4500226757369615,
+    "sustained": true,
+    "playbackRate": 1,
+    "file": "audio/word-phoneme-insect-2-v2.ogg"
+  },
+  {
+    "token": "e",
+    "ipa": "ɛ",
+    "from": 0.5640000000000001,
+    "to": 0.78188,
+    "seconds": 0.4500226757369615,
+    "sustained": true,
+    "playbackRate": 1,
+    "file": "audio/word-phoneme-insect-3-v2.ogg"
+  },
+  {
+    "token": "k",
+    "ipa": "k",
+    "from": 0.8150000000000001,
+    "to": 0.951,
+    "seconds": 0.13600907029478457,
+    "sustained": false,
+    "playbackRate": 1,
+    "file": "audio/word-phoneme-insect-4-v2.ogg"
+  },
+  {
+    "token": "t",
+    "ipa": "t",
+    "from": 0.958,
+    "to": 1.006,
+    "seconds": 0.04798185941043084,
+    "sustained": false,
+    "playbackRate": 1,
+    "file": "audio/word-phoneme-insect-5-v2.ogg"
+  }
+]

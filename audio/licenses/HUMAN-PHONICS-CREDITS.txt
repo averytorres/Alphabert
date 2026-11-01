@@ -1,0 +1,31 @@
+Human phonics recordings — CC BY-SA 3.0
+License: https://creativecommons.org/licenses/by-sa/3.0/
+These adapted audio files remain available under CC BY-SA 3.0. No endorsement is implied.
+
+audio/phoneme-ee-human-v1.ogg
+IPA: i
+Creator: Denelson83
+Source: https://commons.wikimedia.org/wiki/File:Close_front_unrounded_vowel.ogg
+Original SHA256: b56dd3aaa59b5a7b1dc61892d1386652d5937fb0eccca8fe8e7faaea6b90b69d
+Changes: Gain, mono conversion and resampling; original duration retained
+
+audio/phoneme-e-human-v1.ogg
+IPA: ɛ
+Creator: Terfili; original upload by Denelson83
+Source: https://commons.wikimedia.org/wiki/File:Open-mid_front_unrounded_vowel.ogg
+Original SHA256: dbc669c265420874b1473283d51daed1ad047fa41e45bd0486aa9b4627423643
+Changes: Gain, mono conversion and resampling; original duration retained
+
+audio/phoneme-i-human-v1.ogg
+IPA: ɪ
+Creator: Denelson83
+Source: https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg
+Original SHA256: 3c07d0a3b413821a926d46286c7631de22119e5dff24f1971bb46b577cb5cbee
+Changes: Gain, mono conversion and resampling; original duration retained
+
+audio/phoneme-f-human-v1.ogg
+IPA: f
+Creator: Peter Isotalo
+Source: https://commons.wikimedia.org/wiki/File:Voiceless_labiodental_fricative.ogg
+Original SHA256: 72176c9094f87ee551ad6c2b280a378a5526b2829b4baf6654c1a093511886a0
+Changes: Cropped the natural unvoiced F between the source vowels; edge fades; gain, mono conversion and resampling

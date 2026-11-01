@@ -1,0 +1,1122 @@
+[
+  {
+    "word": "crab",
+    "blend": "cr",
+    "tokens": [
+      "k",
+      "r"
+    ],
+    "ipa": "kɹ",
+    "selectedPhones": [
+      "k",
+      "ɹ"
+    ],
+    "segments": [
+      {
+        "token": "k",
+        "seconds": 0.06104308390022676,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-k-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      },
+      {
+        "token": "r",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-r-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.5360544217687074,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-crab-cr-v4.ogg"
+  },
+  {
+    "word": "clap",
+    "blend": "cl",
+    "tokens": [
+      "k",
+      "l"
+    ],
+    "ipa": "kl",
+    "selectedPhones": [
+      "k",
+      "l"
+    ],
+    "segments": [
+      {
+        "token": "k",
+        "seconds": 0.06104308390022676,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-k-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      },
+      {
+        "token": "l",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-l-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.5360544217687074,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-clap-cl-v4.ogg"
+  },
+  {
+    "word": "clock",
+    "blend": "cl",
+    "tokens": [
+      "k",
+      "l"
+    ],
+    "ipa": "kl",
+    "selectedPhones": [
+      "k",
+      "l"
+    ],
+    "segments": [
+      {
+        "token": "k",
+        "seconds": 0.06104308390022676,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-k-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      },
+      {
+        "token": "l",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-l-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.5360544217687074,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-clock-cl-v4.ogg"
+  },
+  {
+    "word": "drum",
+    "blend": "dr",
+    "tokens": [
+      "d",
+      "r"
+    ],
+    "ipa": "dɹ",
+    "selectedPhones": [
+      "d",
+      "ɹ"
+    ],
+    "segments": [
+      {
+        "token": "d",
+        "seconds": 0.08,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-d-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      },
+      {
+        "token": "r",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-r-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.5550113378684808,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-drum-dr-v4.ogg"
+  },
+  {
+    "word": "dress",
+    "blend": "dr",
+    "tokens": [
+      "d",
+      "r"
+    ],
+    "ipa": "dɹ",
+    "selectedPhones": [
+      "d",
+      "ɹ"
+    ],
+    "segments": [
+      {
+        "token": "d",
+        "seconds": 0.08,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-d-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      },
+      {
+        "token": "r",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-r-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.5550113378684808,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-dress-dr-v4.ogg"
+  },
+  {
+    "word": "flag",
+    "blend": "fl",
+    "tokens": [
+      "f",
+      "l"
+    ],
+    "ipa": "fl",
+    "selectedPhones": [
+      "f",
+      "l"
+    ],
+    "segments": [
+      {
+        "token": "f",
+        "seconds": 0.35591836734693877,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-f-human-v1.ogg",
+        "human": true,
+        "looped": false
+      },
+      {
+        "token": "l",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-l-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.8309297052154195,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-flag-fl-v4.ogg"
+  },
+  {
+    "word": "frog",
+    "blend": "fr",
+    "tokens": [
+      "f",
+      "r"
+    ],
+    "ipa": "fɹ",
+    "selectedPhones": [
+      "f",
+      "ɹ"
+    ],
+    "segments": [
+      {
+        "token": "f",
+        "seconds": 0.35591836734693877,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-f-human-v1.ogg",
+        "human": true,
+        "looped": false
+      },
+      {
+        "token": "r",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-r-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.8309297052154195,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-frog-fr-v4.ogg"
+  },
+  {
+    "word": "gift",
+    "blend": "ft",
+    "tokens": [
+      "f",
+      "t"
+    ],
+    "ipa": "ft",
+    "selectedPhones": [
+      "f",
+      "t"
+    ],
+    "segments": [
+      {
+        "token": "f",
+        "seconds": 0.35591836734693877,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-f-human-v1.ogg",
+        "human": true,
+        "looped": false
+      },
+      {
+        "token": "t",
+        "seconds": 0.04897959183673469,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-t-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.3999092970521542,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-gift-ft-v4.ogg"
+  },
+  {
+    "word": "hand",
+    "blend": "nd",
+    "tokens": [
+      "n",
+      "d"
+    ],
+    "ipa": "nd",
+    "selectedPhones": [
+      "n",
+      "d"
+    ],
+    "segments": [
+      {
+        "token": "n",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-n-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "d",
+        "seconds": 0.08,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-d-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.5550113378684808,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-hand-nd-v4.ogg"
+  },
+  {
+    "word": "insect",
+    "blend": "ct",
+    "tokens": [
+      "k",
+      "t"
+    ],
+    "ipa": "kt",
+    "selectedPhones": [
+      "k",
+      "t"
+    ],
+    "segments": [
+      {
+        "token": "k",
+        "seconds": 0.06104308390022676,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-k-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      },
+      {
+        "token": "t",
+        "seconds": 0.04897959183673469,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-t-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.10503401360544218,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-insect-ct-v4.ogg"
+  },
+  {
+    "word": "ink",
+    "blend": "nk",
+    "tokens": [
+      "ng",
+      "k"
+    ],
+    "ipa": "ŋk",
+    "selectedPhones": [
+      "ŋ",
+      "k"
+    ],
+    "segments": [
+      {
+        "token": "ng",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-ng-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "k",
+        "seconds": 0.06104308390022676,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-k-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.5360544217687074,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-ink-nk-v4.ogg"
+  },
+  {
+    "word": "lamp",
+    "blend": "mp",
+    "tokens": [
+      "m",
+      "p"
+    ],
+    "ipa": "mp",
+    "selectedPhones": [
+      "m",
+      "p"
+    ],
+    "segments": [
+      {
+        "token": "m",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-m-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "p",
+        "seconds": 0.08698412698412698,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-p-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.5619954648526078,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-lamp-mp-v4.ogg"
+  },
+  {
+    "word": "land",
+    "blend": "nd",
+    "tokens": [
+      "n",
+      "d"
+    ],
+    "ipa": "nd",
+    "selectedPhones": [
+      "n",
+      "d"
+    ],
+    "segments": [
+      {
+        "token": "n",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-n-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "d",
+        "seconds": 0.08,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-d-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.5550113378684808,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-land-nd-v4.ogg"
+  },
+  {
+    "word": "nest",
+    "blend": "st",
+    "tokens": [
+      "s",
+      "t"
+    ],
+    "ipa": "st",
+    "selectedPhones": [
+      "s",
+      "t"
+    ],
+    "segments": [
+      {
+        "token": "s",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-s-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "t",
+        "seconds": 0.04897959183673469,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-t-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.5239909297052154,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-nest-st-v4.ogg"
+  },
+  {
+    "word": "plant",
+    "blend": "pl",
+    "tokens": [
+      "p",
+      "l"
+    ],
+    "ipa": "pl",
+    "selectedPhones": [
+      "p",
+      "l"
+    ],
+    "segments": [
+      {
+        "token": "p",
+        "seconds": 0.08698412698412698,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-p-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      },
+      {
+        "token": "l",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-l-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.5619954648526078,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-plant-pl-v4.ogg"
+  },
+  {
+    "word": "plant",
+    "blend": "nt",
+    "tokens": [
+      "n",
+      "t"
+    ],
+    "ipa": "nt",
+    "selectedPhones": [
+      "n",
+      "t"
+    ],
+    "segments": [
+      {
+        "token": "n",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-n-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "t",
+        "seconds": 0.04897959183673469,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-t-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.5239909297052154,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-plant-nt-v4.ogg"
+  },
+  {
+    "word": "plum",
+    "blend": "pl",
+    "tokens": [
+      "p",
+      "l"
+    ],
+    "ipa": "pl",
+    "selectedPhones": [
+      "p",
+      "l"
+    ],
+    "segments": [
+      {
+        "token": "p",
+        "seconds": 0.08698412698412698,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-p-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      },
+      {
+        "token": "l",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-l-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.5619954648526078,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-plum-pl-v4.ogg"
+  },
+  {
+    "word": "quilt",
+    "blend": "lt",
+    "tokens": [
+      "l",
+      "t"
+    ],
+    "ipa": "lt",
+    "selectedPhones": [
+      "l",
+      "t"
+    ],
+    "segments": [
+      {
+        "token": "l",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-l-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "t",
+        "seconds": 0.04897959183673469,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-t-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.5239909297052154,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-quilt-lt-v4.ogg"
+  },
+  {
+    "word": "star",
+    "blend": "st",
+    "tokens": [
+      "s",
+      "t"
+    ],
+    "ipa": "st",
+    "selectedPhones": [
+      "s",
+      "t"
+    ],
+    "segments": [
+      {
+        "token": "s",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-s-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "t",
+        "seconds": 0.04897959183673469,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-t-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.5239909297052154,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-star-st-v4.ogg"
+  },
+  {
+    "word": "stop",
+    "blend": "st",
+    "tokens": [
+      "s",
+      "t"
+    ],
+    "ipa": "st",
+    "selectedPhones": [
+      "s",
+      "t"
+    ],
+    "segments": [
+      {
+        "token": "s",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-s-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "t",
+        "seconds": 0.04897959183673469,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-t-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.5239909297052154,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-stop-st-v4.ogg"
+  },
+  {
+    "word": "snail",
+    "blend": "sn",
+    "tokens": [
+      "s",
+      "n"
+    ],
+    "ipa": "sn",
+    "selectedPhones": [
+      "s",
+      "n"
+    ],
+    "segments": [
+      {
+        "token": "s",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-s-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "n",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-n-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.9550113378684807,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-snail-sn-v4.ogg"
+  },
+  {
+    "word": "snow",
+    "blend": "sn",
+    "tokens": [
+      "s",
+      "n"
+    ],
+    "ipa": "sn",
+    "selectedPhones": [
+      "s",
+      "n"
+    ],
+    "segments": [
+      {
+        "token": "s",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-s-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "n",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-n-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.9550113378684807,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-snow-sn-v4.ogg"
+  },
+  {
+    "word": "tree",
+    "blend": "tr",
+    "tokens": [
+      "t",
+      "r"
+    ],
+    "ipa": "tɹ",
+    "selectedPhones": [
+      "t",
+      "ɹ"
+    ],
+    "segments": [
+      {
+        "token": "t",
+        "seconds": 0.04897959183673469,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-t-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      },
+      {
+        "token": "r",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-r-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.5239909297052154,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-tree-tr-v4.ogg"
+  },
+  {
+    "word": "tent",
+    "blend": "nt",
+    "tokens": [
+      "n",
+      "t"
+    ],
+    "ipa": "nt",
+    "selectedPhones": [
+      "n",
+      "t"
+    ],
+    "segments": [
+      {
+        "token": "n",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-n-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "t",
+        "seconds": 0.04897959183673469,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-t-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.5239909297052154,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-tent-nt-v4.ogg"
+  },
+  {
+    "word": "train",
+    "blend": "tr",
+    "tokens": [
+      "t",
+      "r"
+    ],
+    "ipa": "tɹ",
+    "selectedPhones": [
+      "t",
+      "ɹ"
+    ],
+    "segments": [
+      {
+        "token": "t",
+        "seconds": 0.04897959183673469,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-t-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      },
+      {
+        "token": "r",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-r-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.5239909297052154,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-train-tr-v4.ogg"
+  },
+  {
+    "word": "vest",
+    "blend": "st",
+    "tokens": [
+      "s",
+      "t"
+    ],
+    "ipa": "st",
+    "selectedPhones": [
+      "s",
+      "t"
+    ],
+    "segments": [
+      {
+        "token": "s",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-s-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      },
+      {
+        "token": "t",
+        "seconds": 0.04897959183673469,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-t-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      }
+    ],
+    "seconds": 0.5239909297052154,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-vest-st-v4.ogg"
+  },
+  {
+    "word": "blue",
+    "blend": "bl",
+    "tokens": [
+      "b",
+      "l"
+    ],
+    "ipa": "bl",
+    "selectedPhones": [
+      "b",
+      "l"
+    ],
+    "segments": [
+      {
+        "token": "b",
+        "seconds": 0.08,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-b-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      },
+      {
+        "token": "l",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-l-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.5550113378684808,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-blue-bl-v4.ogg"
+  },
+  {
+    "word": "glue",
+    "blend": "gl",
+    "tokens": [
+      "g",
+      "l"
+    ],
+    "ipa": "ɡl",
+    "selectedPhones": [
+      "ɡ",
+      "l"
+    ],
+    "segments": [
+      {
+        "token": "g",
+        "seconds": 0.08104308390022676,
+        "sustained": false,
+        "steadyRelease": false,
+        "sourceEndFraction": 1,
+        "source": "audio/phoneme-g-reference-v3.ogg",
+        "human": false,
+        "looped": false
+      },
+      {
+        "token": "l",
+        "seconds": 0.48,
+        "sustained": true,
+        "steadyRelease": true,
+        "sourceEndFraction": 0.6,
+        "source": "audio/phoneme-l-reference-v3.ogg",
+        "human": false,
+        "looped": true
+      }
+    ],
+    "seconds": 0.5560544217687075,
+    "playbackRate": 1,
+    "timeStretched": false,
+    "method": "Isolated consonants; continuous sounds exclude keyword-boundary tails and fade cleanly",
+    "file": "audio/blend-glue-gl-v4.ogg"
+  }
+]

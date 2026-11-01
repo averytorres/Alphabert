@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "sounds": {
+    "ee": {
+      "token": "ee",
+      "ipa": "i",
+      "title": "Close_front_unrounded_vowel.ogg",
+      "author": "Denelson83",
+      "media": "9/91/Close_front_unrounded_vowel.ogg",
+      "file": "audio/phoneme-ee-human-v1.ogg",
+      "url": "https://commons.wikimedia.org/wiki/File:Close_front_unrounded_vowel.ogg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/9/91/Close_front_unrounded_vowel.ogg",
+      "sha256": "b56dd3aaa59b5a7b1dc61892d1386652d5937fb0eccca8fe8e7faaea6b90b69d",
+      "playbackRate": 1,
+      "looped": false,
+      "timeStretched": false,
+      "changes": "Gain, mono conversion and resampling; original duration retained"
+    },
+    "e": {
+      "token": "e",
+      "ipa": "ɛ",
+      "title": "Open-mid_front_unrounded_vowel.ogg",
+      "author": "Terfili; original upload by Denelson83",
+      "media": "7/71/Open-mid_front_unrounded_vowel.ogg",
+      "file": "audio/phoneme-e-human-v1.ogg",
+      "url": "https://commons.wikimedia.org/wiki/File:Open-mid_front_unrounded_vowel.ogg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/7/71/Open-mid_front_unrounded_vowel.ogg",
+      "sha256": "dbc669c265420874b1473283d51daed1ad047fa41e45bd0486aa9b4627423643",
+      "playbackRate": 1,
+      "looped": false,
+      "timeStretched": false,
+      "changes": "Gain, mono conversion and resampling; original duration retained"
+    },
+    "i": {
+      "token": "i",
+      "ipa": "ɪ",
+      "title": "Near-close_near-front_unrounded_vowel.ogg",
+      "author": "Denelson83",
+      "media": "4/4c/Near-close_near-front_unrounded_vowel.ogg",
+      "file": "audio/phoneme-i-human-v1.ogg",
+      "url": "https://commons.wikimedia.org/wiki/File:Near-close_near-front_unrounded_vowel.ogg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Near-close_near-front_unrounded_vowel.ogg",
+      "sha256": "3c07d0a3b413821a926d46286c7631de22119e5dff24f1971bb46b577cb5cbee",
+      "playbackRate": 1,
+      "looped": false,
+      "timeStretched": false,
+      "changes": "Gain, mono conversion and resampling; original duration retained"
+    },
+    "f": {
+      "token": "f",
+      "ipa": "f",
+      "title": "Voiceless_labiodental_fricative.ogg",
+      "author": "Peter Isotalo",
+      "media": "3/33/Voiceless_labiodental_fricative.ogg",
+      "from": 0.225,
+      "to": 0.505,
+      "file": "audio/phoneme-f-human-v1.ogg",
+      "url": "https://commons.wikimedia.org/wiki/File:Voiceless_labiodental_fricative.ogg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/3/33/Voiceless_labiodental_fricative.ogg",
+      "sha256": "72176c9094f87ee551ad6c2b280a378a5526b2829b4baf6654c1a093511886a0",
+      "playbackRate": 1,
+      "looped": false,
+      "timeStretched": false,
+      "changes": "Cropped the natural unvoiced F between the source vowels; edge fades; gain, mono conversion and resampling"
+    }
+  }
+}

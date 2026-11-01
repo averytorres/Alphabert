@@ -1,0 +1,473 @@
+{
+  "version": 1,
+  "sounds": {
+    "a": {
+      "source": "ant",
+      "ipa": "æ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-a-clear-v1.ogg"
+    },
+    "ay": {
+      "source": "ape",
+      "ipa": "eɪ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.5490249433106575,
+      "playbackRate": 1,
+      "file": "audio/phoneme-ay-clear-v1.ogg"
+    },
+    "b": {
+      "source": "bat",
+      "ipa": "b",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.06299319727891156,
+      "playbackRate": 1,
+      "file": "audio/phoneme-b-clear-v1.ogg"
+    },
+    "k": {
+      "source": "cat",
+      "ipa": "k",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.0490249433106576,
+      "playbackRate": 1,
+      "file": "audio/phoneme-k-clear-v1.ogg"
+    },
+    "d": {
+      "source": "dog",
+      "ipa": "d",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.04598639455782313,
+      "playbackRate": 1,
+      "file": "audio/phoneme-d-clear-v1.ogg"
+    },
+    "e": {
+      "source": "egg",
+      "ipa": "ɛ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-e-clear-v1.ogg"
+    },
+    "ee": {
+      "source": "eel",
+      "ipa": "i",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-ee-clear-v1.ogg"
+    },
+    "f": {
+      "source": "fan",
+      "ipa": "f",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-f-clear-v1.ogg"
+    },
+    "g": {
+      "source": "goat",
+      "ipa": "ɡ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.04598639455782313,
+      "playbackRate": 1,
+      "file": "audio/phoneme-g-clear-v1.ogg"
+    },
+    "h": {
+      "source": "hat",
+      "ipa": "h",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-h-clear-v1.ogg"
+    },
+    "i": {
+      "source": "ink",
+      "ipa": "ɪ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-i-clear-v1.ogg"
+    },
+    "igh": {
+      "source": "ice",
+      "ipa": "aɪ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.5239909297052154,
+      "playbackRate": 1,
+      "file": "audio/phoneme-igh-clear-v1.ogg"
+    },
+    "j": {
+      "source": "jam",
+      "ipa": "dʒ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.07301587301587302,
+      "playbackRate": 1,
+      "file": "audio/phoneme-j-clear-v1.ogg"
+    },
+    "l": {
+      "source": "leaf",
+      "ipa": "l",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-l-clear-v1.ogg"
+    },
+    "m": {
+      "source": "map",
+      "ipa": "m",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-m-clear-v1.ogg"
+    },
+    "n": {
+      "source": "net",
+      "ipa": "n",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-n-clear-v1.ogg"
+    },
+    "o": {
+      "source": "ox",
+      "ipa": "ɑ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-o-clear-v1.ogg"
+    },
+    "oa": {
+      "source": "oak",
+      "ipa": "oʊ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.56,
+      "playbackRate": 1,
+      "file": "audio/phoneme-oa-clear-v1.ogg"
+    },
+    "oo": {
+      "source": "moon",
+      "ipa": "u",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-oo-clear-v1.ogg"
+    },
+    "p": {
+      "source": "pig",
+      "ipa": "p",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.03301587301587302,
+      "playbackRate": 1,
+      "file": "audio/phoneme-p-clear-v1.ogg"
+    },
+    "r": {
+      "source": "red",
+      "ipa": "ɹ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-r-clear-v1.ogg"
+    },
+    "s": {
+      "source": "sun",
+      "ipa": "s",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-s-clear-v1.ogg"
+    },
+    "t": {
+      "source": "top",
+      "ipa": "t",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.04204081632653061,
+      "playbackRate": 1,
+      "file": "audio/phoneme-t-clear-v1.ogg"
+    },
+    "u": {
+      "source": "up",
+      "ipa": "ʌ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-u-clear-v1.ogg"
+    },
+    "ue": {
+      "source": "unit",
+      "ipa": "ju",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.37700680272108844,
+      "playbackRate": 1,
+      "file": "audio/phoneme-ue-clear-v1.ogg"
+    },
+    "v": {
+      "source": "van",
+      "ipa": "v",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-v-clear-v1.ogg"
+    },
+    "w": {
+      "source": "web",
+      "ipa": "w",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.25501133786848074,
+      "playbackRate": 1,
+      "file": "audio/phoneme-w-clear-v1.ogg"
+    },
+    "y": {
+      "source": "yak",
+      "ipa": "j",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.23700680272108843,
+      "playbackRate": 1,
+      "file": "audio/phoneme-y-clear-v1.ogg"
+    },
+    "z": {
+      "source": "zoo",
+      "ipa": "z",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-z-clear-v1.ogg"
+    },
+    "sh": {
+      "source": "ship",
+      "ipa": "ʃ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-sh-clear-v1.ogg"
+    },
+    "ch": {
+      "source": "chip",
+      "ipa": "tʃ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.0670294784580499,
+      "playbackRate": 1,
+      "file": "audio/phoneme-ch-clear-v1.ogg"
+    },
+    "th": {
+      "source": "thin",
+      "ipa": "θ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-th-clear-v1.ogg"
+    },
+    "ng": {
+      "source": "sing",
+      "ipa": "ŋ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-ng-clear-v1.ogg"
+    },
+    "qu": {
+      "source": "queen",
+      "ipa": "kw",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.3140136054421769,
+      "playbackRate": 1,
+      "file": "audio/phoneme-qu-clear-v1.ogg"
+    },
+    "ks": {
+      "source": "box",
+      "ipa": "ks",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.23197278911564626,
+      "playbackRate": 1,
+      "file": "audio/phoneme-ks-clear-v1.ogg"
+    },
+    "or": {
+      "source": "fork",
+      "ipa": "ɔɹ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.5740136054421768,
+      "playbackRate": 1,
+      "file": "audio/phoneme-or-clear-v1.ogg"
+    },
+    "ar": {
+      "source": "car",
+      "ipa": "ɑɹ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.7090249433106576,
+      "playbackRate": 1,
+      "file": "audio/phoneme-ar-clear-v1.ogg"
+    },
+    "er": {
+      "source": "otter",
+      "ipa": "əɹ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.2780045351473923,
+      "playbackRate": 1,
+      "file": "audio/phoneme-er-clear-v1.ogg"
+    },
+    "ai": {
+      "source": "ape",
+      "ipa": "eɪ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.5490249433106575,
+      "playbackRate": 1,
+      "file": "audio/phoneme-ai-clear-v1.ogg"
+    },
+    "ow": {
+      "source": "cow",
+      "ipa": "aʊ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.6760090702947846,
+      "playbackRate": 1,
+      "file": "audio/phoneme-ow-clear-v1.ogg"
+    },
+    "oi": {
+      "source": "boy",
+      "ipa": "ɔɪ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.7270294784580499,
+      "playbackRate": 1,
+      "file": "audio/phoneme-oi-clear-v1.ogg"
+    },
+    "air": {
+      "source": "chair",
+      "ipa": "ɛɹ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.6510204081632653,
+      "playbackRate": 1,
+      "file": "audio/phoneme-air-clear-v1.ogg"
+    },
+    "ear": {
+      "source": "hear",
+      "ipa": "ɪɹ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.7910204081632654,
+      "playbackRate": 1,
+      "file": "audio/phoneme-ear-clear-v1.ogg"
+    },
+    "eh": {
+      "source": "egg",
+      "ipa": "ɛ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-eh-clear-v1.ogg"
+    },
+    "ah": {
+      "source": "ox",
+      "ipa": "ɑ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-ah-clear-v1.ogg"
+    },
+    "uh": {
+      "source": "up",
+      "ipa": "ʌ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-uh-clear-v1.ogg"
+    },
+    "aw": {
+      "source": "ball",
+      "ipa": "ɔ",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-aw-clear-v1.ogg"
+    },
+    "eye": {
+      "source": "ice",
+      "ipa": "aɪ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.5239909297052154,
+      "playbackRate": 1,
+      "file": "audio/phoneme-eye-clear-v1.ogg"
+    },
+    "oh": {
+      "source": "oak",
+      "ipa": "oʊ",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.5609977324263039,
+      "playbackRate": 1,
+      "file": "audio/phoneme-oh-clear-v1.ogg"
+    },
+    "yoo": {
+      "source": "unit",
+      "ipa": "ju",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.37700680272108844,
+      "playbackRate": 1,
+      "file": "audio/phoneme-yoo-clear-v1.ogg"
+    },
+    "kw": {
+      "source": "queen",
+      "ipa": "kw",
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "seconds": 0.3140136054421769,
+      "playbackRate": 1,
+      "file": "audio/phoneme-kw-clear-v1.ogg"
+    },
+    "schwa": {
+      "source": "zebra",
+      "ipa": "ə",
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "seconds": 0.5,
+      "playbackRate": 1,
+      "file": "audio/phoneme-schwa-clear-v1.ogg"
+    }
+  }
+}

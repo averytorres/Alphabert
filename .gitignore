@@ -1,0 +1,64 @@
+*.iso
+iso-inspection/
+.speech-cache/
+.speech-phonics-cache/
+.speech-letter-cache/
+android/build/
+android/debug.keystore
+android/*.apk
+android/*.idsig
+node_modules/
+tools/test-browser/
+tools/audio/
+tools/phonics/
+.phonics-reference-cache/
+.phonics-timing-cache/
+test-results/
+.music-review/
+.human-phonics-cache/
+.elevenlabs-cache/
+tools/audio-python/
+
+# Local duplicate repository created inside the actual project.
+/Alphabert/
+
+# Local credentials and signing material.
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+
+# Generated trial media and local transcript/model audit outputs.
+audio-trials/
+__pycache__/
+*.pyc
+
+# Downloaded research material; retain original attribution locally.
+/scripts/everyday-songbook-source.abc
+/scripts/*-source.jpg
+
+# Development dependencies and local tool installations.
+/tools/
+.cache/
+.codex/
+.vs/
+.idea/
+
+# Additional signing/credential formats and generated packages.
+*.p12
+*.pfx
+*.key
+*.pem
+*.apk
+*.aab
+*.idsig
+credentials.json
+service-account*.json
+*-service-account.json
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+desktop.ini

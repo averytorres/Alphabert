@@ -1,0 +1,422 @@
+{
+  "version": 1,
+  "note": "Source/routing and signal review of all 52 tokens. This is not a human listening certification.",
+  "sounds": [
+    {
+      "token": "a",
+      "ipa": "æ",
+      "example": "ant",
+      "file": "audio/phoneme-a-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "ay",
+      "ipa": "eɪ",
+      "example": "ape",
+      "file": "audio/phoneme-ay-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "b",
+      "ipa": "b",
+      "example": "cab",
+      "file": "audio/phoneme-b-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "k",
+      "ipa": "k",
+      "example": "king",
+      "file": "audio/phoneme-k-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "d",
+      "ipa": "d",
+      "example": "bed",
+      "file": "audio/phoneme-d-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "e",
+      "ipa": "ɛ",
+      "example": "egg",
+      "file": "audio/phoneme-e-human-v1.ogg",
+      "kind": "Human recording",
+      "listeningVerified": false
+    },
+    {
+      "token": "ee",
+      "ipa": "i",
+      "example": "eel",
+      "file": "audio/phoneme-ee-human-v1.ogg",
+      "kind": "Human recording",
+      "listeningVerified": false
+    },
+    {
+      "token": "f",
+      "ipa": "f",
+      "example": "fan",
+      "file": "audio/phoneme-f-human-v1.ogg",
+      "kind": "Human recording",
+      "listeningVerified": false
+    },
+    {
+      "token": "g",
+      "ipa": "ɡ",
+      "example": "bag",
+      "file": "audio/phoneme-g-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "h",
+      "ipa": "h",
+      "example": "hat",
+      "file": "audio/phoneme-h-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "i",
+      "ipa": "ɪ",
+      "example": "ink",
+      "file": "audio/phoneme-i-human-v1.ogg",
+      "kind": "Human recording",
+      "listeningVerified": false
+    },
+    {
+      "token": "igh",
+      "ipa": "aɪ",
+      "example": "ice",
+      "file": "audio/phoneme-igh-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "j",
+      "ipa": "dʒ",
+      "example": "jam",
+      "file": "audio/phoneme-j-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "l",
+      "ipa": "l",
+      "example": "leaf",
+      "file": "audio/phoneme-l-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "m",
+      "ipa": "m",
+      "example": "map",
+      "file": "audio/phoneme-m-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "n",
+      "ipa": "n",
+      "example": "net",
+      "file": "audio/phoneme-n-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "o",
+      "ipa": "ɑ",
+      "example": "ox",
+      "file": "audio/phoneme-o-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "oa",
+      "ipa": "oʊ",
+      "example": "oak",
+      "file": "audio/phoneme-oa-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "oo",
+      "ipa": "u",
+      "example": "moon",
+      "file": "audio/phoneme-oo-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "p",
+      "ipa": "p",
+      "example": "cap",
+      "file": "audio/phoneme-p-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "r",
+      "ipa": "ɹ",
+      "example": "red",
+      "file": "audio/phoneme-r-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "s",
+      "ipa": "s",
+      "example": "sun",
+      "file": "audio/phoneme-s-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "t",
+      "ipa": "t",
+      "example": "cat",
+      "file": "audio/phoneme-t-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "u",
+      "ipa": "ʌ",
+      "example": "up",
+      "file": "audio/phoneme-u-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "ue",
+      "ipa": "ju",
+      "example": "unit",
+      "file": "audio/phoneme-ue-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "v",
+      "ipa": "v",
+      "example": "van",
+      "file": "audio/phoneme-v-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "w",
+      "ipa": "w",
+      "example": "web",
+      "file": "audio/phoneme-w-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "y",
+      "ipa": "j",
+      "example": "yak",
+      "file": "audio/phoneme-y-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "z",
+      "ipa": "z",
+      "example": "zoo",
+      "file": "audio/phoneme-z-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "sh",
+      "ipa": "ʃ",
+      "example": "ship",
+      "file": "audio/phoneme-sh-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "ch",
+      "ipa": "tʃ",
+      "example": "chip",
+      "file": "audio/phoneme-ch-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "th",
+      "ipa": "θ",
+      "example": "thin",
+      "file": "audio/phoneme-th-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "ng",
+      "ipa": "ŋ",
+      "example": "sing",
+      "file": "audio/phoneme-ng-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "qu",
+      "ipa": "kw",
+      "example": "queen",
+      "file": "audio/phoneme-qu-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "ks",
+      "ipa": "ks",
+      "example": "box",
+      "file": "audio/phoneme-ks-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "or",
+      "ipa": "ɔɹ",
+      "example": "fork",
+      "file": "audio/phoneme-or-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "ar",
+      "ipa": "ɑɹ",
+      "example": "car",
+      "file": "audio/phoneme-ar-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "er",
+      "ipa": "əɹ",
+      "example": "otter",
+      "file": "audio/phoneme-er-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "ai",
+      "ipa": "eɪ",
+      "example": "ape",
+      "file": "audio/phoneme-ai-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "ow",
+      "ipa": "aʊ",
+      "example": "cow",
+      "file": "audio/phoneme-ow-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "oi",
+      "ipa": "ɔɪ",
+      "example": "boy",
+      "file": "audio/phoneme-oi-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "air",
+      "ipa": "ɛɹ",
+      "example": "chair",
+      "file": "audio/phoneme-air-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "ear",
+      "ipa": "ɪɹ",
+      "example": "hear",
+      "file": "audio/phoneme-ear-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "eh",
+      "ipa": "ɛ",
+      "example": "egg",
+      "file": "audio/phoneme-eh-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "ah",
+      "ipa": "ɑ",
+      "example": "ox",
+      "file": "audio/phoneme-ah-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "uh",
+      "ipa": "ʌ",
+      "example": "up",
+      "file": "audio/phoneme-uh-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "aw",
+      "ipa": "ɔ",
+      "example": "ball",
+      "file": "audio/phoneme-aw-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "eye",
+      "ipa": "aɪ",
+      "example": "ice",
+      "file": "audio/phoneme-eye-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "oh",
+      "ipa": "oʊ",
+      "example": "oak",
+      "file": "audio/phoneme-oh-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    },
+    {
+      "token": "yoo",
+      "ipa": "ju",
+      "example": "unit",
+      "file": "audio/phoneme-yoo-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "kw",
+      "ipa": "kw",
+      "example": "queen",
+      "file": "audio/phoneme-kw-reference-v3.ogg",
+      "kind": "Generated, native articulation",
+      "listeningVerified": false
+    },
+    {
+      "token": "schwa",
+      "ipa": "ə",
+      "example": "zebra",
+      "file": "audio/phoneme-schwa-held-v2.ogg",
+      "kind": "Generated, sustained",
+      "listeningVerified": false
+    }
+  ]
+}

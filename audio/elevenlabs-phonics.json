@@ -1,0 +1,1215 @@
+{
+  "version": 2,
+  "model": "eleven_v4",
+  "voice": "Roger - Laid-Back, Casual, Resonant",
+  "stability": 0.5,
+  "similarity": 0.75,
+  "playbackRate": 1,
+  "timeStretched": false,
+  "looped": false,
+  "sourceApproval": "User approved the original full review recordings and ant/book/web retry. Fresh stop cues address the subsequent audibility report and have not yet received individual listening approval. Cut boundaries require in-game listening review.",
+  "sources": {
+    "extended": {
+      "file": "audio-trials/elevenlabs/extended-take1.mp3",
+      "sha256": "82674989543a1721904f8a77d0ea80e2e17448a40d27c7207f2336260c2bc100"
+    },
+    "retry": {
+      "file": "audio-trials/elevenlabs/ant-book-web-take1.mp3",
+      "sha256": "62d0af96ae32b1356f56839c80ab2ee3f9f9005fb99ff666ceb57fd820c1cd33"
+    },
+    "original": {
+      "file": "audio-trials/elevenlabs/roger-v4-take1.mp3",
+      "sha256": "08a0d853562321ccd54c6c55d4e70a73e1d924fd12d179774ef187d54d585ed2"
+    },
+    "stops": {
+      "file": "audio-trials/elevenlabs/stop-sounds-v2.mp3",
+      "sha256": "52e8b65a72e323ef2ba482b32864c385e57a50d1d9f698f46fad78208ae4d776"
+    },
+    "standalone-j": {
+      "file": ".elevenlabs-cache/standalone-phonics/j.mp3",
+      "sha256": "8828bce74fc71e13e7e67ab5f44b5113bbf5aa5e833ba31c56b375fdcde13d2f"
+    },
+    "standalone-ks": {
+      "file": ".elevenlabs-cache/standalone-phonics/ks.mp3",
+      "sha256": "b812a57fb1f6594c64204c2dd59a5e6bc997ea3bd6b676c714c27c6744a23db3"
+    },
+    "standalone-kw": {
+      "file": ".elevenlabs-cache/standalone-phonics/kw.mp3",
+      "sha256": "1259164dd717174ca30a269fa03cad0a0a97bcfc3ef521f5a38756c3f1648d4a"
+    },
+    "standalone-ng": {
+      "file": ".elevenlabs-cache/standalone-phonics/ng.mp3",
+      "sha256": "cb27ac20de089d9469f140f04f12e1e7662a11d255aae6bb43d592cce4c061b8"
+    },
+    "standalone-schwa": {
+      "file": ".elevenlabs-cache/standalone-phonics/schwa.mp3",
+      "sha256": "05d63b72ffbd78d4dcbf371eebeb1c16427a6a9a8a59b1159c187f0289474490"
+    },
+    "standalone-w": {
+      "file": ".elevenlabs-cache/standalone-phonics/w.mp3",
+      "sha256": "5c87973abeb291d556ce5f106fb839c28a0f7402610a7b3c38b2cd2c637a80c2"
+    },
+    "standalone-y": {
+      "file": ".elevenlabs-cache/standalone-phonics/y.mp3",
+      "sha256": "267c4e0e29bae775dc221c0d85d402b1c33a38f0578492bc827344ebbdda4e94"
+    }
+  },
+  "sounds": {
+    "a": {
+      "file": "audio/eleven-phoneme-a-v1.ogg",
+      "source": "retry",
+      "start": 4.45,
+      "end": 4.92,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "shortoo": {
+      "file": "audio/eleven-phoneme-shortoo-v1.ogg",
+      "source": "retry",
+      "start": 14.135,
+      "end": 14.57,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "w": {
+      "file": "audio/eleven-phoneme-w-v3.ogg",
+      "source": "standalone-w",
+      "start": 0,
+      "end": 0.96,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "independent": true,
+      "isolatedCue": false,
+      "gain": 1.5,
+      "peakLimit": 0.85,
+      "style": "clear",
+      "method": "Complete single-cue response, no timestamp cutting; gain and peak limiter",
+      "individualListeningVerified": false
+    },
+    "e": {
+      "file": "audio/eleven-phoneme-e-v1.ogg",
+      "source": "extended",
+      "start": 5.105,
+      "end": 5.4,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "i": {
+      "file": "audio/eleven-phoneme-i-v1.ogg",
+      "source": "extended",
+      "start": 7.38,
+      "end": 7.695,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "o": {
+      "file": "audio/eleven-phoneme-o-v1.ogg",
+      "source": "extended",
+      "start": 9.78,
+      "end": 10.24,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "u": {
+      "file": "audio/eleven-phoneme-u-v1.ogg",
+      "source": "extended",
+      "start": 12.315,
+      "end": 12.63,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "ay": {
+      "file": "audio/eleven-phoneme-ay-v1.ogg",
+      "source": "extended",
+      "start": 14.325,
+      "end": 14.805,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "ee": {
+      "file": "audio/eleven-phoneme-ee-v1.ogg",
+      "source": "original",
+      "start": 6.75,
+      "end": 7.76,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "igh": {
+      "file": "audio/eleven-phoneme-igh-v1.ogg",
+      "source": "extended",
+      "start": 18.66,
+      "end": 19.15,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "oa": {
+      "file": "audio/eleven-phoneme-oa-v1.ogg",
+      "source": "extended",
+      "start": 20.825,
+      "end": 21.275,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "ue": {
+      "file": "audio/eleven-phoneme-ue-v1.ogg",
+      "source": "extended",
+      "start": 22.945,
+      "end": 23.465,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "oo": {
+      "file": "audio/eleven-phoneme-oo-v1.ogg",
+      "source": "extended",
+      "start": 25.31,
+      "end": 25.8,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "aw": {
+      "file": "audio/eleven-phoneme-aw-v1.ogg",
+      "source": "extended",
+      "start": 29.465,
+      "end": 29.935,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "ow": {
+      "file": "audio/eleven-phoneme-ow-v1.ogg",
+      "source": "extended",
+      "start": 31.62,
+      "end": 32.15,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "oi": {
+      "file": "audio/eleven-phoneme-oi-v1.ogg",
+      "source": "extended",
+      "start": 33.775,
+      "end": 34.255,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "ar": {
+      "file": "audio/eleven-phoneme-ar-v1.ogg",
+      "source": "extended",
+      "start": 35.86,
+      "end": 36.33,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "or": {
+      "file": "audio/eleven-phoneme-or-v1.ogg",
+      "source": "extended",
+      "start": 37.935,
+      "end": 38.4,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "er": {
+      "file": "audio/eleven-phoneme-er-v1.ogg",
+      "source": "extended",
+      "start": 39.945,
+      "end": 40.4,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "air": {
+      "file": "audio/eleven-phoneme-air-v1.ogg",
+      "source": "extended",
+      "start": 41.97,
+      "end": 42.46,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "ear": {
+      "file": "audio/eleven-phoneme-ear-v1.ogg",
+      "source": "extended",
+      "start": 44.015,
+      "end": 44.48,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "b": {
+      "file": "audio/eleven-phoneme-b-v2.ogg",
+      "source": "stops",
+      "start": 2.99,
+      "end": 3.4,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "method": "Fresh naturally released consonant cue; full articulation retained, gain 1.5 with peak limiter",
+      "individualListeningVerified": false
+    },
+    "d": {
+      "file": "audio/eleven-phoneme-d-v2.ogg",
+      "source": "stops",
+      "start": 7.205,
+      "end": 7.69,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "method": "Fresh naturally released consonant cue; full articulation retained, gain 1.5 with peak limiter",
+      "individualListeningVerified": false
+    },
+    "g": {
+      "file": "audio/eleven-phoneme-g-v2.ogg",
+      "source": "stops",
+      "start": 11.25,
+      "end": 11.67,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "method": "Fresh naturally released consonant cue; full articulation retained, gain 1.5 with peak limiter",
+      "individualListeningVerified": false
+    },
+    "k": {
+      "file": "audio/eleven-phoneme-k-v2.ogg",
+      "source": "stops",
+      "start": 15.255,
+      "end": 15.57,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "method": "Fresh naturally released consonant cue; full articulation retained, gain 1.5 with peak limiter",
+      "individualListeningVerified": false
+    },
+    "p": {
+      "file": "audio/eleven-phoneme-p-v2.ogg",
+      "source": "stops",
+      "start": 19.11,
+      "end": 19.36,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "method": "Fresh naturally released consonant cue; full articulation retained, gain 1.5 with peak limiter",
+      "individualListeningVerified": false
+    },
+    "t": {
+      "file": "audio/eleven-phoneme-t-v2.ogg",
+      "source": "stops",
+      "start": 22.78,
+      "end": 23.055,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "method": "Fresh naturally released consonant cue; full articulation retained, gain 1.5 with peak limiter",
+      "individualListeningVerified": false
+    },
+    "j": {
+      "file": "audio/eleven-phoneme-j-v3.ogg",
+      "source": "standalone-j",
+      "start": 0,
+      "end": 1.12,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "independent": true,
+      "isolatedCue": false,
+      "gain": 1.5,
+      "peakLimit": 0.85,
+      "style": "clear",
+      "method": "Complete single-cue response, no timestamp cutting; gain and peak limiter",
+      "individualListeningVerified": false
+    },
+    "ch": {
+      "file": "audio/eleven-phoneme-ch-v1.ogg",
+      "source": "extended",
+      "start": 60.345,
+      "end": 60.685,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "h": {
+      "file": "audio/eleven-phoneme-h-v1.ogg",
+      "source": "extended",
+      "start": 62.195,
+      "end": 62.555,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "l": {
+      "file": "audio/eleven-phoneme-l-v1.ogg",
+      "source": "extended",
+      "start": 64.06,
+      "end": 64.52,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "n": {
+      "file": "audio/eleven-phoneme-n-v1.ogg",
+      "source": "extended",
+      "start": 66.18,
+      "end": 66.65,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "s": {
+      "file": "audio/eleven-phoneme-s-v1.ogg",
+      "source": "extended",
+      "start": 68.21,
+      "end": 68.75,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "v": {
+      "file": "audio/eleven-phoneme-v-v1.ogg",
+      "source": "extended",
+      "start": 70.36,
+      "end": 70.82,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "y": {
+      "file": "audio/eleven-phoneme-y-v3.ogg",
+      "source": "standalone-y",
+      "start": 0,
+      "end": 1.04,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "independent": true,
+      "isolatedCue": false,
+      "gain": 1.5,
+      "peakLimit": 0.85,
+      "style": "clear",
+      "method": "Complete single-cue response, no timestamp cutting; gain and peak limiter",
+      "individualListeningVerified": false
+    },
+    "z": {
+      "file": "audio/eleven-phoneme-z-v1.ogg",
+      "source": "extended",
+      "start": 76.605,
+      "end": 77,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "sh": {
+      "file": "audio/eleven-phoneme-sh-v1.ogg",
+      "source": "extended",
+      "start": 78.84,
+      "end": 79.39,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "th": {
+      "file": "audio/eleven-phoneme-th-v1.ogg",
+      "source": "extended",
+      "start": 80.86,
+      "end": 81.385,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "f": {
+      "file": "audio/eleven-phoneme-f-v1.ogg",
+      "source": "original",
+      "start": 8.255,
+      "end": 8.955,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "m": {
+      "file": "audio/eleven-phoneme-m-v1.ogg",
+      "source": "original",
+      "start": 9.56,
+      "end": 10.565,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "r": {
+      "file": "audio/eleven-phoneme-r-v1.ogg",
+      "source": "original",
+      "start": 10.905,
+      "end": 11.645,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "ng": {
+      "file": "audio/eleven-phoneme-ng-v3.ogg",
+      "source": "standalone-ng",
+      "start": 0,
+      "end": 0.59,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "independent": false,
+      "isolatedCue": true,
+      "excerpt": {
+        "file": "audio-trials/elevenlabs/extended-take1.mp3",
+        "start": 82.95,
+        "end": 83.54
+      },
+      "gain": 1.5,
+      "peakLimit": 0.85,
+      "style": "clear",
+      "method": "Whole isolated cue from approved Roger review; native timing, gain and peak limiter",
+      "individualListeningVerified": false
+    },
+    "kw": {
+      "file": "audio/eleven-phoneme-kw-v3.ogg",
+      "source": "standalone-kw",
+      "start": 0,
+      "end": 0.96,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "independent": true,
+      "isolatedCue": false,
+      "gain": 1.5,
+      "peakLimit": 0.85,
+      "style": "clear",
+      "method": "Complete single-cue response, no timestamp cutting; gain and peak limiter",
+      "individualListeningVerified": false
+    },
+    "ks": {
+      "file": "audio/eleven-phoneme-ks-v3.ogg",
+      "source": "standalone-ks",
+      "start": 0,
+      "end": 1.04,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "independent": true,
+      "isolatedCue": false,
+      "gain": 1.5,
+      "peakLimit": 0.85,
+      "style": "clear",
+      "method": "Complete single-cue response, no timestamp cutting; gain and peak limiter",
+      "individualListeningVerified": false
+    },
+    "schwa": {
+      "file": "audio/eleven-phoneme-schwa-v7.ogg",
+      "source": "standalone-schwa",
+      "start": 0,
+      "end": 0.8,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "independent": true,
+      "isolatedCue": false,
+      "gain": 1,
+      "peakLimit": 0.98,
+      "style": "neutral",
+      "method": "Complete single-cue response, no timestamp cutting; gain and peak limiter",
+      "individualListeningVerified": true
+    },
+    "ai": {
+      "file": "audio/eleven-phoneme-ay-v1.ogg",
+      "source": "extended",
+      "start": 14.325,
+      "end": 14.805,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "aliasOf": "ay"
+    },
+    "eh": {
+      "file": "audio/eleven-phoneme-e-v1.ogg",
+      "source": "extended",
+      "start": 5.105,
+      "end": 5.4,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "aliasOf": "e"
+    },
+    "ah": {
+      "file": "audio/eleven-phoneme-o-v1.ogg",
+      "source": "extended",
+      "start": 9.78,
+      "end": 10.24,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "aliasOf": "o"
+    },
+    "uh": {
+      "file": "audio/eleven-phoneme-u-v1.ogg",
+      "source": "extended",
+      "start": 12.315,
+      "end": 12.63,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "aliasOf": "u"
+    },
+    "eye": {
+      "file": "audio/eleven-phoneme-igh-v1.ogg",
+      "source": "extended",
+      "start": 18.66,
+      "end": 19.15,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "aliasOf": "igh"
+    },
+    "oh": {
+      "file": "audio/eleven-phoneme-oa-v1.ogg",
+      "source": "extended",
+      "start": 20.825,
+      "end": 21.275,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "aliasOf": "oa"
+    },
+    "yoo": {
+      "file": "audio/eleven-phoneme-ue-v1.ogg",
+      "source": "extended",
+      "start": 22.945,
+      "end": 23.465,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "aliasOf": "ue"
+    },
+    "qu": {
+      "file": "audio/eleven-phoneme-kw-v3.ogg",
+      "source": "standalone-kw",
+      "start": 0,
+      "end": 0.96,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false,
+      "independent": true,
+      "isolatedCue": false,
+      "gain": 1.5,
+      "peakLimit": 0.85,
+      "style": "clear",
+      "method": "Complete single-cue response, no timestamp cutting; gain and peak limiter",
+      "individualListeningVerified": false,
+      "aliasOf": "kw"
+    }
+  },
+  "letters": {
+    "a": {
+      "file": "audio/eleven-letter-a-v1.ogg",
+      "source": "extended",
+      "start": 115.61,
+      "end": 116.045,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "b": {
+      "file": "audio/eleven-letter-b-v1.ogg",
+      "source": "extended",
+      "start": 116.11,
+      "end": 116.52,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "c": {
+      "file": "audio/eleven-letter-c-v1.ogg",
+      "source": "extended",
+      "start": 116.55,
+      "end": 117.02,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "d": {
+      "file": "audio/eleven-letter-d-v1.ogg",
+      "source": "extended",
+      "start": 117.04,
+      "end": 117.67,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "e": {
+      "file": "audio/eleven-letter-e-v1.ogg",
+      "source": "extended",
+      "start": 117.76,
+      "end": 118.16,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "f": {
+      "file": "audio/eleven-letter-f-v1.ogg",
+      "source": "extended",
+      "start": 118.2,
+      "end": 118.6,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "g": {
+      "file": "audio/eleven-letter-g-v1.ogg",
+      "source": "extended",
+      "start": 118.62,
+      "end": 119.095,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "h": {
+      "file": "audio/eleven-letter-h-v1.ogg",
+      "source": "extended",
+      "start": 119.39,
+      "end": 119.805,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "i": {
+      "file": "audio/eleven-letter-i-v1.ogg",
+      "source": "extended",
+      "start": 119.865,
+      "end": 120.23,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "j": {
+      "file": "audio/eleven-letter-j-v1.ogg",
+      "source": "extended",
+      "start": 120.25,
+      "end": 120.615,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "k": {
+      "file": "audio/eleven-letter-k-v1.ogg",
+      "source": "extended",
+      "start": 120.635,
+      "end": 121.18,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "l": {
+      "file": "audio/eleven-letter-l-v1.ogg",
+      "source": "extended",
+      "start": 121.27,
+      "end": 121.645,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "m": {
+      "file": "audio/eleven-letter-m-v1.ogg",
+      "source": "extended",
+      "start": 121.71,
+      "end": 122.04,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "n": {
+      "file": "audio/eleven-letter-n-v1.ogg",
+      "source": "extended",
+      "start": 122.095,
+      "end": 122.425,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "o": {
+      "file": "audio/eleven-letter-o-v1.ogg",
+      "source": "extended",
+      "start": 122.48,
+      "end": 122.765,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "p": {
+      "file": "audio/eleven-letter-p-v1.ogg",
+      "source": "extended",
+      "start": 122.815,
+      "end": 123.215,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "q": {
+      "file": "audio/eleven-letter-q-v1.ogg",
+      "source": "extended",
+      "start": 123.6,
+      "end": 123.94,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "r": {
+      "file": "audio/eleven-letter-r-v1.ogg",
+      "source": "extended",
+      "start": 123.96,
+      "end": 124.3,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "s": {
+      "file": "audio/eleven-letter-s-v1.ogg",
+      "source": "extended",
+      "start": 124.32,
+      "end": 124.81,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "t": {
+      "file": "audio/eleven-letter-t-v1.ogg",
+      "source": "extended",
+      "start": 124.915,
+      "end": 125.22,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "u": {
+      "file": "audio/eleven-letter-u-v1.ogg",
+      "source": "extended",
+      "start": 125.24,
+      "end": 125.65,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "v": {
+      "file": "audio/eleven-letter-v-v1.ogg",
+      "source": "extended",
+      "start": 125.67,
+      "end": 126.06,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "w": {
+      "file": "audio/eleven-letter-w-v1.ogg",
+      "source": "extended",
+      "start": 126.25,
+      "end": 126.87,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "x": {
+      "file": "audio/eleven-letter-x-v1.ogg",
+      "source": "extended",
+      "start": 126.925,
+      "end": 127.35,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "y": {
+      "file": "audio/eleven-letter-y-v1.ogg",
+      "source": "extended",
+      "start": 127.43,
+      "end": 127.82,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    "z": {
+      "file": "audio/eleven-letter-z-v1.ogg",
+      "source": "extended",
+      "start": 127.84,
+      "end": 128.385,
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    }
+  },
+  "blends": [
+    {
+      "word": "crab",
+      "text": "cr",
+      "tokens": [
+        "k",
+        "r"
+      ],
+      "file": "audio/eleven-blend-crab-cr-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "clap",
+      "text": "cl",
+      "tokens": [
+        "k",
+        "l"
+      ],
+      "file": "audio/eleven-blend-clap-cl-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "clock",
+      "text": "cl",
+      "tokens": [
+        "k",
+        "l"
+      ],
+      "file": "audio/eleven-blend-clock-cl-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "drum",
+      "text": "dr",
+      "tokens": [
+        "d",
+        "r"
+      ],
+      "file": "audio/eleven-blend-drum-dr-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "dress",
+      "text": "dr",
+      "tokens": [
+        "d",
+        "r"
+      ],
+      "file": "audio/eleven-blend-dress-dr-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "flag",
+      "text": "fl",
+      "tokens": [
+        "f",
+        "l"
+      ],
+      "file": "audio/eleven-blend-flag-fl-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "frog",
+      "text": "fr",
+      "tokens": [
+        "f",
+        "r"
+      ],
+      "file": "audio/eleven-blend-frog-fr-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "gift",
+      "text": "ft",
+      "tokens": [
+        "f",
+        "t"
+      ],
+      "file": "audio/eleven-blend-gift-ft-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "hand",
+      "text": "nd",
+      "tokens": [
+        "n",
+        "d"
+      ],
+      "file": "audio/eleven-blend-hand-nd-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "insect",
+      "text": "ct",
+      "tokens": [
+        "k",
+        "t"
+      ],
+      "file": "audio/eleven-blend-insect-ct-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "ink",
+      "text": "nk",
+      "tokens": [
+        "ng",
+        "k"
+      ],
+      "file": "audio/eleven-blend-ink-nk-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "lamp",
+      "text": "mp",
+      "tokens": [
+        "m",
+        "p"
+      ],
+      "file": "audio/eleven-blend-lamp-mp-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "land",
+      "text": "nd",
+      "tokens": [
+        "n",
+        "d"
+      ],
+      "file": "audio/eleven-blend-land-nd-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "nest",
+      "text": "st",
+      "tokens": [
+        "s",
+        "t"
+      ],
+      "file": "audio/eleven-blend-nest-st-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "plant",
+      "text": "pl",
+      "tokens": [
+        "p",
+        "l"
+      ],
+      "file": "audio/eleven-blend-plant-pl-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "plant",
+      "text": "nt",
+      "tokens": [
+        "n",
+        "t"
+      ],
+      "file": "audio/eleven-blend-plant-nt-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "plum",
+      "text": "pl",
+      "tokens": [
+        "p",
+        "l"
+      ],
+      "file": "audio/eleven-blend-plum-pl-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "quilt",
+      "text": "lt",
+      "tokens": [
+        "l",
+        "t"
+      ],
+      "file": "audio/eleven-blend-quilt-lt-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "star",
+      "text": "st",
+      "tokens": [
+        "s",
+        "t"
+      ],
+      "file": "audio/eleven-blend-star-st-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "stop",
+      "text": "st",
+      "tokens": [
+        "s",
+        "t"
+      ],
+      "file": "audio/eleven-blend-stop-st-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "snail",
+      "text": "sn",
+      "tokens": [
+        "s",
+        "n"
+      ],
+      "file": "audio/eleven-blend-snail-sn-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "snow",
+      "text": "sn",
+      "tokens": [
+        "s",
+        "n"
+      ],
+      "file": "audio/eleven-blend-snow-sn-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "tree",
+      "text": "tr",
+      "tokens": [
+        "t",
+        "r"
+      ],
+      "file": "audio/eleven-blend-tree-tr-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "tent",
+      "text": "nt",
+      "tokens": [
+        "n",
+        "t"
+      ],
+      "file": "audio/eleven-blend-tent-nt-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "train",
+      "text": "tr",
+      "tokens": [
+        "t",
+        "r"
+      ],
+      "file": "audio/eleven-blend-train-tr-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "umbrella",
+      "text": "br",
+      "tokens": [
+        "l",
+        "schwa"
+      ],
+      "file": "audio/eleven-blend-umbrella-br-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "vest",
+      "text": "st",
+      "tokens": [
+        "s",
+        "t"
+      ],
+      "file": "audio/eleven-blend-vest-st-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "zebra",
+      "text": "br",
+      "tokens": [
+        "r",
+        "schwa"
+      ],
+      "file": "audio/eleven-blend-zebra-br-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "blue",
+      "text": "bl",
+      "tokens": [
+        "b",
+        "l"
+      ],
+      "file": "audio/eleven-blend-blue-bl-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    },
+    {
+      "word": "glue",
+      "text": "gl",
+      "tokens": [
+        "g",
+        "l"
+      ],
+      "file": "audio/eleven-blend-glue-gl-v1.ogg",
+      "playbackRate": 1,
+      "timeStretched": false,
+      "looped": false
+    }
+  ]
+}

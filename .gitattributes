@@ -1,0 +1,10 @@
+* text=auto
+*.ogg binary
+*.mp3 binary
+*.wav binary
+*.png binary
+*.gif binary
+*.jpg binary
+*.webp binary
+*.apk binary
+*.iso binary

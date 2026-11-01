@@ -1,0 +1,17 @@
+{
+  "restoredFrom": "Alphabert-1.11.7.apk",
+  "sounds": {
+    "kw": {
+      "file": "audio/eleven-phoneme-kw-v3.ogg",
+      "sha256": "ea63cedfc0c2ed1b116a5c5bc7b5730f41687a441d908797a6e86c2d86098ae8",
+      "backup": ".elevenlabs-cache/standalone-phonics/previous/kw-clear.ogg",
+      "sourceSha256": "1259164dd717174ca30a269fa03cad0a0a97bcfc3ef521f5a38756c3f1648d4a"
+    },
+    "w": {
+      "file": "audio/eleven-phoneme-w-v3.ogg",
+      "sha256": "713426839c5c39cc9bfe9c00dd270f539ae6c977773505f6d72d8e662ab4b96d",
+      "backup": ".elevenlabs-cache/standalone-phonics/previous/w-clear.ogg",
+      "sourceSha256": "5c87973abeb291d556ce5f106fb839c28a0f7402610a7b3c38b2cd2c637a80c2"
+    }
+  }
+}

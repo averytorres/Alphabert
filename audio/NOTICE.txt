@@ -1,0 +1,2 @@
+Built-in speech is generated with ElevenLabs, Eleven v4, Roger. https://elevenlabs.io
+Recordings are bundled for offline playback; no API key is included. Repeated instruction fragments are assembled locally. Phonics retain their natural timing without stretching or looping. Earlier source banks and their licenses remain available for provenance and fallback. Newly added unprepared content uses the device voice.

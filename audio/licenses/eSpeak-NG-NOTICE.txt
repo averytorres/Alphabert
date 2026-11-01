@@ -1,0 +1,1 @@
+Phonics samples generated with eSpeak NG via @echogarden/espeak-ng-emscripten 0.3.5. Source: https://github.com/echogarden-project/espeak-ng-emscripten . Engine is GPL-3.0; the engine is used as a development tool and is not bundled in the Android app. Samples are extracted using phoneme event timings in ordinary English words. Normal narration and alphabet names remain Kokoro.

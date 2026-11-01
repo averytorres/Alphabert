@@ -1,0 +1,488 @@
+{
+  "version": 2,
+  "method": "Steady-state sustain; continuous consonants exclude final 40 percent of source and fade out without word-derived release; native sample/playback rate",
+  "sounds": {
+    "a": {
+      "file": "audio/phoneme-a-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.39700680272108846,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "ay": {
+      "file": "audio/phoneme-ay-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.5490249433106575,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "b": {
+      "file": "audio/phoneme-b-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "k": {
+      "file": "audio/phoneme-k-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "d": {
+      "file": "audio/phoneme-d-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "e": {
+      "file": "audio/phoneme-e-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.5280272108843538,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "ee": {
+      "file": "audio/phoneme-ee-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.6500226757369615,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "f": {
+      "file": "audio/phoneme-f-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "fadeOutSeconds": 0.025,
+      "originalSeconds": 0.13002267573696144,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "g": {
+      "file": "audio/phoneme-g-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "h": {
+      "file": "audio/phoneme-h-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "fadeOutSeconds": 0.025,
+      "originalSeconds": 0.10702947845804989,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "i": {
+      "file": "audio/phoneme-i-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.34199546485260773,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "igh": {
+      "file": "audio/phoneme-igh-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.5239909297052154,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "j": {
+      "file": "audio/phoneme-j-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "l": {
+      "file": "audio/phoneme-l-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "fadeOutSeconds": 0.025,
+      "originalSeconds": 0.25501133786848074,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "m": {
+      "file": "audio/phoneme-m-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "fadeOutSeconds": 0.025,
+      "originalSeconds": 0.24,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "n": {
+      "file": "audio/phoneme-n-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "fadeOutSeconds": 0.025,
+      "originalSeconds": 0.25501133786848074,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "o": {
+      "file": "audio/phoneme-o-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.5259863945578231,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "oa": {
+      "file": "audio/phoneme-oa-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.56,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "oo": {
+      "file": "audio/phoneme-oo-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.3889795918367347,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "p": {
+      "file": "audio/phoneme-p-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "r": {
+      "file": "audio/phoneme-r-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "fadeOutSeconds": 0.025,
+      "originalSeconds": 0.31002267573696146,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "s": {
+      "file": "audio/phoneme-s-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "fadeOutSeconds": 0.025,
+      "originalSeconds": 0.12498866213151927,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "t": {
+      "file": "audio/phoneme-t-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "u": {
+      "file": "audio/phoneme-u-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.45700680272108846,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "ue": {
+      "file": "audio/phoneme-ue-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "v": {
+      "file": "audio/phoneme-v-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "fadeOutSeconds": 0.025,
+      "originalSeconds": 0.20299319727891157,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "w": {
+      "file": "audio/phoneme-w-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "y": {
+      "file": "audio/phoneme-y-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "z": {
+      "file": "audio/phoneme-z-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "fadeOutSeconds": 0.025,
+      "originalSeconds": 0.1980045351473923,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "sh": {
+      "file": "audio/phoneme-sh-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "fadeOutSeconds": 0.025,
+      "originalSeconds": 0.16099773242630386,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "ch": {
+      "file": "audio/phoneme-ch-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "th": {
+      "file": "audio/phoneme-th-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "fadeOutSeconds": 0.025,
+      "originalSeconds": 0.14199546485260772,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "ng": {
+      "file": "audio/phoneme-ng-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": true,
+      "sourceEndFraction": 0.6,
+      "fadeOutSeconds": 0.025,
+      "originalSeconds": 0.2419954648526077,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "qu": {
+      "file": "audio/phoneme-qu-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "ks": {
+      "file": "audio/phoneme-ks-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "or": {
+      "file": "audio/phoneme-or-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.5740136054421768,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "ar": {
+      "file": "audio/phoneme-ar-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.7090249433106576,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "er": {
+      "file": "audio/phoneme-er-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.2780045351473923,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "ai": {
+      "file": "audio/phoneme-ai-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.5490249433106575,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "ow": {
+      "file": "audio/phoneme-ow-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.6760090702947846,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "oi": {
+      "file": "audio/phoneme-oi-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.7270294784580499,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "air": {
+      "file": "audio/phoneme-air-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.6510204081632653,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "ear": {
+      "file": "audio/phoneme-ear-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.7910204081632654,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "eh": {
+      "file": "audio/phoneme-eh-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.5280272108843538,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "ah": {
+      "file": "audio/phoneme-ah-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.5249886621315193,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "uh": {
+      "file": "audio/phoneme-uh-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.45700680272108846,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "aw": {
+      "file": "audio/phoneme-aw-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.6630385487528345,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "eye": {
+      "file": "audio/phoneme-eye-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.5239909297052154,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "oh": {
+      "file": "audio/phoneme-oh-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.5609977324263039,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    },
+    "yoo": {
+      "file": "audio/phoneme-yoo-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "kw": {
+      "file": "audio/phoneme-kw-reference-v3.ogg",
+      "sustained": false,
+      "reason": "Keep stop release or glide intact"
+    },
+    "schwa": {
+      "file": "audio/phoneme-schwa-held-v2.ogg",
+      "sustained": true,
+      "steadyRelease": false,
+      "sourceEndFraction": 1,
+      "fadeOutSeconds": 0,
+      "originalSeconds": 0.10099773242630386,
+      "heldSeconds": 0.8500226757369614,
+      "sampleRate": 22050,
+      "playbackRate": 1
+    }
+  }
+}
